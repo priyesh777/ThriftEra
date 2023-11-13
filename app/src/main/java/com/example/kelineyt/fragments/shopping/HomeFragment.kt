@@ -45,7 +45,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         TabLayoutMediator(binding.tabLayout, binding.viewpagerHome) { tab, position ->
             when (position) {
                 0 -> tab.text = "All"
-                1 -> tab.text = "Clothing"
+                1 -> tab.text = "Tables"
 //                2 -> tab.text = "Cupboard"
 //                3 -> tab.text = "Table"
                 3 -> tab.text = "Accessories"
