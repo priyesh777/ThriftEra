@@ -54,7 +54,8 @@ class BestDealsAdapter : RecyclerView.Adapter<BestDealsAdapter.BestDealsViewHold
         holder.bind(product)
 
         holder.itemView.setOnClickListener {
-            onClick?.invoke(product)
+// Disabled to avoid opening product details
+//            onClick?.invoke(product)
         }
 
     }

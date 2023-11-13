@@ -49,7 +49,8 @@ class SpecialProductsAdapter :
         holder.bind(product)
 
         holder.itemView.setOnClickListener {
-            onClick?.invoke(product)
+// This has been disabled to not open product details
+//            onClick?.invoke(product)
         }
     }
 

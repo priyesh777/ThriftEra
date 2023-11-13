@@ -30,8 +30,8 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         val categoriesFragments = arrayListOf(
             MainCategoryFragment(),
             ChairFragment(),
-            CupboardFragment(),
-            TableFragment(),
+//            CupboardFragment(),
+//            TableFragment(),
             AccessoryFragment(),
             FurnitureFragment()
         )
