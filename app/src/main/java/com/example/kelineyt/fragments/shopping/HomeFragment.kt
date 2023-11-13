@@ -29,8 +29,8 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         val categoriesFragments = arrayListOf(
             MainCategoryFragment(),
-            ChairFragment(),
-//            CupboardFragment(),
+//            ChairFragment(),
+            CupboardFragment(),
 //            TableFragment(),
             AccessoryFragment(),
             FurnitureFragment()
@@ -46,10 +46,10 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             when (position) {
                 0 -> tab.text = "All"
                 1 -> tab.text = "Tables"
-//                2 -> tab.text = "Cupboard"
+//                2 -> tab.text = "Furniture"
 //                3 -> tab.text = "Table"
                 3 -> tab.text = "Accessories"
-                2 -> tab.text = "Furniture"
+                2 -> tab.text = "Clothing"
             }
         }.attach()
     }
