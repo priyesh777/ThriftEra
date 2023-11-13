@@ -49,29 +49,29 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <View
-            android:layout_width="10dp"
-            android:layout_height="match_parent"/>
+<!--        <View-->
+<!--            android:layout_width="10dp"-->
+<!--            android:layout_height="match_parent"/>-->
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/ic_scan"
-            android:background="@drawable/icon_background"
-            android:backgroundTint="@color/g_search_and_icons"
-            android:padding="10dp"/>
+<!--        <ImageView-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:src="@drawable/ic_scan"-->
+<!--            android:background="@drawable/icon_background"-->
+<!--            android:backgroundTint="@color/g_search_and_icons"-->
+<!--            android:padding="10dp"/>-->
 
-        <View
-            android:layout_width="10dp"
-            android:layout_height="match_parent"/>
+<!--        <View-->
+<!--            android:layout_width="10dp"-->
+<!--            android:layout_height="match_parent"/>-->
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/ic_microphone"
-            android:background="@drawable/icon_background"
-            android:backgroundTint="@color/g_search_and_icons"
-            android:padding="10dp"/>
+<!--        <ImageView-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:src="@drawable/ic_microphone"-->
+<!--            android:background="@drawable/icon_background"-->
+<!--            android:backgroundTint="@color/g_search_and_icons"-->
+<!--            android:padding="10dp"/>-->
 
     </LinearLayout>
 
@@ -80,19 +80,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:tabRippleColor="@color/white"
-        app:tabSelectedTextColor="@color/black"
+        app:tabSelectedTextColor="@color/base_green"
         app:tabMode="scrollable"
         app:tabTextAppearance="@style/tabLayout_text"
         app:layout_constraintTop_toBottomOf="@id/homeHeader"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:tabIndicator="@null"
+        app:tabIndicatorColor="@color/base_green"
         android:layout_marginTop="5dp"/>
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewpagerHome"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginTop="5dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tabLayout"

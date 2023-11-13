@@ -45,6 +45,7 @@ class CategoryViewModel constructor(
     }
 
     fun fetchBestProducts() {
+        // This function will fetch the data for All Products
         viewModelScope.launch {
             _bestProducts.emit(Resource.Loading())
         }

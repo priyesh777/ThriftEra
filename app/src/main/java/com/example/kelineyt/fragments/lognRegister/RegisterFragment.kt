@@ -56,8 +56,8 @@ class RegisterFragment : Fragment() {
                     edEmailRegister.text.toString().trim()
                 )
                 val password = edPasswordRegister.text.toString()
-//                viewModel.createAccountWithEmailAndPassword(user, password)
-                Toast.makeText(requireContext(), "Successfully Registered !", Toast.LENGTH_LONG).show()
+                viewModel.createAccountWithEmailAndPassword(user, password)
+//                Toast.makeText(requireContext(), "Successfully Registered !", Toast.LENGTH_LONG).show()
             }
         }
 

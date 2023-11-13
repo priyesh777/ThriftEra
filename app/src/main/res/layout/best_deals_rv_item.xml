@@ -9,7 +9,9 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="88dp">
+        android:layout_height="88dp"
+        android:background="@drawable/product_card_border"
+        >
 
         <ImageView
             android:id="@+id/img_best_deal"
@@ -63,9 +65,9 @@
             android:id="@+id/btn_see_product"
             android:layout_width="83dp"
             android:layout_height="28dp"
-            android:background="@drawable/blue_background"
+            android:background="@drawable/base_green_background"
             android:fontFamily="@font/poppins_light"
-            android:text="See product"
+            android:text="Check out"
             android:textColor="@color/white"
             android:textSize="10dp"
             android:textStyle="bold"

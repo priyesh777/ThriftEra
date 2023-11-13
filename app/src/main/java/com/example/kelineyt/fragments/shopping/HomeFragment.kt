@@ -30,8 +30,8 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         val categoriesFragments = arrayListOf(
             MainCategoryFragment(),
             ChairFragment(),
-            CupboardFragment(),
-            TableFragment(),
+//            CupboardFragment(),
+//            TableFragment(),
             AccessoryFragment(),
             FurnitureFragment()
         )
@@ -41,14 +41,15 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         val viewPager2Adapter =
             HomeViewpagerAdapter(categoriesFragments, childFragmentManager, lifecycle)
         binding.viewpagerHome.adapter = viewPager2Adapter
+//        This needs to be applied for category-modification
         TabLayoutMediator(binding.tabLayout, binding.viewpagerHome) { tab, position ->
             when (position) {
-                0 -> tab.text = "Main"
-                1 -> tab.text = "Chair"
-                2 -> tab.text = "Cupboard"
-                3 -> tab.text = "Table"
-                4 -> tab.text = "Accessory"
-                5 -> tab.text = "Furniture"
+                0 -> tab.text = "All"
+                1 -> tab.text = "Clothing"
+//                2 -> tab.text = "Cupboard"
+//                3 -> tab.text = "Table"
+                3 -> tab.text = "Accessories"
+                2 -> tab.text = "Furniture"
             }
         }.attach()
     }

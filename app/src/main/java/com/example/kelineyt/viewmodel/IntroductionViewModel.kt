@@ -27,7 +27,8 @@ class IntroductionViewModel @Inject constructor(
     }
 
     init {
-        val isButtonClicked = sharedPreferences.getBoolean(INTRODUCTION_KEY,false)
+        // Here the "INTRODUCTION_KEY" was passed before instead of empty string
+        val isButtonClicked = sharedPreferences.getBoolean("",false)
         val user = firebaseAuth.currentUser
 
         if (user != null){

@@ -19,7 +19,7 @@ class SpecialProductsAdapter :
             binding.apply {
                 Glide.with(itemView).load(product.images[0]).into(imageSpecialRvItem)
                 tvSpecialProductName.text = product.name
-                tvSpecialPrdouctPrice.text = product.price.toString()
+//                tvSpecialPrdouctPrice.text = product.price.toString()
             }
         }
     }
@@ -49,7 +49,8 @@ class SpecialProductsAdapter :
         holder.bind(product)
 
         holder.itemView.setOnClickListener {
-            onClick?.invoke(product)
+// This has been disabled to not open product details
+//            onClick?.invoke(product)
         }
     }
 
