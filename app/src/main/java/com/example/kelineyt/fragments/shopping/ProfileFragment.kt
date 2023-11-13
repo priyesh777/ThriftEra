@@ -40,22 +40,24 @@ class ProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.constraintProfile.setOnClickListener {
-            findNavController().navigate(R.id.action_profileFragment_to_userAccountFragment)
-        }
+// The below code has been commented out for Profile section ---->
 
-        binding.linearAllOrders.setOnClickListener {
-            findNavController().navigate(R.id.action_profileFragment_to_ordersFragment)
-        }
+//        binding.constraintProfile.setOnClickListener {
+//            findNavController().navigate(R.id.action_profileFragment_to_userAccountFragment)
+//        }
+//
+//        binding.linearAllOrders.setOnClickListener {
+//            findNavController().navigate(R.id.action_profileFragment_to_ordersFragment)
+//        }
 
-        binding.linearBilling.setOnClickListener {
-            val action = ProfileFragmentDirections.actionProfileFragmentToBillingFragment(
-                0f,
-                emptyArray(),
-                false
-            )
-            findNavController().navigate(action)
-        }
+//        binding.linearBilling.setOnClickListener {
+//            val action = ProfileFragmentDirections.actionProfileFragmentToBillingFragment(
+//                0f,
+//                emptyArray(),
+//                false
+//            )
+//            findNavController().navigate(action)
+//        }
 
         binding.linearLogOut.setOnClickListener {
             viewModel.logout()
@@ -66,26 +68,29 @@ class ProfileFragment : Fragment() {
 
         binding.tvVersion.text = "Version ${BuildConfig.VERSION_CODE}"
 
-        lifecycleScope.launchWhenStarted {
-            viewModel.user.collectLatest {
-                when (it) {
-                    is Resource.Loading -> {
-                        binding.progressbarSettings.visibility = View.VISIBLE
-                    }
-                    is Resource.Success -> {
-                        binding.progressbarSettings.visibility = View.GONE
-                        Glide.with(requireView()).load(it.data!!.imagePath).error(ColorDrawable(
-                            Color.BLACK)).into(binding.imageUser)
-                        binding.tvUserName.text = "${it.data.firstName} ${it.data.lastName}"
-                    }
-                    is Resource.Error -> {
-                        Toast.makeText(requireContext(), it.message, Toast.LENGTH_SHORT).show()
-                        binding.progressbarSettings.visibility = View.GONE
-                    }
-                    else -> Unit
-                }
-            }
-        }
+// The below code has been commented out for Profile section ---->
+
+
+//        lifecycleScope.launchWhenStarted {
+//            viewModel.user.collectLatest {
+//                when (it) {
+//                    is Resource.Loading -> {
+//                        binding.progressbarSettings.visibility = View.VISIBLE
+//                    }
+//                    is Resource.Success -> {
+//                        binding.progressbarSettings.visibility = View.GONE
+//                        Glide.with(requireView()).load(it.data!!.imagePath).error(ColorDrawable(
+//                            Color.BLACK)).into(binding.imageUser)
+//                        binding.tvUserName.text = "${it.data.firstName} ${it.data.lastName}"
+//                    }
+//                    is Resource.Error -> {
+//                        Toast.makeText(requireContext(), it.message, Toast.LENGTH_SHORT).show()
+//                        binding.progressbarSettings.visibility = View.GONE
+//                    }
+//                    else -> Unit
+//                }
+//            }
+//        }
     }
 
     override fun onResume() {

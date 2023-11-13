@@ -28,7 +28,19 @@
                 android:indeterminateTint="@color/g_gray700" />
 
 
-
+            <TextView
+                android:id="@+id/latestProducts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_thin"
+                android:text="Latest Products"
+                android:textColor="@color/base_green"
+                android:textSize="22sp"
+                android:layout_marginStart="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvSpecialProducts"
@@ -36,12 +48,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="10dp"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
-
-
-
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/latestProducts"
+                />
 
             <TextView
                 android:id="@+id/tvBestDeals"
@@ -50,7 +60,7 @@
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/poppins_thin"
                 android:text="Best deals"
-                android:textColor="@color/black"
+                android:textColor="@color/base_green"
                 android:textSize="22sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -72,12 +82,13 @@
                 android:id="@+id/tvBestProducts"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="20dp"
                 android:fontFamily="@font/poppins_thin"
-                android:text="Best Products"
-                android:textColor="@color/black"
+                android:text="All Products"
+                android:textColor="@color/base_green"
                 android:textSize="22sp"
                 app:layout_constraintStart_toStartOf="@id/rvSpecialProducts"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/rvBestDealsProducts"/>
 
 

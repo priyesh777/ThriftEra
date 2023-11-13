@@ -46,8 +46,8 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
             buttonLoginLogin.setOnClickListener {
                 val email = emailLogin.text.toString().trim()
                 val password = passwordLogin.text.toString()
-//                viewModel.login(email, password)
-                Toast.makeText(requireContext(), "You have been logged In !", Toast.LENGTH_LONG).show()
+                viewModel.login(email, password)
+//                Toast.makeText(requireContext(), "You have been logged In !", Toast.LENGTH_LONG).show()
             }
         }
 
