@@ -12,7 +12,6 @@ import com.example.kelineyt.adapters.BillingProductsAdapter
 import com.example.kelineyt.data.order.OrderStatus
 import com.example.kelineyt.data.order.getOrderStatus
 import com.example.kelineyt.databinding.FragmentOrderDetailBinding
-import com.example.kelineyt.databinding.FragmentOrdersBinding
 import com.example.kelineyt.util.VerticalItemDecoration
 import com.example.kelineyt.util.hideBottomNavigationView
 

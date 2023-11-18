@@ -18,7 +18,6 @@ import com.example.kelineyt.util.Resource
 import com.example.kelineyt.viewmodel.RegisterViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.withContext
 
 private val TAG = "RegisterFragment"

@@ -1,12 +1,10 @@
 package com.example.kelineyt.viewmodel
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.kelineyt.data.Product
 import com.example.kelineyt.util.Resource
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.Query
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

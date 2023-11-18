@@ -2,7 +2,6 @@ package com.example.kelineyt.fragments.categories
 
 import android.os.Bundle
 import android.view.View
-import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import com.example.kelineyt.data.Category

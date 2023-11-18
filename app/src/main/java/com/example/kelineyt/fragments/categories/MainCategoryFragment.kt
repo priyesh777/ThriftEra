@@ -13,12 +13,10 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.kelineyt.R
 import com.example.kelineyt.adapters.BestDealsAdapter
 import com.example.kelineyt.adapters.BestProductsAdapter
 import com.example.kelineyt.adapters.SpecialProductsAdapter
-import com.example.kelineyt.databinding.FragmentHomeBinding
 import com.example.kelineyt.databinding.FragmentMainCategoryBinding
 import com.example.kelineyt.util.Resource
 import com.example.kelineyt.util.showBottomNavigationView

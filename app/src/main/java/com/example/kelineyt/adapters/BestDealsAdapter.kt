@@ -1,6 +1,5 @@
 package com.example.kelineyt.adapters
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
@@ -54,8 +53,7 @@ class BestDealsAdapter : RecyclerView.Adapter<BestDealsAdapter.BestDealsViewHold
         holder.bind(product)
 
         holder.itemView.setOnClickListener {
-// Disabled to avoid opening product details
-//            onClick?.invoke(product)
+            onClick?.invoke(product)
         }
 
     }

@@ -16,7 +16,6 @@ import com.example.kelineyt.viewmodel.IntroductionViewModel
 import com.example.kelineyt.viewmodel.IntroductionViewModel.Companion.ACCOUNT_OPTIONS_FRAGMENT
 import com.example.kelineyt.viewmodel.IntroductionViewModel.Companion.SHOPPING_ACTIVITY
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.flow.collect
 
 @AndroidEntryPoint
 class IntroductionFragment : Fragment(R.layout.fragment_introdcution) {

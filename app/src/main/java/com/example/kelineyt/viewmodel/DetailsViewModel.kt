@@ -1,5 +1,6 @@
 package com.example.kelineyt.viewmodel
 
+import android.app.AlertDialog
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.kelineyt.data.CartProduct
@@ -36,7 +37,9 @@ class DetailsViewModel @Inject constructor(
                         if(product?.product == cartProduct.product && product.selectedColor == cartProduct.selectedColor && product.selectedSize== cartProduct.selectedSize){ //Increase the quantity (fixed quantity increasement issue)
                             val documentId = it.first().id
                             increaseQuantity(documentId, cartProduct)
-                        } else { //Add new product
+                        } else {
+                            // If the product has been already added then it will again be added when user wishes to add again
+                            //Add new product
                             addNewProduct(cartProduct)
                         }
                     }

@@ -20,7 +20,6 @@ import com.example.kelineyt.data.User
 import com.example.kelineyt.databinding.FragmentUserAccountBinding
 import com.example.kelineyt.dialog.setupBottomSheetDialog
 import com.example.kelineyt.util.Resource
-import com.example.kelineyt.util.hideBottomNavigationView
 import com.example.kelineyt.viewmodel.UserAccountViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
@@ -92,9 +91,12 @@ class UserAccountFragment : Fragment() {
             }
         }
 
+        binding.imageCloseUserAccount.setOnClickListener {
+            findNavController().navigateUp()
+        }
+
         binding.tvUpdatePassword.setOnClickListener {
             setupBottomSheetDialog {
-
             }
         }
 
