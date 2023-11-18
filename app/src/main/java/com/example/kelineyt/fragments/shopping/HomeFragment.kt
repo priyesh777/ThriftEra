@@ -44,14 +44,8 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         TabLayoutMediator(binding.tabLayout, binding.viewpagerHome) { tab, position ->
             when (position) {
                 0 -> tab.text = "All"
-<<<<<<< Updated upstream
-                1 -> tab.text = "Tables"
-//                2 -> tab.text = "Furniture"
-//                3 -> tab.text = "Table"
-=======
                 1 -> tab.text = "Furniture"
                 2 -> tab.text = "Tables"
->>>>>>> Stashed changes
                 3 -> tab.text = "Accessories"
 //                2 -> tab.text = "Furniture"
 //                3 -> tab.text = "Cupboards"
