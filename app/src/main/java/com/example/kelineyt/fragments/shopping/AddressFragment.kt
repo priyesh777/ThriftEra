@@ -13,7 +13,6 @@ import androidx.navigation.fragment.navArgs
 import com.example.kelineyt.data.Address
 import com.example.kelineyt.databinding.FragmentAddressBinding
 import com.example.kelineyt.util.Resource
-import com.example.kelineyt.util.hideBottomNavigationView
 import com.example.kelineyt.viewmodel.AddressViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest

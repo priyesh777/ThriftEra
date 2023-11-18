@@ -23,7 +23,6 @@ import com.example.kelineyt.data.order.OrderStatus
 import com.example.kelineyt.databinding.FragmentBillingBinding
 import com.example.kelineyt.util.HorizontalItemDecoration
 import com.example.kelineyt.util.Resource
-import com.example.kelineyt.util.hideBottomNavigationView
 import com.example.kelineyt.viewmodel.BillingViewModel
 import com.example.kelineyt.viewmodel.OrderViewModel
 import com.google.android.material.snackbar.Snackbar
@@ -73,6 +72,10 @@ class BillingFragment : Fragment() {
                 middleLine.visibility = View.INVISIBLE
                 bottomLine.visibility = View.INVISIBLE
             }
+        }
+
+        binding.imageCloseBilling.setOnClickListener {
+            findNavController().navigateUp()
         }
 
         binding.imageAddAddress.setOnClickListener {

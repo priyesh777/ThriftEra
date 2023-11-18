@@ -13,13 +13,10 @@ import androidx.navigation.fragment.findNavController
 import com.example.kelineyt.R
 import com.example.kelineyt.activities.ShoppingActivity
 import com.example.kelineyt.databinding.FragmentLoginBinding
-import com.example.kelineyt.databinding.ResetPassowrdDialogBinding
-import com.example.kelineyt.dialog.setupBottomSheetDialog
 import com.example.kelineyt.util.Resource
 import com.example.kelineyt.viewmodel.LoginViewModel
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.flow.collect
 
 @AndroidEntryPoint
 class LoginFragment : Fragment(R.layout.fragment_login) {

@@ -3,7 +3,6 @@ package com.example.kelineyt.viewmodel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.kelineyt.data.Address
-import com.example.kelineyt.util.Constants.USER_COLLECTION
 import com.example.kelineyt.util.Resource
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore

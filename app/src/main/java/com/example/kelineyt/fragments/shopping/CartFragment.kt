@@ -65,9 +65,23 @@ class CartFragment : Fragment(R.layout.fragment_cart) {
             viewModel.changeQuantity(it, FirebaseCommon.QuantityChanging.DECREASE)
         }
 
+        //We can simply add alert when booked item
         binding.buttonCheckout.setOnClickListener {
-            val action = CartFragmentDirections.actionCartFragmentToBillingFragment2(totalPrice,cartAdapter.differ.currentList.toTypedArray(),true)
-            findNavController().navigate(action)
+// This has been commented out for avoiding the billing logic
+//            val action = CartFragmentDirections.actionCartFragmentToBillingFragment2(totalPrice,cartAdapter.differ.currentList.toTypedArray(),true)
+//            findNavController().navigate(action)
+
+            val alertDialog = AlertDialog.Builder(requireContext()).apply {
+                setTitle("Book Information")
+                setMessage("Your items will be booked and you will receive an email for further confirmation. Thank-you.")
+                setPositiveButton("Okay") { dialog, _ ->
+                    binding.progressbarCart.visibility = View.GONE
+                    dialog.dismiss()
+                }
+            }
+            binding.progressbarCart.visibility = View.VISIBLE
+            alertDialog.create()
+            alertDialog.show()
         }
 
 

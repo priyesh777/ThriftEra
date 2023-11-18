@@ -40,16 +40,15 @@ class ProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-// The below code has been commented out for Profile section ---->
+        binding.constraintProfile.setOnClickListener {
+            findNavController().navigate(R.id.action_profileFragment_to_userAccountFragment)
+        }
 
-//        binding.constraintProfile.setOnClickListener {
-//            findNavController().navigate(R.id.action_profileFragment_to_userAccountFragment)
-//        }
-//
+//  Disabled the logic of Orders and Billing ---->
 //        binding.linearAllOrders.setOnClickListener {
 //            findNavController().navigate(R.id.action_profileFragment_to_ordersFragment)
 //        }
-
+//
 //        binding.linearBilling.setOnClickListener {
 //            val action = ProfileFragmentDirections.actionProfileFragmentToBillingFragment(
 //                0f,
@@ -68,45 +67,30 @@ class ProfileFragment : Fragment() {
 
         binding.tvVersion.text = "Version ${BuildConfig.VERSION_CODE}"
 
-// The below code has been commented out for Profile section ---->
-
-
-//        lifecycleScope.launchWhenStarted {
-//            viewModel.user.collectLatest {
-//                when (it) {
-//                    is Resource.Loading -> {
-//                        binding.progressbarSettings.visibility = View.VISIBLE
-//                    }
-//                    is Resource.Success -> {
-//                        binding.progressbarSettings.visibility = View.GONE
-//                        Glide.with(requireView()).load(it.data!!.imagePath).error(ColorDrawable(
-//                            Color.BLACK)).into(binding.imageUser)
-//                        binding.tvUserName.text = "${it.data.firstName} ${it.data.lastName}"
-//                    }
-//                    is Resource.Error -> {
-//                        Toast.makeText(requireContext(), it.message, Toast.LENGTH_SHORT).show()
-//                        binding.progressbarSettings.visibility = View.GONE
-//                    }
-//                    else -> Unit
-//                }
-//            }
-//        }
+        lifecycleScope.launchWhenStarted {
+            viewModel.user.collectLatest {
+                when (it) {
+                    is Resource.Loading -> {
+                        binding.progressbarSettings.visibility = View.VISIBLE
+                    }
+                    is Resource.Success -> {
+                        binding.progressbarSettings.visibility = View.GONE
+                        Glide.with(requireView()).load(it.data!!.imagePath).error(ColorDrawable(
+                            Color.BLACK)).into(binding.imageUser)
+                        binding.tvUserName.text = "${it.data.firstName} ${it.data.lastName}"
+                    }
+                    is Resource.Error -> {
+                        Toast.makeText(requireContext(), it.message, Toast.LENGTH_SHORT).show()
+                        binding.progressbarSettings.visibility = View.GONE
+                    }
+                    else -> Unit
+                }
+            }
+        }
     }
 
     override fun onResume() {
         super.onResume()
-
         showBottomNavigationView()
     }
 }
-
-
-
-
-
-
-
-
-
-
-

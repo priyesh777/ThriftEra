@@ -1,7 +1,6 @@
 package com.example.kelineyt.adapters
 
 import android.graphics.Paint
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -59,8 +58,7 @@ class BestProductsAdapter : RecyclerView.Adapter<BestProductsAdapter.BestProduct
         holder.bind(product)
 
         holder.itemView.setOnClickListener {
-// Disabled to avoid opening the product details
-//            onClick?.invoke(product)
+            onClick?.invoke(product)
         }
     }
 

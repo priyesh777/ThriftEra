@@ -4,10 +4,9 @@ import android.app.Application
 import android.graphics.Bitmap
 import android.net.Uri
 import android.provider.MediaStore
-import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.kelineyt.KelineApplication
+import com.example.kelineyt.ThriftApplication
 import com.example.kelineyt.data.User
 import com.example.kelineyt.util.RegisterValidation
 import com.example.kelineyt.util.Resource
@@ -90,7 +89,7 @@ class UserAccountViewModel @Inject constructor(
         viewModelScope.launch {
             try {
                 val imageBitmap = MediaStore.Images.Media.getBitmap(
-                    getApplication<KelineApplication>().contentResolver,
+                    getApplication<ThriftApplication>().contentResolver,
                     imageUri
                 )
                 val byteArrayOutputStream = ByteArrayOutputStream()
