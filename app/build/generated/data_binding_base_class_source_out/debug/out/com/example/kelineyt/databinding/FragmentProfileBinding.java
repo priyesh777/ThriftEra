@@ -29,6 +29,9 @@ public final class FragmentProfileBinding implements ViewBinding {
   public final ImageView arrow;
 
   @NonNull
+  public final TextView checkBookedItems;
+
+  @NonNull
   public final ConstraintLayout constraintParent;
 
   @NonNull
@@ -44,6 +47,9 @@ public final class FragmentProfileBinding implements ViewBinding {
   public final CircleImageView imageUser;
 
   @NonNull
+  public final LinearLayout linearBookedItem;
+
+  @NonNull
   public final LinearLayout linearLogOut;
 
   @NonNull
@@ -54,6 +60,9 @@ public final class FragmentProfileBinding implements ViewBinding {
 
   @NonNull
   public final ProgressBar progressbarSettings;
+
+  @NonNull
+  public final TextView tvBookedItems;
 
   @NonNull
   public final TextView tvEditPersonalDetails;
@@ -70,30 +79,39 @@ public final class FragmentProfileBinding implements ViewBinding {
   @NonNull
   public final TextView tvVersion;
 
+  @NonNull
+  public final LinearLayout userBookedItems;
+
   private FragmentProfileBinding(@NonNull NestedScrollView rootView, @NonNull ImageView arrow,
-      @NonNull ConstraintLayout constraintParent, @NonNull ConstraintLayout constraintProfile,
-      @NonNull Guideline guideline1, @NonNull Guideline guideline2,
-      @NonNull CircleImageView imageUser, @NonNull LinearLayout linearLogOut,
+      @NonNull TextView checkBookedItems, @NonNull ConstraintLayout constraintParent,
+      @NonNull ConstraintLayout constraintProfile, @NonNull Guideline guideline1,
+      @NonNull Guideline guideline2, @NonNull CircleImageView imageUser,
+      @NonNull LinearLayout linearBookedItem, @NonNull LinearLayout linearLogOut,
       @NonNull LinearLayout linearRegional, @NonNull TextView logout,
-      @NonNull ProgressBar progressbarSettings, @NonNull TextView tvEditPersonalDetails,
-      @NonNull TextView tvRegional, @NonNull TextView tvSettings, @NonNull TextView tvUserName,
-      @NonNull TextView tvVersion) {
+      @NonNull ProgressBar progressbarSettings, @NonNull TextView tvBookedItems,
+      @NonNull TextView tvEditPersonalDetails, @NonNull TextView tvRegional,
+      @NonNull TextView tvSettings, @NonNull TextView tvUserName, @NonNull TextView tvVersion,
+      @NonNull LinearLayout userBookedItems) {
     this.rootView = rootView;
     this.arrow = arrow;
+    this.checkBookedItems = checkBookedItems;
     this.constraintParent = constraintParent;
     this.constraintProfile = constraintProfile;
     this.guideline1 = guideline1;
     this.guideline2 = guideline2;
     this.imageUser = imageUser;
+    this.linearBookedItem = linearBookedItem;
     this.linearLogOut = linearLogOut;
     this.linearRegional = linearRegional;
     this.logout = logout;
     this.progressbarSettings = progressbarSettings;
+    this.tvBookedItems = tvBookedItems;
     this.tvEditPersonalDetails = tvEditPersonalDetails;
     this.tvRegional = tvRegional;
     this.tvSettings = tvSettings;
     this.tvUserName = tvUserName;
     this.tvVersion = tvVersion;
+    this.userBookedItems = userBookedItems;
   }
 
   @Override
@@ -129,6 +147,12 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.checkBookedItems;
+      TextView checkBookedItems = ViewBindings.findChildViewById(rootView, id);
+      if (checkBookedItems == null) {
+        break missingId;
+      }
+
       id = R.id.constraintParent;
       ConstraintLayout constraintParent = ViewBindings.findChildViewById(rootView, id);
       if (constraintParent == null) {
@@ -159,6 +183,12 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.linear_booked_item;
+      LinearLayout linearBookedItem = ViewBindings.findChildViewById(rootView, id);
+      if (linearBookedItem == null) {
+        break missingId;
+      }
+
       id = R.id.linearLogOut;
       LinearLayout linearLogOut = ViewBindings.findChildViewById(rootView, id);
       if (linearLogOut == null) {
@@ -180,6 +210,12 @@ public final class FragmentProfileBinding implements ViewBinding {
       id = R.id.progressbarSettings;
       ProgressBar progressbarSettings = ViewBindings.findChildViewById(rootView, id);
       if (progressbarSettings == null) {
+        break missingId;
+      }
+
+      id = R.id.tvBookedItems;
+      TextView tvBookedItems = ViewBindings.findChildViewById(rootView, id);
+      if (tvBookedItems == null) {
         break missingId;
       }
 
@@ -213,10 +249,16 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentProfileBinding((NestedScrollView) rootView, arrow, constraintParent,
-          constraintProfile, guideline1, guideline2, imageUser, linearLogOut, linearRegional,
-          logout, progressbarSettings, tvEditPersonalDetails, tvRegional, tvSettings, tvUserName,
-          tvVersion);
+      id = R.id.userBookedItems;
+      LinearLayout userBookedItems = ViewBindings.findChildViewById(rootView, id);
+      if (userBookedItems == null) {
+        break missingId;
+      }
+
+      return new FragmentProfileBinding((NestedScrollView) rootView, arrow, checkBookedItems,
+          constraintParent, constraintProfile, guideline1, guideline2, imageUser, linearBookedItem,
+          linearLogOut, linearRegional, logout, progressbarSettings, tvBookedItems,
+          tvEditPersonalDetails, tvRegional, tvSettings, tvUserName, tvVersion, userBookedItems);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

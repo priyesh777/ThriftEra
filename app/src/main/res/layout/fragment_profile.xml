@@ -95,17 +95,67 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-<!--            <TextView-->
-<!--                android:id="@+id/tvOrders"-->
-<!--                style="@style/MediumTextViewThin"-->
-<!--                android:textColor="@color/g_gray700"-->
-<!--                android:textStyle="normal"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="20dp"-->
-<!--                android:text="Orders"-->
-<!--                app:layout_constraintStart_toStartOf="@id/guideline1"-->
-<!--                app:layout_constraintTop_toBottomOf="@id/constraintProfile" />-->
+            <TextView
+                android:id="@+id/tvBookedItems"
+                style="@style/MediumTextViewThin"
+                android:textColor="@color/g_gray700"
+                android:textStyle="normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="User Booked Items"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toBottomOf="@id/constraintProfile" />
+
+            <LinearLayout
+                android:background="@drawable/search_box_background"
+                android:id="@+id/linear_booked_item"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintEnd_toEndOf="@id/guideline2"
+                app:layout_constraintTop_toBottomOf="@id/tvBookedItems"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:id="@+id/userBookedItems"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_cart"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/settings_items_background"
+                        android:backgroundTint="@color/base_green"
+                        app:tint="@color/white"
+                        />
+
+                    <TextView
+                        android:id="@+id/checkBookedItems"
+                        style="@style/MediumTextViewThin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="15dp"
+                        android:layout_weight="1"
+                        android:text="Booked Items"
+                        android:textColor="@color/g_gray700"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/ic_arrow"
+                        app:tint="@color/g_blue_gray200"
+                        android:layout_gravity="center_vertical"/>
+                </LinearLayout>
+            </LinearLayout>
 
 
 <!--            <LinearLayout-->
@@ -301,7 +351,7 @@
                 android:layout_marginTop="20dp"
                 android:text="Account Logout"
                 app:layout_constraintStart_toStartOf="@id/guideline1"
-                app:layout_constraintTop_toBottomOf="@id/constraintProfile" />
+                app:layout_constraintTop_toBottomOf="@id/linear_booked_item" />
 
             <LinearLayout
                 android:background="@drawable/search_box_background"
@@ -328,7 +378,7 @@
                         android:src="@drawable/ic_logout"
                         android:layout_gravity="center_vertical"
                         android:background="@drawable/settings_items_background"
-                        android:backgroundTint="#ff5823"
+                        android:backgroundTint="@color/g_red"
                         app:tint="@color/white"
                         />
 
@@ -351,8 +401,6 @@
                         app:tint="@color/g_blue_gray200"
                         android:layout_gravity="center_vertical"/>
                 </LinearLayout>
-
-
             </LinearLayout>
 
 

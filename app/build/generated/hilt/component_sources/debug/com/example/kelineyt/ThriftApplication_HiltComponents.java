@@ -30,6 +30,7 @@ import com.example.kelineyt.viewmodel.OrderViewModel_HiltModules;
 import com.example.kelineyt.viewmodel.ProfileViewModel_HiltModules;
 import com.example.kelineyt.viewmodel.RegisterViewModel_HiltModules;
 import com.example.kelineyt.viewmodel.UserAccountViewModel_HiltModules;
+import com.example.kelineyt.viewmodel.UserBookedViewModel_HiltModules;
 import dagger.Binds;
 import dagger.Component;
 import dagger.Module;
@@ -181,7 +182,8 @@ public final class ThriftApplication_HiltComponents {
           RegisterViewModel_HiltModules.KeyModule.class,
           ActivityCBuilderModule.class,
           ViewModelCBuilderModule.class,
-          UserAccountViewModel_HiltModules.KeyModule.class
+          UserAccountViewModel_HiltModules.KeyModule.class,
+          UserBookedViewModel_HiltModules.KeyModule.class
       }
   )
   @ActivityRetainedScoped
@@ -230,7 +232,8 @@ public final class ThriftApplication_HiltComponents {
           OrderViewModel_HiltModules.BindsModule.class,
           ProfileViewModel_HiltModules.BindsModule.class,
           RegisterViewModel_HiltModules.BindsModule.class,
-          UserAccountViewModel_HiltModules.BindsModule.class
+          UserAccountViewModel_HiltModules.BindsModule.class,
+          UserBookedViewModel_HiltModules.BindsModule.class
       }
   )
   @ViewModelScoped

@@ -46,6 +46,7 @@ dimen smallButtonWidth
 dimen tvRightAddressMargin
 drawable base_green_background
 drawable base_white_background
+drawable baseline_search_24
 drawable blue_background
 drawable blury_background
 drawable bottom_nav_item_background
@@ -54,6 +55,7 @@ drawable ellips
 drawable empty_box_background
 drawable facebook_login
 drawable google_login
+drawable green_border
 drawable ic_add
 drawable ic_all_orders
 drawable ic_arrow
@@ -101,11 +103,13 @@ id action_accountOptionsFragment_to_registerFragment
 id action_billingFragment_to_addressFragment
 id action_cartFragment_to_billingFragment2
 id action_cartFragment_to_productDetailsFragment
+id action_fragmentUserBookedItems_to_productDetailsFragment
 id action_homeFragment_to_productDetailsFragment
 id action_introductionFragment_to_accountOptionsFragment
 id action_loginFragment_to_registerFragment
 id action_ordersFragment_to_orderDetailFragment
 id action_profileFragment_to_billingFragment
+id action_profileFragment_to_fragmentUserBookedItems
 id action_profileFragment_to_ordersFragment
 id action_profileFragment_to_userAccountFragment
 id action_registerFragment_to_loginFragment
@@ -134,6 +138,7 @@ id buttonSendResetPassword
 id buttonStart
 id cardProductImages
 id cartFragment
+id checkBookedItems
 id constraintParent
 id constraintProfile
 id createAccount
@@ -156,6 +161,7 @@ id emailLogin
 id emptySearchTexture
 id forgotPasswordLogin
 id fragmentContainerView
+id fragmentUserBookedItems
 id googleLoginButton
 id googleRegister
 id guideline1
@@ -180,6 +186,7 @@ id imageCartProductColor
 id imageCartProductSize
 id imageClose
 id imageCloseBilling
+id imageCloseBookedItems
 id imageCloseOrder
 id imageCloseOrders
 id imageCloseUserAccount
@@ -212,6 +219,7 @@ id linearLogOut
 id linearProductPref
 id linearStepView
 id linearTitlePrice
+id linear_booked_item
 id linear_product_name
 id linear_regional
 id loginFragment
@@ -267,6 +275,7 @@ id tvAddress
 id tvBestDeals
 id tvBestProducts
 id tvBillingProductQuantity
+id tvBookedItems
 id tvCartProductQuantity
 id tvCartProductSize
 id tvFullName
@@ -306,6 +315,7 @@ id tv_new_price
 id tv_old_price
 id tv_price
 id userAccountFragment
+id userBookedItems
 id viewPagerProductImages
 id viewpagerHome
 id welcomeToThrift
@@ -315,6 +325,7 @@ layout address_rv_item
 layout best_deals_rv_item
 layout billing_products_rv_item
 layout book_item_dialog
+layout booked_product_item
 layout cart_product_item
 layout color_rv_item
 layout fragment_account_options
@@ -333,6 +344,7 @@ layout fragment_profile
 layout fragment_register
 layout fragment_search
 layout fragment_user_account
+layout fragment_user_booked_items
 layout order_item
 layout product_rv_item
 layout reset_passowrd_dialog
@@ -353,6 +365,7 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string hello_blank_fragment
 string project_id
 string shortSlogan
 string signInSlogan

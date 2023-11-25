@@ -61,6 +61,8 @@ import com.example.kelineyt.viewmodel.RegisterViewModel;
 import com.example.kelineyt.viewmodel.RegisterViewModel_HiltModules_KeyModule_ProvideFactory;
 import com.example.kelineyt.viewmodel.UserAccountViewModel;
 import com.example.kelineyt.viewmodel.UserAccountViewModel_HiltModules_KeyModule_ProvideFactory;
+import com.example.kelineyt.viewmodel.UserBookedViewModel;
+import com.example.kelineyt.viewmodel.UserBookedViewModel_HiltModules_KeyModule_ProvideFactory;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableSet;
 import com.google.errorprone.annotations.CanIgnoreReturnValue;
@@ -129,7 +131,7 @@ public final class DaggerThriftApplication_HiltComponents_SingletonC extends Thr
   }
 
   @Override
-  public void injectThriftApplication(ThriftApplication thriftApplication) {
+  public void injectThriftApplication(ThriftApplication arg0) {
   }
 
   @Override
@@ -543,7 +545,7 @@ public final class DaggerThriftApplication_HiltComponents_SingletonC extends Thr
 
     @Override
     public Set<String> getViewModelKeys() {
-      return ImmutableSet.<String>of(AddressViewModel_HiltModules_KeyModule_ProvideFactory.provide(), AllOrdersViewModel_HiltModules_KeyModule_ProvideFactory.provide(), BillingViewModel_HiltModules_KeyModule_ProvideFactory.provide(), CartViewModel_HiltModules_KeyModule_ProvideFactory.provide(), DetailsViewModel_HiltModules_KeyModule_ProvideFactory.provide(), IntroductionViewModel_HiltModules_KeyModule_ProvideFactory.provide(), LoginViewModel_HiltModules_KeyModule_ProvideFactory.provide(), MainCategoryViewModel_HiltModules_KeyModule_ProvideFactory.provide(), OrderViewModel_HiltModules_KeyModule_ProvideFactory.provide(), ProfileViewModel_HiltModules_KeyModule_ProvideFactory.provide(), RegisterViewModel_HiltModules_KeyModule_ProvideFactory.provide(), UserAccountViewModel_HiltModules_KeyModule_ProvideFactory.provide());
+      return ImmutableSet.<String>of(AddressViewModel_HiltModules_KeyModule_ProvideFactory.provide(), AllOrdersViewModel_HiltModules_KeyModule_ProvideFactory.provide(), BillingViewModel_HiltModules_KeyModule_ProvideFactory.provide(), CartViewModel_HiltModules_KeyModule_ProvideFactory.provide(), DetailsViewModel_HiltModules_KeyModule_ProvideFactory.provide(), IntroductionViewModel_HiltModules_KeyModule_ProvideFactory.provide(), LoginViewModel_HiltModules_KeyModule_ProvideFactory.provide(), MainCategoryViewModel_HiltModules_KeyModule_ProvideFactory.provide(), OrderViewModel_HiltModules_KeyModule_ProvideFactory.provide(), ProfileViewModel_HiltModules_KeyModule_ProvideFactory.provide(), RegisterViewModel_HiltModules_KeyModule_ProvideFactory.provide(), UserAccountViewModel_HiltModules_KeyModule_ProvideFactory.provide(), UserBookedViewModel_HiltModules_KeyModule_ProvideFactory.provide());
     }
 
     @Override
@@ -593,6 +595,8 @@ public final class DaggerThriftApplication_HiltComponents_SingletonC extends Thr
 
     private Provider<UserAccountViewModel> userAccountViewModelProvider;
 
+    private Provider<UserBookedViewModel> userBookedViewModelProvider;
+
     private ViewModelCImpl(DaggerThriftApplication_HiltComponents_SingletonC singletonC,
         ActivityRetainedCImpl activityRetainedCImpl, SavedStateHandle savedStateHandleParam) {
       this.singletonC = singletonC;
@@ -616,11 +620,12 @@ public final class DaggerThriftApplication_HiltComponents_SingletonC extends Thr
       this.profileViewModelProvider = new SwitchingProvider<>(singletonC, activityRetainedCImpl, viewModelCImpl, 9);
       this.registerViewModelProvider = new SwitchingProvider<>(singletonC, activityRetainedCImpl, viewModelCImpl, 10);
       this.userAccountViewModelProvider = new SwitchingProvider<>(singletonC, activityRetainedCImpl, viewModelCImpl, 11);
+      this.userBookedViewModelProvider = new SwitchingProvider<>(singletonC, activityRetainedCImpl, viewModelCImpl, 12);
     }
 
     @Override
     public Map<String, Provider<ViewModel>> getHiltViewModelMap() {
-      return ImmutableMap.<String, Provider<ViewModel>>builderWithExpectedSize(12).put("com.example.kelineyt.viewmodel.AddressViewModel", (Provider) addressViewModelProvider).put("com.example.kelineyt.viewmodel.AllOrdersViewModel", (Provider) allOrdersViewModelProvider).put("com.example.kelineyt.viewmodel.BillingViewModel", (Provider) billingViewModelProvider).put("com.example.kelineyt.viewmodel.CartViewModel", (Provider) cartViewModelProvider).put("com.example.kelineyt.viewmodel.DetailsViewModel", (Provider) detailsViewModelProvider).put("com.example.kelineyt.viewmodel.IntroductionViewModel", (Provider) introductionViewModelProvider).put("com.example.kelineyt.viewmodel.LoginViewModel", (Provider) loginViewModelProvider).put("com.example.kelineyt.viewmodel.MainCategoryViewModel", (Provider) mainCategoryViewModelProvider).put("com.example.kelineyt.viewmodel.OrderViewModel", (Provider) orderViewModelProvider).put("com.example.kelineyt.viewmodel.ProfileViewModel", (Provider) profileViewModelProvider).put("com.example.kelineyt.viewmodel.RegisterViewModel", (Provider) registerViewModelProvider).put("com.example.kelineyt.viewmodel.UserAccountViewModel", (Provider) userAccountViewModelProvider).build();
+      return ImmutableMap.<String, Provider<ViewModel>>builderWithExpectedSize(13).put("com.example.kelineyt.viewmodel.AddressViewModel", (Provider) addressViewModelProvider).put("com.example.kelineyt.viewmodel.AllOrdersViewModel", (Provider) allOrdersViewModelProvider).put("com.example.kelineyt.viewmodel.BillingViewModel", (Provider) billingViewModelProvider).put("com.example.kelineyt.viewmodel.CartViewModel", (Provider) cartViewModelProvider).put("com.example.kelineyt.viewmodel.DetailsViewModel", (Provider) detailsViewModelProvider).put("com.example.kelineyt.viewmodel.IntroductionViewModel", (Provider) introductionViewModelProvider).put("com.example.kelineyt.viewmodel.LoginViewModel", (Provider) loginViewModelProvider).put("com.example.kelineyt.viewmodel.MainCategoryViewModel", (Provider) mainCategoryViewModelProvider).put("com.example.kelineyt.viewmodel.OrderViewModel", (Provider) orderViewModelProvider).put("com.example.kelineyt.viewmodel.ProfileViewModel", (Provider) profileViewModelProvider).put("com.example.kelineyt.viewmodel.RegisterViewModel", (Provider) registerViewModelProvider).put("com.example.kelineyt.viewmodel.UserAccountViewModel", (Provider) userAccountViewModelProvider).put("com.example.kelineyt.viewmodel.UserBookedViewModel", (Provider) userBookedViewModelProvider).build();
     }
 
     private static final class SwitchingProvider<T> implements Provider<T> {
@@ -679,6 +684,9 @@ public final class DaggerThriftApplication_HiltComponents_SingletonC extends Thr
 
           case 11: // com.example.kelineyt.viewmodel.UserAccountViewModel 
           return (T) new UserAccountViewModel(singletonC.provideFirebaseFirestoreDatabaseProvider.get(), singletonC.provideFirebaseAuthProvider.get(), singletonC.provideStorageProvider.get(), ApplicationContextModule_ProvideApplicationFactory.provideApplication(singletonC.applicationContextModule));
+
+          case 12: // com.example.kelineyt.viewmodel.UserBookedViewModel 
+          return (T) new UserBookedViewModel(singletonC.provideFirebaseFirestoreDatabaseProvider.get(), singletonC.provideFirebaseAuthProvider.get(), singletonC.provideFirebaseCommonProvider.get());
 
           default: throw new AssertionError(id);
         }
