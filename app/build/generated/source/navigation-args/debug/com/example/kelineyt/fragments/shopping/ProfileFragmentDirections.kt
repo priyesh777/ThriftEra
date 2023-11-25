@@ -40,5 +40,8 @@ public class ProfileFragmentDirections private constructor() {
       products: Array<CartProduct>,
       payment: Boolean
     ): NavDirections = ActionProfileFragmentToBillingFragment(totalPrice, products, payment)
+
+    public fun actionProfileFragmentToFragmentUserBookedItems(): NavDirections =
+        ActionOnlyNavDirections(R.id.action_profileFragment_to_fragmentUserBookedItems)
   }
 }

@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.widget.NestedScrollView;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.kelineyt.R;
@@ -35,17 +36,21 @@ public final class FragmentSearchBinding implements ViewBinding {
   public final LinearProgressIndicator progressbarCart;
 
   @NonNull
+  public final RecyclerView rvBestProducts;
+
+  @NonNull
   public final ConstraintLayout searchBar;
 
   private FragmentSearchBinding(@NonNull NestedScrollView rootView,
       @NonNull ImageView emptySearchTexture, @NonNull LinearLayout homeHeader,
       @NonNull ConstraintLayout layoutSearchEmpty, @NonNull LinearProgressIndicator progressbarCart,
-      @NonNull ConstraintLayout searchBar) {
+      @NonNull RecyclerView rvBestProducts, @NonNull ConstraintLayout searchBar) {
     this.rootView = rootView;
     this.emptySearchTexture = emptySearchTexture;
     this.homeHeader = homeHeader;
     this.layoutSearchEmpty = layoutSearchEmpty;
     this.progressbarCart = progressbarCart;
+    this.rvBestProducts = rvBestProducts;
     this.searchBar = searchBar;
   }
 
@@ -100,6 +105,12 @@ public final class FragmentSearchBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.rvBestProducts;
+      RecyclerView rvBestProducts = ViewBindings.findChildViewById(rootView, id);
+      if (rvBestProducts == null) {
+        break missingId;
+      }
+
       id = R.id.searchBar;
       ConstraintLayout searchBar = ViewBindings.findChildViewById(rootView, id);
       if (searchBar == null) {
@@ -107,7 +118,7 @@ public final class FragmentSearchBinding implements ViewBinding {
       }
 
       return new FragmentSearchBinding((NestedScrollView) rootView, emptySearchTexture, homeHeader,
-          layoutSearchEmpty, progressbarCart, searchBar);
+          layoutSearchEmpty, progressbarCart, rvBestProducts, searchBar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

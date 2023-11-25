@@ -104,6 +104,7 @@ class CartFragment : Fragment(R.layout.fragment_cart) {
             }
         }
 
+        //The below code displays the list of added items of cart
         lifecycleScope.launchWhenStarted {
             viewModel.cartProducts.collectLatest {
                 when (it) {

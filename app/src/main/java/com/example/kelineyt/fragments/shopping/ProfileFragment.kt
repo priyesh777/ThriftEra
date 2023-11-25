@@ -44,6 +44,11 @@ class ProfileFragment : Fragment() {
             findNavController().navigate(R.id.action_profileFragment_to_userAccountFragment)
         }
 
+        binding.userBookedItems.setOnClickListener {
+            findNavController().navigate(R.id.action_profileFragment_to_fragmentUserBookedItems)
+        }
+
+
 //  Disabled the logic of Orders and Billing ---->
 //        binding.linearAllOrders.setOnClickListener {
 //            findNavController().navigate(R.id.action_profileFragment_to_ordersFragment)

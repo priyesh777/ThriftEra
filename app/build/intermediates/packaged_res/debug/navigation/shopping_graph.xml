@@ -51,6 +51,9 @@
         <action
             android:id="@+id/action_profileFragment_to_billingFragment"
             app:destination="@id/billingFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_fragmentUserBookedItems"
+            app:destination="@id/fragmentUserBookedItems" />
     </fragment>
     <fragment
         android:id="@+id/productDetailsFragment"
@@ -109,5 +112,14 @@
         <argument
             android:name="order"
             app:argType="com.example.kelineyt.data.order.Order" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentUserBookedItems"
+        android:name="com.example.kelineyt.fragments.settings.FragmentUserBookedItems"
+        android:label="fragment_user_booked_items"
+        tools:layout="@layout/fragment_user_booked_items" >
+        <action
+            android:id="@+id/action_fragmentUserBookedItems_to_productDetailsFragment"
+            app:destination="@id/productDetailsFragment" />
     </fragment>
 </navigation>
