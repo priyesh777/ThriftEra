@@ -22,6 +22,7 @@ import com.example.kelineyt.viewmodel.UserBookedViewModel
 import kotlinx.coroutines.flow.collectLatest
 
 class FragmentUserBookedItems : Fragment(R.layout.fragment_user_booked_items) {
+    //Fragment used to list the booked items component in the profile section
     private lateinit var binding: FragmentUserBookedItemsBinding
     private val userBookedItemsAdapter by lazy { UserBookedItemsAdapter() }
     private val viewModel by activityViewModels<UserBookedViewModel>()
@@ -59,7 +60,7 @@ class FragmentUserBookedItems : Fragment(R.layout.fragment_user_booked_items) {
             val b = Bundle().apply {
                 putParcelable("product", it.product)
             }
-//            findNavController().navigate(R.id.action_fragmentUserBookedItems_to_productDetailsFragment, b)
+            findNavController().navigate(R.id.action_fragmentUserBookedItems_to_productDetailsFragment, b)
         }
 
         userBookedItemsAdapter.onPlusClick = {

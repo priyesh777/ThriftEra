@@ -14,7 +14,7 @@ import com.example.kelineyt.data.order.getOrderStatus
 import com.example.kelineyt.databinding.OrderItemBinding
 
 class AllOrdersAdapter : Adapter<AllOrdersAdapter.OrdersViewHolder>() {
-
+// Adapter used to list all the orders in the billing section
     inner class OrdersViewHolder(private val binding: OrderItemBinding) : ViewHolder(binding.root) {
         fun bind(order: Order) {
             binding.apply {

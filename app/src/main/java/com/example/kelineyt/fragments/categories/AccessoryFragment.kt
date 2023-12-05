@@ -16,6 +16,7 @@ import javax.inject.Inject
 
 @AndroidEntryPoint
 class AccessoryFragment: BaseCategoryFragment() {
+    //Fragment used to list the Accesories tab
 
     @Inject
     lateinit var firestore: FirebaseFirestore

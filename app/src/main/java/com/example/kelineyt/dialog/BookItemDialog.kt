@@ -10,6 +10,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog
 fun Fragment.setupBookItemDialog(
     onSendClick: (String) -> Unit
 ){
+    //Reusable dialog created for booking items
     val dialog = BottomSheetDialog(requireContext(),R.style.DialogStyle)
     val view = layoutInflater.inflate(R.layout.book_item_dialog,null)
     dialog.setContentView(view)

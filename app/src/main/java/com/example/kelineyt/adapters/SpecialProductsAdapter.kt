@@ -11,6 +11,7 @@ import com.example.kelineyt.databinding.SpecialRvItemBinding
 
 class SpecialProductsAdapter :
     RecyclerView.Adapter<SpecialProductsAdapter.SpecialProductsViewHolder>() {
+    //Adapter to list all the special product elements in the recycler view
 
     inner class SpecialProductsViewHolder(private val binding: SpecialRvItemBinding) :
         RecyclerView.ViewHolder(binding.root) {

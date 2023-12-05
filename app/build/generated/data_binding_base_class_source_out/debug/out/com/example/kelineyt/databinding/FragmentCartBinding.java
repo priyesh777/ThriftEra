@@ -33,6 +33,9 @@ public final class FragmentCartBinding implements ViewBinding {
   public final CircularProgressButton buttonCheckout;
 
   @NonNull
+  public final ImageView imageCloseCart;
+
+  @NonNull
   public final ImageView imageEmptyBox;
 
   @NonNull
@@ -64,14 +67,15 @@ public final class FragmentCartBinding implements ViewBinding {
 
   private FragmentCartBinding(@NonNull NestedScrollView rootView,
       @NonNull Guideline bottomGuideLine, @NonNull CircularProgressButton buttonCheckout,
-      @NonNull ImageView imageEmptyBox, @NonNull ImageView imageEmptyBoxTexture,
-      @NonNull ConstraintLayout layoutCartEmpty, @NonNull Guideline leftGuideLine,
-      @NonNull LinearProgressIndicator progressbarCart, @NonNull Guideline rightGuideLine,
-      @NonNull RecyclerView rvCart, @NonNull Toolbar toolbarCart,
+      @NonNull ImageView imageCloseCart, @NonNull ImageView imageEmptyBox,
+      @NonNull ImageView imageEmptyBoxTexture, @NonNull ConstraintLayout layoutCartEmpty,
+      @NonNull Guideline leftGuideLine, @NonNull LinearProgressIndicator progressbarCart,
+      @NonNull Guideline rightGuideLine, @NonNull RecyclerView rvCart, @NonNull Toolbar toolbarCart,
       @NonNull ConstraintLayout totalBoxContainer, @NonNull TextView tvTotalPrice) {
     this.rootView = rootView;
     this.bottomGuideLine = bottomGuideLine;
     this.buttonCheckout = buttonCheckout;
+    this.imageCloseCart = imageCloseCart;
     this.imageEmptyBox = imageEmptyBox;
     this.imageEmptyBoxTexture = imageEmptyBoxTexture;
     this.layoutCartEmpty = layoutCartEmpty;
@@ -120,6 +124,12 @@ public final class FragmentCartBinding implements ViewBinding {
       id = R.id.buttonCheckout;
       CircularProgressButton buttonCheckout = ViewBindings.findChildViewById(rootView, id);
       if (buttonCheckout == null) {
+        break missingId;
+      }
+
+      id = R.id.imageCloseCart;
+      ImageView imageCloseCart = ViewBindings.findChildViewById(rootView, id);
+      if (imageCloseCart == null) {
         break missingId;
       }
 
@@ -184,8 +194,8 @@ public final class FragmentCartBinding implements ViewBinding {
       }
 
       return new FragmentCartBinding((NestedScrollView) rootView, bottomGuideLine, buttonCheckout,
-          imageEmptyBox, imageEmptyBoxTexture, layoutCartEmpty, leftGuideLine, progressbarCart,
-          rightGuideLine, rvCart, toolbarCart, totalBoxContainer, tvTotalPrice);
+          imageCloseCart, imageEmptyBox, imageEmptyBoxTexture, layoutCartEmpty, leftGuideLine,
+          progressbarCart, rightGuideLine, rvCart, toolbarCart, totalBoxContainer, tvTotalPrice);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

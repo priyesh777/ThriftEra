@@ -5,6 +5,7 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class CartProduct(
+    // Data types for cart products
     val product: Product,
     val quantity: Int,
     val selectedColor: Int? = null,

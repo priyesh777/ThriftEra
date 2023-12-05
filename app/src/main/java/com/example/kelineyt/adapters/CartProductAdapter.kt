@@ -13,7 +13,7 @@ import com.example.kelineyt.databinding.CartProductItemBinding
 import com.example.kelineyt.helper.getProductPrice
 
 class CartProductAdapter: RecyclerView.Adapter<CartProductAdapter.CartProductsViewHolder>() {
-
+//Adapter to showcase the products of cart component using the recycler view
     inner class CartProductsViewHolder( val binding: CartProductItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
 

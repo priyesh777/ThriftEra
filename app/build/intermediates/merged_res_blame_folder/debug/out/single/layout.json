@@ -36,6 +36,10 @@
         "source": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-main-56:/layout/activity_shopping.xml"
     },
     {
+        "merged": "com.example.kelineyt.app-mergeDebugResources-53:/layout/actitivty_login_register.xml",
+        "source": "com.example.kelineyt.app-main-56:/layout/actitivty_login_register.xml"
+    },
+    {
         "merged": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-mergeDebugResources-53:/layout/color_rv_item.xml",
         "source": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-main-56:/layout/color_rv_item.xml"
     },
@@ -98,10 +102,6 @@
     {
         "merged": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-mergeDebugResources-53:/layout/fragment_order_detail.xml",
         "source": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-main-56:/layout/fragment_order_detail.xml"
-    },
-    {
-        "merged": "com.example.kelineyt.app-mergeDebugResources-53:/layout/fragment_user_booked_items.xml",
-        "source": "com.example.kelineyt.app-main-56:/layout/fragment_user_booked_items.xml"
     },
     {
         "merged": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-mergeDebugResources-53:/layout/book_item_dialog.xml",

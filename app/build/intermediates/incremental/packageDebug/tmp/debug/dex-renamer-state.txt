@@ -1,4 +1,4 @@
-#Sat Nov 25 11:07:35 EST 2023
+#Tue Dec 05 18:37:41 EST 2023
 base.0=/home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 base.10=/home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/build/intermediates/dex/debug/mergeProjectDexDebug/6/classes.dex

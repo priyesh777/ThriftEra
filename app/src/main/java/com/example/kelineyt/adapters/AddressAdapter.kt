@@ -12,7 +12,7 @@ import com.example.kelineyt.data.Address
 import com.example.kelineyt.databinding.AddressRvItemBinding
 
 class AddressAdapter : Adapter<AddressAdapter.AddressViewHolder>() {
-
+//This is the adapter used for the address element in the billing section
     inner class AddressViewHolder(val binding: AddressRvItemBinding) :
         ViewHolder(binding.root) {
         fun bind(address: Address,isSelected: Boolean) {

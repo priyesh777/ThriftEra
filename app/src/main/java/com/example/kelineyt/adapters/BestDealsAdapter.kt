@@ -10,7 +10,7 @@ import com.example.kelineyt.data.Product
 import com.example.kelineyt.databinding.BestDealsRvItemBinding
 
 class BestDealsAdapter : RecyclerView.Adapter<BestDealsAdapter.BestDealsViewHolder>() {
-
+// Adapter to list the best-deals scroll element using the recycler view
     inner class BestDealsViewHolder(private val binding: BestDealsRvItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(product: Product) {
