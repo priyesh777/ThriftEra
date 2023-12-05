@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.kelineyt.databinding.ColorRvItemBinding
 
 class ColorsAdapter : RecyclerView.Adapter<ColorsAdapter.ColorsViewHolder>() {
+    //Adapter to showcase the colors list in product details component
 
     private var selectedPosition = -1
 

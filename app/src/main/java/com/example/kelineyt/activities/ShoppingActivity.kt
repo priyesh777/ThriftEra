@@ -16,7 +16,7 @@ import kotlinx.coroutines.flow.collectLatest
 
 @AndroidEntryPoint
 class ShoppingActivity : AppCompatActivity() {
-
+    //This is the entry-point for the activities related to shopping
     val binding by lazy {
         ActivityShoppingBinding.inflate(layoutInflater)
     }

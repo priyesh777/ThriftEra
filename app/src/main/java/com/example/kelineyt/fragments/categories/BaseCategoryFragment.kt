@@ -16,6 +16,7 @@ import com.example.kelineyt.databinding.FragmentBaseCategoryBinding
 import com.example.kelineyt.util.showBottomNavigationView
 
 open class BaseCategoryFragment: Fragment(R.layout.fragment_base_category) {
+    //Fragment used to list all the products in tab-component named "All"
     private lateinit var binding: FragmentBaseCategoryBinding
     protected val offerAdapter: BestProductsAdapter by lazy { BestProductsAdapter() }
     protected val  bestProductsAdapter: BestProductsAdapter by lazy { BestProductsAdapter() }

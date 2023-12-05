@@ -25,6 +25,7 @@ import kotlinx.coroutines.flow.collectLatest
 
 @AndroidEntryPoint
 class ProductDetailsFragment : Fragment() {
+    //Fragment used to show the product details
     private val args by navArgs<ProductDetailsFragmentArgs>()
     private lateinit var binding: FragmentProductDetailsBinding
     private val viewPagerAdapter by lazy { ViewPager2Images() }

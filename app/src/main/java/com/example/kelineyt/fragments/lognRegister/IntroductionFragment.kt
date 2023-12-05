@@ -19,6 +19,7 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class IntroductionFragment : Fragment(R.layout.fragment_introdcution) {
+    //Fragment used to redirect the user towards login/register section
     private lateinit var binding: FragmentIntrodcutionBinding
     private val viewModel by viewModels<IntroductionViewModel>()
 

@@ -26,6 +26,7 @@ import kotlinx.coroutines.flow.collectLatest
 
 @AndroidEntryPoint
 class UserAccountFragment : Fragment() {
+    //Fragment used to handle the profile section
     private lateinit var binding: FragmentUserAccountBinding
     private val viewModel by viewModels<UserAccountViewModel>()
     private lateinit var imageActivityResultLauncher: ActivityResultLauncher<Intent>

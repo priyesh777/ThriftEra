@@ -16,6 +16,7 @@ import javax.inject.Inject
 
 @AndroidEntryPoint
 class FurnitureFragment: BaseCategoryFragment() {
+    //Fragment used to list all the products in tab-component named "Furniture"
 
     @Inject
     lateinit var firestore: FirebaseFirestore

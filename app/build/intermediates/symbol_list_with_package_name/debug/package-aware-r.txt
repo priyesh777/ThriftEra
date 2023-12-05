@@ -3076,6 +3076,7 @@ id imageCartProductSize
 id imageClose
 id imageCloseBilling
 id imageCloseBookedItems
+id imageCloseCart
 id imageCloseOrder
 id imageCloseOrders
 id imageCloseUserAccount

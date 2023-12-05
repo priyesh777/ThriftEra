@@ -22,6 +22,7 @@ import com.example.kelineyt.viewmodel.CartViewModel
 import kotlinx.coroutines.flow.collectLatest
 
 class CartFragment : Fragment(R.layout.fragment_cart) {
+    //Fragment used for wrapping up the cart component
     private lateinit var binding: FragmentCartBinding
     private val cartAdapter by lazy { CartProductAdapter() }
     private val viewModel by activityViewModels<CartViewModel>()
@@ -63,6 +64,10 @@ class CartFragment : Fragment(R.layout.fragment_cart) {
 
         cartAdapter.onMinusClick = {
             viewModel.changeQuantity(it, FirebaseCommon.QuantityChanging.DECREASE)
+        }
+
+        binding.imageCloseCart.setOnClickListener {
+            findNavController().navigateUp()
         }
 
         //We can simply add alert when booked item

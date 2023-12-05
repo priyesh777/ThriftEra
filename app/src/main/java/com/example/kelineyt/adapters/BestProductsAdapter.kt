@@ -13,6 +13,7 @@ import com.example.kelineyt.databinding.ProductRvItemBinding
 import com.example.kelineyt.helper.getProductPrice
 
 class BestProductsAdapter : RecyclerView.Adapter<BestProductsAdapter.BestProductsViewHolder>() {
+// Adapter to list the best-products scroll element using the recycler view
 
     inner class BestProductsViewHolder(private val binding: ProductRvItemBinding) :
         RecyclerView.ViewHolder(binding.root) {

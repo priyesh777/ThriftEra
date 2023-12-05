@@ -10,6 +10,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog
 fun Fragment.setupBottomSheetDialog(
     onSendClick: (String) -> Unit
 ){
+    //Dialog box created for reset password feature
     val dialog = BottomSheetDialog(requireContext(),R.style.DialogStyle)
     val view = layoutInflater.inflate(R.layout.reset_passowrd_dialog,null)
     dialog.setContentView(view)

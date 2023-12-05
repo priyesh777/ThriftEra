@@ -12,6 +12,7 @@ import com.example.kelineyt.fragments.categories.*
 import com.google.android.material.tabs.TabLayoutMediator
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
+    //fragment used to wrap the home elements
     private lateinit var binding: FragmentHomeBinding
 
     override fun onCreateView(

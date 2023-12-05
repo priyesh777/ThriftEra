@@ -14,6 +14,7 @@ import com.example.kelineyt.databinding.BillingProductsRvItemBinding
 import com.example.kelineyt.helper.getProductPrice
 
 class BillingProductsAdapter: Adapter<BillingProductsAdapter.BillingProductsViewHolder>() {
+    //Adapter to showcase the products in the billing list
 
     inner class BillingProductsViewHolder(val binding: BillingProductsRvItemBinding): ViewHolder(binding.root) {
 

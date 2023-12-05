@@ -4,36 +4,32 @@
         "source": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-main-56:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.kelineyt.app-merged_res-54:/layout_fragment_user_booked_items.xml.flat",
-        "source": "com.example.kelineyt.app-main-56:/layout/fragment_user_booked_items.xml"
+        "merged": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-merged_res-54:/drawable-v24_blury_background.jpg.flat",
+        "source": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-main-56:/drawable-v24/blury_background.jpg"
     },
     {
         "merged": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-merged_res-54:/drawable_empty_box_background.xml.flat",
         "source": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-main-56:/drawable/empty_box_background.xml"
     },
     {
-        "merged": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-merged_res-54:/drawable-v24_blury_background.jpg.flat",
-        "source": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-main-56:/drawable-v24/blury_background.jpg"
+        "merged": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-merged_res-54:/font_poppins_light.ttf.flat",
+        "source": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-main-56:/font/poppins_light.ttf"
     },
     {
         "merged": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-merged_res-54:/drawable_ic_microphone.xml.flat",
         "source": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-main-56:/drawable/ic_microphone.xml"
     },
     {
-        "merged": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-merged_res-54:/font_poppins_light.ttf.flat",
-        "source": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-main-56:/font/poppins_light.ttf"
-    },
-    {
-        "merged": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-merged_res-54:/menu_bottom_navigation_menu.xml.flat",
-        "source": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-main-56:/menu/bottom_navigation_menu.xml"
+        "merged": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-merged_res-54:/drawable-v24_ic_arrow.xml.flat",
+        "source": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-main-56:/drawable-v24/ic_arrow.xml"
     },
     {
         "merged": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-merged_res-54:/drawable_ic_minus.xml.flat",
         "source": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-main-56:/drawable/ic_minus.xml"
     },
     {
-        "merged": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-merged_res-54:/drawable-v24_ic_arrow.xml.flat",
-        "source": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-main-56:/drawable-v24/ic_arrow.xml"
+        "merged": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-merged_res-54:/menu_bottom_navigation_menu.xml.flat",
+        "source": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-main-56:/menu/bottom_navigation_menu.xml"
     },
     {
         "merged": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-merged_res-54:/layout_fragment_billing.xml.flat",
@@ -154,6 +150,10 @@
     {
         "merged": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-merged_res-54:/drawable_ic_texture_right.xml.flat",
         "source": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-main-56:/drawable/ic_texture_right.xml"
+    },
+    {
+        "merged": "com.example.kelineyt.app-merged_res-54:/layout_actitivty_login_register.xml.flat",
+        "source": "com.example.kelineyt.app-main-56:/layout/actitivty_login_register.xml"
     },
     {
         "merged": "/home/priiyesh/.gradle/daemon/8.0/com.example.kelineyt.app-merged_res-54:/layout_fragment_order_detail.xml.flat",

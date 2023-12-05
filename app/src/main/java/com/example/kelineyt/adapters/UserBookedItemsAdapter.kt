@@ -13,6 +13,7 @@ import com.example.kelineyt.databinding.BookedProductItemBinding
 import com.example.kelineyt.helper.getProductPrice
 
 class UserBookedItemsAdapter: RecyclerView.Adapter<UserBookedItemsAdapter.CartProductsViewHolder>() {
+    //Adapter to list the booked items in the profile section
 
     inner class CartProductsViewHolder( val binding: BookedProductItemBinding) :
         RecyclerView.ViewHolder(binding.root) {

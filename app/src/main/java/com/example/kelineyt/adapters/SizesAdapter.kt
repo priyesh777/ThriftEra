@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.kelineyt.databinding.SizeRvItemBinding
 
 class SizesAdapter: RecyclerView.Adapter<SizesAdapter.SizesViewHolder>() {
+    //Adapter to list the available sizes in the product details component
 
     private var selectedPosition = -1
 
