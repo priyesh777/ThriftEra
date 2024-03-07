@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="default_web_client_id" translatable="false">990888778498-1ve8t9skpm6fbh56ad12i5vbsm6jkdfg.apps.googleusercontent.com</string>
-    <string name="gcm_defaultSenderId" translatable="false">990888778498</string>
-    <string name="google_api_key" translatable="false">AIzaSyChqUc6lS7jLQyHyO-foKaB7bAVYvJ6ZtI</string>
-    <string name="google_app_id" translatable="false">1:990888778498:android:a0460aad9a58a6e936c01b</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyChqUc6lS7jLQyHyO-foKaB7bAVYvJ6ZtI</string>
-    <string name="google_storage_bucket" translatable="false">kelineyt.appspot.com</string>
-    <string name="project_id" translatable="false">kelineyt</string>
+    <string name="gcm_defaultSenderId" translatable="false">259709069762</string>
+    <string name="google_api_key" translatable="false">AIzaSyDs0SIxe7DE3t9LLYntqKFkQjdB_eOPpMk</string>
+    <string name="google_app_id" translatable="false">1:259709069762:android:c6b24f45b458d764c08e5b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDs0SIxe7DE3t9LLYntqKFkQjdB_eOPpMk</string>
+    <string name="google_storage_bucket" translatable="false">thrifterav1.appspot.com</string>
+    <string name="project_id" translatable="false">thrifterav1</string>
 </resources>
