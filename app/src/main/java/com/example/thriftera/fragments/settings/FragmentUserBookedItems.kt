@@ -21,6 +21,7 @@ import com.example.thriftera.util.VerticalItemDecoration
 import com.example.thriftera.viewmodel.UserBookedViewModel
 import kotlinx.coroutines.flow.collectLatest
 
+
 class FragmentUserBookedItems : Fragment(R.layout.fragment_user_booked_items) {
     //Fragment used to list the booked items component in the profile section
     private lateinit var binding: FragmentUserBookedItemsBinding
@@ -50,17 +51,20 @@ class FragmentUserBookedItems : Fragment(R.layout.fragment_user_booked_items) {
                 }
             }
         }
-
-        binding.imageCloseBookedItems.setOnClickListener {
+        val toolbar = binding.toolbarCart
+        toolbar.setNavigationOnClickListener {
             findNavController().navigateUp()
         }
 
 
-            userBookedItemsAdapter.onProductClick = {
+        userBookedItemsAdapter.onProductClick = {
             val b = Bundle().apply {
                 putParcelable("product", it.product)
             }
-            findNavController().navigate(R.id.action_fragmentUserBookedItems_to_productDetailsFragment, b)
+            findNavController().navigate(
+                R.id.action_fragmentUserBookedItems_to_productDetailsFragment,
+                b
+            )
         }
 
         userBookedItemsAdapter.onPlusClick = {
@@ -91,7 +95,6 @@ class FragmentUserBookedItems : Fragment(R.layout.fragment_user_booked_items) {
 //        }
 
 
-
         lifecycleScope.launchWhenStarted {
             viewModel.deleteDialog.collectLatest {
                 val alertDialog = AlertDialog.Builder(requireContext()).apply {
@@ -117,6 +120,7 @@ class FragmentUserBookedItems : Fragment(R.layout.fragment_user_booked_items) {
                     is Resource.Loading -> {
                         binding.progressbarCart.visibility = View.VISIBLE
                     }
+
                     is Resource.Success -> {
                         binding.progressbarCart.visibility = View.INVISIBLE
                         if (it.data!!.isEmpty()) {
@@ -128,10 +132,12 @@ class FragmentUserBookedItems : Fragment(R.layout.fragment_user_booked_items) {
                             userBookedItemsAdapter.differ.submitList(it.data)
                         }
                     }
+
                     is Resource.Error -> {
                         binding.progressbarCart.visibility = View.INVISIBLE
                         Toast.makeText(requireContext(), it.message, Toast.LENGTH_SHORT).show()
                     }
+
                     else -> Unit
                 }
             }

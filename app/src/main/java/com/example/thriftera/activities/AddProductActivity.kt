@@ -4,7 +4,6 @@ import android.app.Activity
 import android.content.Intent
 import android.graphics.Bitmap
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
@@ -13,8 +12,10 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.example.thriftera.R
+import com.example.thriftera.constants.PRODUCTS_COLLECTION
 import com.example.thriftera.data.Product
 import com.example.thriftera.databinding.ActivityAddProductBinding
 import com.google.firebase.firestore.ktx.firestore
@@ -41,6 +42,10 @@ class AddProductActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
+        //shows the back button
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
 
         //4
         binding.buttonColorPicker.setOnClickListener {
@@ -94,6 +99,12 @@ class AddProductActivity : AppCompatActivity() {
         invalidateOptionsMenu()
     }
 
+    //on back pressed, close the activity
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return super.onSupportNavigateUp()
+    }
+
     override fun onPrepareOptionsMenu(menu: Menu?): Boolean {
         return super.onPrepareOptionsMenu(menu)
     }
@@ -141,14 +152,14 @@ class AddProductActivity : AppCompatActivity() {
         val offerPercentage = binding.edOfferPercentage.text.toString().trim()
 
         lifecycleScope.launch {
+            val products = firestore.collection(PRODUCTS_COLLECTION).document()
+            val productId = products.id
             showLoading()
             try {
                 async {
-                    Log.d("test1", "test")
                     imagesByteArrays.forEach {
-                        val id = UUID.randomUUID().toString()
                         launch {
-                            val imagesStorage = storage.reference.child("products/images/$id")
+                            val imagesStorage = storage.reference.child("products/images/$productId")
                             val result = imagesStorage.putBytes(it).await()
                             val downloadUrl = result.storage.downloadUrl.await().toString()
                             images.add(downloadUrl)
@@ -163,22 +174,20 @@ class AddProductActivity : AppCompatActivity() {
             Log.d("test2", "test")
 
             val product = Product(
-                UUID.randomUUID().toString(),
+                productId,
                 name,
                 category,
                 price.toFloat(),
                 if (offerPercentage.isEmpty()) null else offerPercentage.toFloat(),
-                if (productDescription.isEmpty()) null else productDescription,
+                productDescription.ifEmpty { null },
                 selectedColors,
                 sizes,
                 images
             )
-
-            firestore.collection("products").add(product).addOnSuccessListener {
+            products.set(product).addOnSuccessListener {
                 state(true)
                 hideLoading()
             }.addOnFailureListener {
-                Log.e("test2", it.message.toString())
                 state(false)
                 hideLoading()
             }

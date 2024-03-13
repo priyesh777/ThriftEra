@@ -1,3 +1,10 @@
+
+
+NOTES:
+DRY - Don't Repeat Yourself, Follow this one
+WET - Write Everything Twice
+magic string - ""
+
 TO IMPLEMENT
 
 1. Pull to refresh
@@ -5,3 +12,13 @@ TO IMPLEMENT
 3. Save message when the product is added and close the activity
 4. Change UI a bit
 5. Consistent
+
+
+TODO
+1. Add toast after product added successfully, clear fields
+2. change how data is saved in firebase
+3. Search Functionality
+4. After registration success, redirect to login page
+5. Send Notification functionality after the booking is done. [See]
+6. Code Review - Check if possible
+7.

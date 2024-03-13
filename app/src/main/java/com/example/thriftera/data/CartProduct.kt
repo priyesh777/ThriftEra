@@ -10,6 +10,16 @@ data class CartProduct(
     val quantity: Int,
     val selectedColor: Int? = null,
     val selectedSize: String? = null
-): Parcelable {
+) : Parcelable {
     constructor() : this(Product(), 1, null, null)
+}
+
+@Parcelize
+data class CartProductNew(
+    val productId: String,
+    val quantity: Int,
+    val selectedColor: Int? = null,
+    val selectedSize: String? = null
+): Parcelable {
+    constructor(): this("", 1, null, null)
 }

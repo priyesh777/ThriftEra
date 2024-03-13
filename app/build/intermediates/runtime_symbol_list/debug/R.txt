@@ -3114,7 +3114,6 @@ int id imageCartProductColor 0x7f0a0155
 int id imageCartProductSize 0x7f0a0156
 int id imageClose 0x7f0a0157
 int id imageCloseBilling 0x7f0a0158
-int id imageCloseBookedItems 0x7f0a0159
 int id imageCloseCart 0x7f0a015a
 int id imageCloseOrder 0x7f0a015b
 int id imageCloseOrders 0x7f0a015c

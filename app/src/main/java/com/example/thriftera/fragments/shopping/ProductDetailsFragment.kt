@@ -16,6 +16,7 @@ import com.example.thriftera.adapters.ColorsAdapter
 import com.example.thriftera.adapters.SizesAdapter
 import com.example.thriftera.adapters.ViewPager2Images
 import com.example.thriftera.data.CartProduct
+import com.example.thriftera.data.CartProductNew
 import com.example.thriftera.databinding.FragmentProductDetailsBinding
 import com.example.thriftera.util.Resource
 import com.example.thriftera.util.hideBottomNavigationView
@@ -67,7 +68,7 @@ class ProductDetailsFragment : Fragment() {
         }
 
         binding.buttonAddToCart.setOnClickListener {
-            viewModel.addUpdateProductInCart(CartProduct(product, 1, selectedColor, selectedSize))
+            viewModel.addUpdateProductInCart(CartProductNew(product.id, 1, selectedColor, selectedSize))
         }
 
         lifecycleScope.launchWhenStarted {

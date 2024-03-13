@@ -1,6 +1,7 @@
 package com.example.thriftera.firebase
 
 import com.example.thriftera.data.CartProduct
+import com.example.thriftera.data.CartProductNew
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -12,8 +13,11 @@ class FirebaseCommon(
     private val cartCollection =
         firestore.collection("user").document(auth.uid!!).collection("cart")
 
-    fun addProductToCart(cartProduct: CartProduct, onResult: (CartProduct?, Exception?) -> Unit) {
-        cartCollection.document().set(cartProduct)
+    fun addProductToCart(
+        cartProduct: CartProductNew,
+        onResult: (CartProductNew?, Exception?) -> Unit
+    ) {
+        cartCollection.document(cartProduct.productId).set(cartProduct)
             .addOnSuccessListener {
                 onResult(cartProduct, null)
             }.addOnFailureListener {
@@ -56,7 +60,7 @@ class FirebaseCommon(
     }
 
     enum class QuantityChanging {
-        INCREASE,DECREASE
+        INCREASE, DECREASE
     }
 
 

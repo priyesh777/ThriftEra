@@ -2,6 +2,8 @@ package com.example.thriftera.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.thriftera.constants.BOOKED_ITEMS_COLLECTION
+import com.example.thriftera.constants.USER_COLLECTION
 import com.example.thriftera.data.CartProduct
 import com.example.thriftera.firebase.FirebaseCommon
 import com.example.thriftera.helper.getProductPrice
@@ -64,7 +66,8 @@ class UserBookedViewModel @Inject constructor(
 
     private fun getCartProducts() {
         viewModelScope.launch { _cartProducts.emit(Resource.Loading()) }
-        firestore.collection("user").document(auth.uid!!).collection("cart")
+        firestore.collection(USER_COLLECTION).document(auth.uid!!).collection(
+            BOOKED_ITEMS_COLLECTION)
             .addSnapshotListener { value, error ->
                 if (error != null || value == null) {
                     viewModelScope.launch { _cartProducts.emit(Resource.Error(error?.message.toString())) }
