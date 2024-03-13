@@ -14,6 +14,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.thriftera.R
 import com.example.thriftera.adapters.CartProductAdapter
+import com.example.thriftera.data.CartProduct
+import com.example.thriftera.data.Product
 import com.example.thriftera.databinding.FragmentCartBinding
 import com.example.thriftera.firebase.FirebaseCommon
 import com.example.thriftera.util.Resource
@@ -26,6 +28,7 @@ class CartFragment : Fragment(R.layout.fragment_cart) {
     private lateinit var binding: FragmentCartBinding
     private val cartAdapter by lazy { CartProductAdapter() }
     private val viewModel by activityViewModels<CartViewModel>()
+    private var productsInCart = arrayListOf<CartProduct>()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -40,6 +43,11 @@ class CartFragment : Fragment(R.layout.fragment_cart) {
         super.onViewCreated(view, savedInstanceState)
 
         setupCartRv()
+
+        if (viewModel.successDialog.value) {
+            Toast.makeText(requireActivity(), "Items booked successfully!", Toast.LENGTH_SHORT)
+                .show()
+        }
 
         var totalPrice = 0f
         lifecycleScope.launchWhenStarted {
@@ -70,23 +78,22 @@ class CartFragment : Fragment(R.layout.fragment_cart) {
             findNavController().navigateUp()
         }
 
-        //We can simply add alert when booked item
         binding.buttonCheckout.setOnClickListener {
-// This has been commented out for avoiding the billing logic
-//            val action = CartFragmentDirections.actionCartFragmentToBillingFragment2(totalPrice,cartAdapter.differ.currentList.toTypedArray(),true)
-//            findNavController().navigate(action)
+            // 1. TODO - show the list of products that are to be booked
+            // 2. TODO - save the items in the data base
+            viewModel.bookItems(productsInCart.toList())
 
-            val alertDialog = AlertDialog.Builder(requireContext()).apply {
-                setTitle("Book Information")
-                setMessage("Your items will be booked and you will receive an email for further confirmation. Thank-you.")
-                setPositiveButton("Okay") { dialog, _ ->
-                    binding.progressbarCart.visibility = View.GONE
-                    dialog.dismiss()
-                }
-            }
+//            val alertDialog = AlertDialog.Builder(requireContext()).apply {
+//                setTitle("Book Information")
+//                setMessage("Your items will be booked and you will receive an email for further confirmation. Thank-you.")
+//                setPositiveButton("Okay") { dialog, _ ->
+//                    binding.progressbarCart.visibility = View.GONE
+//                    dialog.dismiss()
+//                }
+//            }
             binding.progressbarCart.visibility = View.VISIBLE
-            alertDialog.create()
-            alertDialog.show()
+//            alertDialog.create()
+//            alertDialog.show()
         }
 
 
@@ -116,6 +123,7 @@ class CartFragment : Fragment(R.layout.fragment_cart) {
                     is Resource.Loading -> {
                         binding.progressbarCart.visibility = View.VISIBLE
                     }
+
                     is Resource.Success -> {
                         binding.progressbarCart.visibility = View.INVISIBLE
                         if (it.data!!.isEmpty()) {
@@ -125,12 +133,15 @@ class CartFragment : Fragment(R.layout.fragment_cart) {
                             hideEmptyCart()
                             showOtherViews()
                             cartAdapter.differ.submitList(it.data)
+                            productsInCart.addAll(it.data)
                         }
                     }
+
                     is Resource.Error -> {
                         binding.progressbarCart.visibility = View.INVISIBLE
                         Toast.makeText(requireContext(), it.message, Toast.LENGTH_SHORT).show()
                     }
+
                     else -> Unit
                 }
             }

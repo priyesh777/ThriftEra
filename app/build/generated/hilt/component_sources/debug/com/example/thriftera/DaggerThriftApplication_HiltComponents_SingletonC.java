@@ -131,7 +131,7 @@ public final class DaggerThriftApplication_HiltComponents_SingletonC extends Thr
   }
 
   @Override
-  public void injectThriftApplication(ThriftApplication thriftApplication) {
+  public void injectThriftApplication(ThriftApplication arg0) {
   }
 
   @Override

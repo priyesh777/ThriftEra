@@ -5,3 +5,8 @@ TO IMPLEMENT
 3. Save message when the product is added and close the activity
 4. Change UI a bit
 5. Consistent
+
+
+DRY - Don't Repeat Yourself, Follow this one
+WET - Write Everything Twice
+magic string - ""

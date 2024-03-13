@@ -29,9 +29,6 @@ public final class FragmentUserBookedItemsBinding implements ViewBinding {
   public final Guideline bottomGuideLine;
 
   @NonNull
-  public final ImageView imageCloseBookedItems;
-
-  @NonNull
   public final ImageView imageEmptyBox;
 
   @NonNull
@@ -62,15 +59,13 @@ public final class FragmentUserBookedItemsBinding implements ViewBinding {
   public final TextView tvTotalPrice;
 
   private FragmentUserBookedItemsBinding(@NonNull NestedScrollView rootView,
-      @NonNull Guideline bottomGuideLine, @NonNull ImageView imageCloseBookedItems,
-      @NonNull ImageView imageEmptyBox, @NonNull ImageView imageEmptyBoxTexture,
-      @NonNull ConstraintLayout layoutCartEmpty, @NonNull Guideline leftGuideLine,
-      @NonNull LinearProgressIndicator progressbarCart, @NonNull Guideline rightGuideLine,
-      @NonNull RecyclerView rvCart, @NonNull Toolbar toolbarCart,
+      @NonNull Guideline bottomGuideLine, @NonNull ImageView imageEmptyBox,
+      @NonNull ImageView imageEmptyBoxTexture, @NonNull ConstraintLayout layoutCartEmpty,
+      @NonNull Guideline leftGuideLine, @NonNull LinearProgressIndicator progressbarCart,
+      @NonNull Guideline rightGuideLine, @NonNull RecyclerView rvCart, @NonNull Toolbar toolbarCart,
       @NonNull ConstraintLayout totalBoxContainer, @NonNull TextView tvTotalPrice) {
     this.rootView = rootView;
     this.bottomGuideLine = bottomGuideLine;
-    this.imageCloseBookedItems = imageCloseBookedItems;
     this.imageEmptyBox = imageEmptyBox;
     this.imageEmptyBoxTexture = imageEmptyBoxTexture;
     this.layoutCartEmpty = layoutCartEmpty;
@@ -113,12 +108,6 @@ public final class FragmentUserBookedItemsBinding implements ViewBinding {
       id = R.id.bottomGuideLine;
       Guideline bottomGuideLine = ViewBindings.findChildViewById(rootView, id);
       if (bottomGuideLine == null) {
-        break missingId;
-      }
-
-      id = R.id.imageCloseBookedItems;
-      ImageView imageCloseBookedItems = ViewBindings.findChildViewById(rootView, id);
-      if (imageCloseBookedItems == null) {
         break missingId;
       }
 
@@ -183,9 +172,8 @@ public final class FragmentUserBookedItemsBinding implements ViewBinding {
       }
 
       return new FragmentUserBookedItemsBinding((NestedScrollView) rootView, bottomGuideLine,
-          imageCloseBookedItems, imageEmptyBox, imageEmptyBoxTexture, layoutCartEmpty,
-          leftGuideLine, progressbarCart, rightGuideLine, rvCart, toolbarCart, totalBoxContainer,
-          tvTotalPrice);
+          imageEmptyBox, imageEmptyBoxTexture, layoutCartEmpty, leftGuideLine, progressbarCart,
+          rightGuideLine, rvCart, toolbarCart, totalBoxContainer, tvTotalPrice);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

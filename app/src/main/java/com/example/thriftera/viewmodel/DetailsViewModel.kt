@@ -2,6 +2,8 @@ package com.example.thriftera.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.thriftera.constants.CART_COLLECTION
+import com.example.thriftera.constants.USER_COLLECTION
 import com.example.thriftera.data.CartProduct
 import com.example.thriftera.firebase.FirebaseCommon
 import com.example.thriftera.util.Resource
@@ -11,6 +13,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.tasks.await
 import javax.inject.Inject
 
 @HiltViewModel
@@ -24,28 +27,33 @@ class DetailsViewModel @Inject constructor(
     val addToCart = _addToCart.asStateFlow()
 
     fun addUpdateProductInCart(cartProduct: CartProduct) {
-        viewModelScope.launch { _addToCart.emit(Resource.Loading()) }
-        firestore.collection("user").document(auth.uid!!).collection("cart")
-            .whereEqualTo("product.id", cartProduct.product.id).get()
-            .addOnSuccessListener {
-                it.documents.let {
-                    if (it.isEmpty()) { //Add new product
-                        addNewProduct(cartProduct)
+        viewModelScope.launch {
+            try {
+                _addToCart.emit(Resource.Loading())
+                val userCartRef = firestore.collection(USER_COLLECTION)
+                    .document(auth.uid!!)
+                    .collection(CART_COLLECTION)
+                    .whereEqualTo("product.id", cartProduct.product.id)
+                val querySnapshot = userCartRef.get().await()
+                val documents = querySnapshot.documents
+                if (documents.isEmpty()) {
+                    addNewProduct(cartProduct)
+                } else {
+                    val existingProduct = documents.first().toObject(CartProduct::class.java)
+                    if (existingProduct?.product == cartProduct.product &&
+                        existingProduct.selectedColor == cartProduct.selectedColor &&
+                        existingProduct.selectedSize == cartProduct.selectedSize
+                    ) {
+                        val documentId = documents.first().id
+                        increaseQuantity(documentId, cartProduct)
                     } else {
-                        val product = it.first().toObject(CartProduct::class.java)
-                        if(product?.product == cartProduct.product && product.selectedColor == cartProduct.selectedColor && product.selectedSize== cartProduct.selectedSize){ //Increase the quantity (fixed quantity increasement issue)
-                            val documentId = it.first().id
-                            increaseQuantity(documentId, cartProduct)
-                        } else {
-                            // If the product has been already added then it will again be added when user wishes to add again
-                            //Add new product
-                            addNewProduct(cartProduct)
-                        }
+                        addNewProduct(cartProduct)
                     }
                 }
-            }.addOnFailureListener {
-                viewModelScope.launch { _addToCart.emit(Resource.Error(it.message.toString())) }
+            } catch (e: Exception) {
+                _addToCart.emit(Resource.Error(e.message ?: "Error occurred"))
             }
+        }
     }
 
     private fun addNewProduct(cartProduct: CartProduct) {
