@@ -1,9 +1,10 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:2:1-26:12
+ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:2:1-30:12
+MERGED from [com.github.skydoves:colorpickerview:2.2.4] /home/priiyesh/.gradle/caches/transforms-3/9b45886cfa65db223d47b26e40249d96/transformed/colorpickerview-2.2.4/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.databinding:viewbinding:8.1.2] /home/priiyesh/.gradle/caches/transforms-3/b89a28d446949ae67b45359a4b4a48ea/transformed/viewbinding-8.1.2/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.5.2] /home/priiyesh/.gradle/caches/transforms-3/88ea55231ee50e9a173c05440d31b76b/transformed/navigation-fragment-ktx-2.5.2/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment:2.5.2] /home/priiyesh/.gradle/caches/transforms-3/055e53b861c49730007263a7aae85034/transformed/navigation-fragment-2.5.2/AndroidManifest.xml:17:1-24:12
@@ -97,8 +98,8 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/priiye
 	xmlns:android
 		ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:4:5-24:19
-INJECTED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:4:5-24:19
+ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:4:5-28:19
+INJECTED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:4:5-28:19
 MERGED from [androidx.window:window:1.0.0] /home/priiyesh/.gradle/caches/transforms-3/6553f43aa1feadbc5baf23e9436ac2d7/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0] /home/priiyesh/.gradle/caches/transforms-3/6553f43aa1feadbc5baf23e9436ac2d7/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
 MERGED from [com.google.android.material:material:1.6.1] /home/priiyesh/.gradle/caches/transforms-3/498b314506941ce69c170625c1104408/transformed/material-1.6.1/AndroidManifest.xml:24:5-20
@@ -163,32 +164,42 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/priiy
 		ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:11:9-46
 	android:name
 		ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:5:9-42
-activity#com.example.kelineyt.activities.ShoppingActivity
-ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:12:9-14:39
+activity#com.example.thriftera.activities.AddProductActivity
+ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:12:9-15:40
 	android:exported
-		ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:14:13-36
+		ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:15:13-37
+	android:theme
+		ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:14:13-60
 	android:name
-		ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:13:13-56
-activity#com.example.kelineyt.activities.LoginRegisterActivity
-ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:15:9-23:20
+		ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:13:13-58
+activity#com.example.thriftera.activities.ShoppingActivity
+ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:16:9-18:39
 	android:exported
-		ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:17:13-36
+		ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:18:13-36
 	android:name
-		ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:16:13-61
+		ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:17:13-56
+activity#com.example.thriftera.activities.LoginRegisterActivity
+ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:19:9-27:20
+	android:exported
+		ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:21:13-36
+	android:name
+		ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:20:13-61
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:18:13-22:29
+ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:22:13-26:29
 action#android.intent.action.MAIN
-ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:19:17-69
+ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:23:17-69
 	android:name
-		ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:19:25-66
+		ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:23:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:21:17-77
+ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:21:27-74
+		ADDED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml:25:27-74
 uses-sdk
 INJECTED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml
 INJECTED from /home/priiyesh/AndroidStudioProjects/ThriftEra-Android/app/src/main/AndroidManifest.xml
+MERGED from [com.github.skydoves:colorpickerview:2.2.4] /home/priiyesh/.gradle/caches/transforms-3/9b45886cfa65db223d47b26e40249d96/transformed/colorpickerview-2.2.4/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.skydoves:colorpickerview:2.2.4] /home/priiyesh/.gradle/caches/transforms-3/9b45886cfa65db223d47b26e40249d96/transformed/colorpickerview-2.2.4/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.databinding:viewbinding:8.1.2] /home/priiyesh/.gradle/caches/transforms-3/b89a28d446949ae67b45359a4b4a48ea/transformed/viewbinding-8.1.2/AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:viewbinding:8.1.2] /home/priiyesh/.gradle/caches/transforms-3/b89a28d446949ae67b45359a4b4a48ea/transformed/viewbinding-8.1.2/AndroidManifest.xml:5:5-44
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.5.2] /home/priiyesh/.gradle/caches/transforms-3/88ea55231ee50e9a173c05440d31b76b/transformed/navigation-fragment-ktx-2.5.2/AndroidManifest.xml:20:5-22:41

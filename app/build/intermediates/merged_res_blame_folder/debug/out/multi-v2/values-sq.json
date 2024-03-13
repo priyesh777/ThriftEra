@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.kelineyt.app-mergeDebugResources-52:/values-sq/values-sq.xml",
+            "outputFile": "com.example.thriftera.app-mergeDebugResources-53:/values-sq/values-sq.xml",
             "map": [
                 {
                     "source": "/home/priiyesh/.gradle/caches/transforms-3/c473a297b45071a291e869b2d1862eab/transformed/browser-1.4.0/res/values-sq/values-sq.xml",

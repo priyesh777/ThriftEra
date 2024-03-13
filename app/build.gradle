@@ -9,9 +9,9 @@ plugins {
 
 android {
     compileSdk 31
-
+    namespace 'com.example.thriftera'
     defaultConfig {
-        applicationId "com.example.kelineyt"
+        applicationId "com.example.thriftera"
         minSdk 21
         targetSdk 31
         versionCode 1
@@ -37,7 +37,6 @@ android {
     buildFeatures {
         viewBinding true
     }
-    namespace 'com.example.kelineyt'
 
 }
 
@@ -84,6 +83,9 @@ dependencies {
 
     //Firebase
     implementation 'com.google.firebase:firebase-auth:21.0.6'
+
+    //Color Picker
+    implementation "com.github.skydoves:colorpickerview:2.2.4"
 
     //Coroutines with firebase
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.5.1'

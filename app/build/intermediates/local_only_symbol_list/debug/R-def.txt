@@ -79,6 +79,7 @@ drawable ic_notification
 drawable ic_picked
 drawable ic_plus
 drawable ic_profile
+drawable ic_save
 drawable ic_scan
 drawable ic_search
 drawable ic_texture_left
@@ -127,7 +128,9 @@ id buttonAddToCart
 id buttonAddress
 id buttonCancelResetPassword
 id buttonCheckout
+id buttonColorPicker
 id buttonDelelte
+id buttonImagesPicker
 id buttonLoginAccountOptions
 id buttonLoginLogin
 id buttonPlaceOrder
@@ -143,7 +146,9 @@ id constraintParent
 id constraintProfile
 id createAccount
 id edAddressTitle
+id edCategory
 id edCity
+id edDescription
 id edEmail
 id edEmailRegister
 id edFirstName
@@ -151,9 +156,13 @@ id edFirstNameRegister
 id edFullName
 id edLastName
 id edLastNameRegister
+id edName
+id edOfferPercentage
 id edPasswordRegister
 id edPhone
+id edPrice
 id edResetPassword
+id edSizes
 id edState
 id edStreet
 id ellipse
@@ -186,7 +195,6 @@ id imageCartProductColor
 id imageCartProductSize
 id imageClose
 id imageCloseBilling
-id imageCloseBookedItems
 id imageCloseCart
 id imageCloseOrder
 id imageCloseOrders
@@ -220,6 +228,7 @@ id linearLogOut
 id linearProductPref
 id linearStepView
 id linearTitlePrice
+id linear_add_product
 id linear_booked_item
 id linear_product_name
 id linear_regional
@@ -236,7 +245,9 @@ id ordersFragment
 id parent_linear
 id passwordLogin
 id productDetailsFragment
+id productsInfo
 id profileFragment
+id progressbar
 id progressbarAccount
 id progressbarAddress
 id progressbarCart
@@ -256,6 +267,7 @@ id rvProducts
 id rvSpecialProducts
 id rv_all_orders
 id rv_sizes
+id saveProduct
 id searchBar
 id searchFragment
 id shoppingHostFragment
@@ -272,7 +284,9 @@ id toolbarOrderDetails
 id toolbarUserAccount
 id topLine
 id totalBoxContainer
+id tvAddProduct
 id tvAddress
+id tvAdminAddProduct
 id tvBestDeals
 id tvBestProducts
 id tvBillingProductQuantity
@@ -298,6 +312,8 @@ id tvQuality
 id tvRegional
 id tvResetPassword
 id tvResetPasswordText
+id tvSelectedColors
+id tvSelectedImages
 id tvSettings
 id tvShippingAddress
 id tvShoppingAddress
@@ -321,6 +337,7 @@ id viewPagerProductImages
 id viewpagerHome
 id welcomeToThrift
 layout actitivty_login_register
+layout activity_add_product
 layout activity_shopping
 layout address_rv_item
 layout best_deals_rv_item
@@ -353,6 +370,7 @@ layout size_rv_item
 layout special_rv_item
 layout viewpager_image_item
 menu bottom_navigation_menu
+menu toolbar_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation login_register_graph
@@ -360,7 +378,6 @@ navigation shopping_graph
 string alternateSignIn
 string alternateSignUp
 string app_name
-string default_web_client_id
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id
@@ -376,6 +393,7 @@ style DialogStyle
 style MediumTextViewThin
 style SmallTextViewThin
 style Theme.KelineYt
+style Theme.KelineYt.ActionBar
 style baseGreenButtonStyle
 style baseWhiteButtonStyle
 style blueButtonStyle

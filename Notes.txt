@@ -1,0 +1,12 @@
+TO IMPLEMENT
+
+1. Pull to refresh
+2. Drop-down for the category
+3. Save message when the product is added and close the activity
+4. Change UI a bit
+5. Consistent
+
+
+DRY - Don't Repeat Yourself, Follow this one
+WET - Write Everything Twice
+magic string - ""
