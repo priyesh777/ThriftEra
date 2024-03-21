@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:2:1-30:12
+ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:2:1-30:12
 MERGED from [com.github.skydoves:colorpickerview:2.2.4] /Users/sam/.gradle/caches/transforms-3/9b45886cfa65db223d47b26e40249d96/transformed/colorpickerview-2.2.4/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.databinding:viewbinding:8.1.2] /Users/sam/.gradle/caches/transforms-3/b89a28d446949ae67b45359a4b4a48ea/transformed/viewbinding-8.1.2/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.5.2] /Users/sam/.gradle/caches/transforms-3/88ea55231ee50e9a173c05440d31b76b/transformed/navigation-fragment-ktx-2.5.2/AndroidManifest.xml:17:1-24:12
@@ -50,6 +50,7 @@ MERGED from [androidx.loader:loader:1.0.0] /Users/sam/.gradle/caches/transforms-
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /Users/sam/.gradle/caches/transforms-3/4ff05a8e17c6caa6da2300f1ecc64388/transformed/lifecycle-viewmodel-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /Users/sam/.gradle/caches/transforms-3/908a9e9221566eea9bba4ee1b739be2d/transformed/lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core-ktx:1.7.0] /Users/sam/.gradle/caches/transforms-3/3732aff4e98e23019a05c491076d7ab1/transformed/core-ktx-1.7.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/sam/.gradle/caches/transforms-3/952fde5922b91421cae449de5a07f79c/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [de.hdodenhof:circleimageview:3.1.0] /Users/sam/.gradle/caches/transforms-3/f920ed3b828f18cd76edd57c16d7307a/transformed/circleimageview-3.1.0/AndroidManifest.xml:2:1-11:12
 MERGED from [com.shuhart.stepview:stepview:1.5.1] /Users/sam/.gradle/caches/transforms-3/7ed12205c2570f7b6542ea6d5ce0d27e/transformed/stepview-1.5.1/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/sam/.gradle/caches/transforms-3/754161b31b2db955d1b2e1f2964b6108/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -62,12 +63,13 @@ MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/sam/.gra
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/sam/.gradle/caches/transforms-3/db9b52b3d2496df2ca344d8340b51fdb/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/sam/.gradle/caches/transforms-3/72df423a20f37a19267784a2914d2933/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-components:17.0.1] /Users/sam/.gradle/caches/transforms-3/7091ff1dedf537b59cb2eada0a3d9cb1/transformed/firebase-components-17.0.1/AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.browser:browser:1.4.0] /Users/sam/.gradle/caches/transforms-3/c473a297b45071a291e869b2d1862eab/transformed/browser-1.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/sam/.gradle/caches/transforms-3/bc8223d98ae8d776403c8f55629a2083/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:gifdecoder:4.13.0] /Users/sam/.gradle/caches/transforms-3/454a1ae1e2a20e128a36d2d5aade761f/transformed/gifdecoder-4.13.0/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.exifinterface:exifinterface:1.2.0] /Users/sam/.gradle/caches/transforms-3/6c56756902314d9e08c340d9b2f90904/transformed/exifinterface-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/sam/.gradle/caches/transforms-3/32621dc654c49e9a78cf52d5497100c9/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:17:1-37:12
 MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/sam/.gradle/caches/transforms-3/37f65812140b0093a14d1caeb0ccd247/transformed/startup-runtime-1.0.0/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/sam/.gradle/caches/transforms-3/f936e9ca38801b343302310138753b54/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.browser:browser:1.4.0] /Users/sam/.gradle/caches/transforms-3/c473a297b45071a291e869b2d1862eab/transformed/browser-1.4.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/sam/.gradle/caches/transforms-3/c4cfbb603a6e7a4aa13949eee90fe34e/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/sam/.gradle/caches/transforms-3/461659a12cb541b6a41b27144d0febc2/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/sam/.gradle/caches/transforms-3/e628f643141341646e591791912e3f9a/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -75,7 +77,6 @@ MERGED from [androidx.customview:customview:1.1.0] /Users/sam/.gradle/caches/tra
 MERGED from [androidx.transition:transition:1.4.1] /Users/sam/.gradle/caches/transforms-3/07e578e3388ca3751d486eaa9864e5d1/transformed/transition-1.4.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core:1.8.0] /Users/sam/.gradle/caches/transforms-3/4577755ecd11c9ddf0821e848ddf32e3/transformed/core-1.8.0/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/sam/.gradle/caches/transforms-3/6c71dfbd44cb7785cee542e5a0cb5f41/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/sam/.gradle/caches/transforms-3/bc8223d98ae8d776403c8f55629a2083/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/sam/.gradle/caches/transforms-3/797e99d4d1f3f58f42fc0a473ae15a82/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/sam/.gradle/caches/transforms-3/90f72420a5b5c714804555b7f1804d23/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate-ktx:1.2.0] /Users/sam/.gradle/caches/transforms-3/7e13b6944dfb6d79f60b1bd8414b079c/transformed/savedstate-ktx-1.2.0/AndroidManifest.xml:17:1-24:12
@@ -90,16 +91,16 @@ MERGED from [com.google.dagger:dagger-lint-aar:2.38.1] /Users/sam/.gradle/caches
 MERGED from [io.grpc:grpc-android:1.44.1] /Users/sam/.gradle/caches/transforms-3/54ff63efac6abc7f8ca056f635e3436b/transformed/grpc-android-1.44.1/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/sam/.gradle/caches/transforms-3/96abc81422ebd5bc2ed9249801be6c4f/transformed/protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
 	package
-		INJECTED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:4:5-28:19
-INJECTED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:4:5-28:19
+ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:4:5-28:19
+INJECTED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:4:5-28:19
 MERGED from [androidx.window:window:1.0.0] /Users/sam/.gradle/caches/transforms-3/6553f43aa1feadbc5baf23e9436ac2d7/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0] /Users/sam/.gradle/caches/transforms-3/6553f43aa1feadbc5baf23e9436ac2d7/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
 MERGED from [com.google.android.material:material:1.6.1] /Users/sam/.gradle/caches/transforms-3/498b314506941ce69c170625c1104408/transformed/material-1.6.1/AndroidManifest.xml:24:5-20
@@ -147,57 +148,57 @@ MERGED from [androidx.core:core:1.8.0] /Users/sam/.gradle/caches/transforms-3/45
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/sam/.gradle/caches/transforms-3/6c71dfbd44cb7785cee542e5a0cb5f41/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/sam/.gradle/caches/transforms-3/6c71dfbd44cb7785cee542e5a0cb5f41/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 	android:extractNativeLibs
-		INJECTED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.8.0] /Users/sam/.gradle/caches/transforms-3/4577755ecd11c9ddf0821e848ddf32e3/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:10:9-36
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:10:9-36
 	android:label
-		ADDED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:8:9-41
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:9:9-54
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:7:9-43
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:6:9-35
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:11:9-46
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:11:9-46
 	android:name
-		ADDED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:5:9-42
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:5:9-42
 activity#com.example.thriftera.activities.AddProductActivity
-ADDED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:12:9-15:40
+ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:12:9-15:40
 	android:exported
-		ADDED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:15:13-37
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:15:13-37
 	android:theme
-		ADDED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:14:13-60
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:14:13-60
 	android:name
-		ADDED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:13:13-58
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:13:13-58
 activity#com.example.thriftera.activities.ShoppingActivity
-ADDED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:16:9-18:39
+ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:16:9-18:39
 	android:exported
-		ADDED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:18:13-36
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:18:13-36
 	android:name
-		ADDED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:17:13-56
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:17:13-56
 activity#com.example.thriftera.activities.LoginRegisterActivity
-ADDED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:19:9-27:20
+ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:19:9-27:20
 	android:exported
-		ADDED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:21:13-36
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:21:13-36
 	android:name
-		ADDED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:20:13-61
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:20:13-61
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:22:13-26:29
+ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:22:13-26:29
 action#android.intent.action.MAIN
-ADDED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:23:17-69
+ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:23:17-69
 	android:name
-		ADDED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:23:25-66
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:23:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:25:17-77
+ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:25:27-74
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:25:27-74
 uses-sdk
-INJECTED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml
 MERGED from [com.github.skydoves:colorpickerview:2.2.4] /Users/sam/.gradle/caches/transforms-3/9b45886cfa65db223d47b26e40249d96/transformed/colorpickerview-2.2.4/AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.skydoves:colorpickerview:2.2.4] /Users/sam/.gradle/caches/transforms-3/9b45886cfa65db223d47b26e40249d96/transformed/colorpickerview-2.2.4/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.databinding:viewbinding:8.1.2] /Users/sam/.gradle/caches/transforms-3/b89a28d446949ae67b45359a4b4a48ea/transformed/viewbinding-8.1.2/AndroidManifest.xml:5:5-44
@@ -290,6 +291,8 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /Users/sam
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /Users/sam/.gradle/caches/transforms-3/908a9e9221566eea9bba4ee1b739be2d/transformed/lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core-ktx:1.7.0] /Users/sam/.gradle/caches/transforms-3/3732aff4e98e23019a05c491076d7ab1/transformed/core-ktx-1.7.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.core:core-ktx:1.7.0] /Users/sam/.gradle/caches/transforms-3/3732aff4e98e23019a05c491076d7ab1/transformed/core-ktx-1.7.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/sam/.gradle/caches/transforms-3/952fde5922b91421cae449de5a07f79c/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/sam/.gradle/caches/transforms-3/952fde5922b91421cae449de5a07f79c/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [de.hdodenhof:circleimageview:3.1.0] /Users/sam/.gradle/caches/transforms-3/f920ed3b828f18cd76edd57c16d7307a/transformed/circleimageview-3.1.0/AndroidManifest.xml:5:5-7:41
 MERGED from [de.hdodenhof:circleimageview:3.1.0] /Users/sam/.gradle/caches/transforms-3/f920ed3b828f18cd76edd57c16d7307a/transformed/circleimageview-3.1.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.shuhart.stepview:stepview:1.5.1] /Users/sam/.gradle/caches/transforms-3/7ed12205c2570f7b6542ea6d5ce0d27e/transformed/stepview-1.5.1/AndroidManifest.xml:7:5-9:41
@@ -314,6 +317,10 @@ MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/sam/.gradle/ca
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/sam/.gradle/caches/transforms-3/72df423a20f37a19267784a2914d2933/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-components:17.0.1] /Users/sam/.gradle/caches/transforms-3/7091ff1dedf537b59cb2eada0a3d9cb1/transformed/firebase-components-17.0.1/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-components:17.0.1] /Users/sam/.gradle/caches/transforms-3/7091ff1dedf537b59cb2eada0a3d9cb1/transformed/firebase-components-17.0.1/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.browser:browser:1.4.0] /Users/sam/.gradle/caches/transforms-3/c473a297b45071a291e869b2d1862eab/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] /Users/sam/.gradle/caches/transforms-3/c473a297b45071a291e869b2d1862eab/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/sam/.gradle/caches/transforms-3/bc8223d98ae8d776403c8f55629a2083/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/sam/.gradle/caches/transforms-3/bc8223d98ae8d776403c8f55629a2083/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.github.bumptech.glide:gifdecoder:4.13.0] /Users/sam/.gradle/caches/transforms-3/454a1ae1e2a20e128a36d2d5aade761f/transformed/gifdecoder-4.13.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.bumptech.glide:gifdecoder:4.13.0] /Users/sam/.gradle/caches/transforms-3/454a1ae1e2a20e128a36d2d5aade761f/transformed/gifdecoder-4.13.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.exifinterface:exifinterface:1.2.0] /Users/sam/.gradle/caches/transforms-3/6c56756902314d9e08c340d9b2f90904/transformed/exifinterface-1.2.0/AndroidManifest.xml:20:5-22:41
@@ -324,8 +331,6 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/sam/.gradle/caches/t
 MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/sam/.gradle/caches/transforms-3/37f65812140b0093a14d1caeb0ccd247/transformed/startup-runtime-1.0.0/AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/sam/.gradle/caches/transforms-3/f936e9ca38801b343302310138753b54/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/sam/.gradle/caches/transforms-3/f936e9ca38801b343302310138753b54/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.browser:browser:1.4.0] /Users/sam/.gradle/caches/transforms-3/c473a297b45071a291e869b2d1862eab/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.browser:browser:1.4.0] /Users/sam/.gradle/caches/transforms-3/c473a297b45071a291e869b2d1862eab/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/sam/.gradle/caches/transforms-3/c4cfbb603a6e7a4aa13949eee90fe34e/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/sam/.gradle/caches/transforms-3/c4cfbb603a6e7a4aa13949eee90fe34e/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/sam/.gradle/caches/transforms-3/461659a12cb541b6a41b27144d0febc2/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
@@ -340,8 +345,6 @@ MERGED from [androidx.core:core:1.8.0] /Users/sam/.gradle/caches/transforms-3/45
 MERGED from [androidx.core:core:1.8.0] /Users/sam/.gradle/caches/transforms-3/4577755ecd11c9ddf0821e848ddf32e3/transformed/core-1.8.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/sam/.gradle/caches/transforms-3/6c71dfbd44cb7785cee542e5a0cb5f41/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/sam/.gradle/caches/transforms-3/6c71dfbd44cb7785cee542e5a0cb5f41/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/sam/.gradle/caches/transforms-3/bc8223d98ae8d776403c8f55629a2083/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/sam/.gradle/caches/transforms-3/bc8223d98ae8d776403c8f55629a2083/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/sam/.gradle/caches/transforms-3/797e99d4d1f3f58f42fc0a473ae15a82/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/sam/.gradle/caches/transforms-3/797e99d4d1f3f58f42fc0a473ae15a82/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /Users/sam/.gradle/caches/transforms-3/90f72420a5b5c714804555b7f1804d23/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
@@ -369,9 +372,9 @@ MERGED from [io.grpc:grpc-android:1.44.1] /Users/sam/.gradle/caches/transforms-3
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/sam/.gradle/caches/transforms-3/96abc81422ebd5bc2ed9249801be6c4f/transformed/protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/sam/.gradle/caches/transforms-3/96abc81422ebd5bc2ed9249801be6c4f/transformed/protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
 	android:targetSdkVersion
-		INJECTED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.0.0] /Users/sam/.gradle/caches/transforms-3/6553f43aa1feadbc5baf23e9436ac2d7/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
 	android:required

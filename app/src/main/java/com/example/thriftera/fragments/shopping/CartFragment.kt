@@ -73,10 +73,6 @@ class CartFragment : Fragment(R.layout.fragment_cart) {
             viewModel.changeQuantity(it, FirebaseCommon.QuantityChanging.DECREASE)
         }
 
-        binding.imageCloseCart.setOnClickListener {
-            findNavController().navigateUp()
-        }
-
         binding.buttonCheckout.setOnClickListener {
             // 1. TODO - show the list of products that are to be booked
             // 2. TODO - save the items in the data base

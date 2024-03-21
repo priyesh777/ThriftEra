@@ -4,11 +4,13 @@ package com.example.thriftera.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatImageButton;
+import androidx.appcompat.widget.AppCompatImageView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.thriftera.R;
@@ -18,13 +20,13 @@ import java.lang.String;
 
 public final class ProductRvItemBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageView imgFavorite;
+  public final AppCompatImageButton imgFavorite;
 
   @NonNull
-  public final ImageView imgProduct;
+  public final AppCompatImageView imgProduct;
 
   @NonNull
   public final LinearLayout linearProductName;
@@ -38,9 +40,10 @@ public final class ProductRvItemBinding implements ViewBinding {
   @NonNull
   public final TextView tvPrice;
 
-  private ProductRvItemBinding(@NonNull LinearLayout rootView, @NonNull ImageView imgFavorite,
-      @NonNull ImageView imgProduct, @NonNull LinearLayout linearProductName,
-      @NonNull TextView tvName, @NonNull TextView tvNewPrice, @NonNull TextView tvPrice) {
+  private ProductRvItemBinding(@NonNull ConstraintLayout rootView,
+      @NonNull AppCompatImageButton imgFavorite, @NonNull AppCompatImageView imgProduct,
+      @NonNull LinearLayout linearProductName, @NonNull TextView tvName,
+      @NonNull TextView tvNewPrice, @NonNull TextView tvPrice) {
     this.rootView = rootView;
     this.imgFavorite = imgFavorite;
     this.imgProduct = imgProduct;
@@ -52,7 +55,7 @@ public final class ProductRvItemBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -78,13 +81,13 @@ public final class ProductRvItemBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.img_favorite;
-      ImageView imgFavorite = ViewBindings.findChildViewById(rootView, id);
+      AppCompatImageButton imgFavorite = ViewBindings.findChildViewById(rootView, id);
       if (imgFavorite == null) {
         break missingId;
       }
 
       id = R.id.img_product;
-      ImageView imgProduct = ViewBindings.findChildViewById(rootView, id);
+      AppCompatImageView imgProduct = ViewBindings.findChildViewById(rootView, id);
       if (imgProduct == null) {
         break missingId;
       }
@@ -113,7 +116,7 @@ public final class ProductRvItemBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ProductRvItemBinding((LinearLayout) rootView, imgFavorite, imgProduct,
+      return new ProductRvItemBinding((ConstraintLayout) rootView, imgFavorite, imgProduct,
           linearProductName, tvName, tvNewPrice, tvPrice);
     }
     String missingId = rootView.getResources().getResourceName(id);

@@ -159,7 +159,8 @@ class AddProductActivity : AppCompatActivity() {
                 async {
                     imagesByteArrays.forEach {
                         launch {
-                            val imagesStorage = storage.reference.child("products/images/$productId")
+                            val imagesStorage =
+                                storage.reference.child("products/images/$productId")
                             val result = imagesStorage.putBytes(it).await()
                             val downloadUrl = result.storage.downloadUrl.await().toString()
                             images.add(downloadUrl)
@@ -170,9 +171,6 @@ class AddProductActivity : AppCompatActivity() {
                 hideLoading()
                 state(false)
             }
-
-            Log.d("test2", "test")
-
             val product = Product(
                 productId,
                 name,
@@ -187,10 +185,35 @@ class AddProductActivity : AppCompatActivity() {
             products.set(product).addOnSuccessListener {
                 state(true)
                 hideLoading()
+                clearFields()
+                showSuccessToast()
             }.addOnFailureListener {
                 state(false)
                 hideLoading()
             }
+        }
+    }
+
+    private fun showSuccessToast() {
+        Toast.makeText(
+            this@AddProductActivity,
+            "Product added successfully",
+            Toast.LENGTH_SHORT
+        ).show()
+    }
+
+    private fun clearFields() {
+        with(binding) {
+            edName.text.clear()
+            edCategory.text.clear()
+            edDescription.text.clear()
+            edPrice.text.clear()
+            edOfferPercentage.text.clear()
+            edSizes.text.clear()
+            selectedColors.clear()
+            selectedImages.clear()
+            tvSelectedColors.text = ""
+            tvSelectedImages.text = ""
         }
     }
 

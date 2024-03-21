@@ -1085,6 +1085,7 @@ attr sv_stepsNumber
 attr sv_textPadding
 attr sv_textSize
 attr sv_typeface
+attr swipeRefreshLayoutProgressSpinnerBackgroundColor
 attr switchMinWidth
 attr switchPadding
 attr switchStyle
@@ -3115,7 +3116,6 @@ id imageCartProductColor
 id imageCartProductSize
 id imageClose
 id imageCloseBilling
-id imageCloseCart
 id imageCloseOrder
 id imageCloseOrders
 id imageCloseUserAccount
@@ -3389,6 +3389,7 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
+id swipeRefreshLayout
 id tabLayout
 id tabMode
 id tag_accessibility_actions
@@ -3435,6 +3436,7 @@ id toolbarAllOrders
 id toolbarBilling
 id toolbarCart
 id toolbarOrderDetails
+id toolbarSettings
 id toolbarUserAccount
 id top
 id topLine
@@ -3479,7 +3481,6 @@ id tvResetPassword
 id tvResetPasswordText
 id tvSelectedColors
 id tvSelectedImages
-id tvSettings
 id tvShippingAddress
 id tvShoppingAddress
 id tvSize
@@ -5138,6 +5139,7 @@ styleable StateListDrawable android_dither android_visible android_variablePaddi
 styleable StateListDrawableItem android_drawable
 styleable StateSet defaultState
 styleable StepView sv_animationDuration sv_animationType sv_background sv_doneCircleColor sv_doneCircleRadius sv_doneStepLineColor sv_doneStepMarkColor sv_doneTextColor sv_nextStepCircleColor sv_nextStepCircleEnabled sv_nextStepLineColor sv_nextTextColor sv_selectedCircleColor sv_selectedCircleRadius sv_selectedStepNumberColor sv_selectedTextColor sv_stepLineWidth sv_stepNumberTextSize sv_stepPadding sv_stepViewStyle sv_steps sv_stepsNumber sv_textPadding sv_textSize sv_typeface
+styleable SwipeRefreshLayout swipeRefreshLayoutProgressSpinnerBackgroundColor
 styleable SwitchCompat android_textOn android_textOff android_thumb showText splitTrack switchMinWidth switchPadding switchTextAppearance thumbTextPadding thumbTint thumbTintMode track trackTint trackTintMode
 styleable SwitchMaterial useMaterialThemeColors
 styleable TabItem android_icon android_layout android_text

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.thriftera.app-mergeDebugResources-53:/values-si/values-si.xml",
+            "outputFile": "com.example.thriftera.app-mergeDebugResources-54:/values-si/values-si.xml",
             "map": [
                 {
                     "source": "/Users/sam/.gradle/caches/transforms-3/c473a297b45071a291e869b2d1862eab/transformed/browser-1.4.0/res/values-si/values-si.xml",

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.thriftera.app-mergeDebugResources-53:/values-en-rCA/values-en-rCA.xml",
+            "outputFile": "com.example.thriftera.app-mergeDebugResources-54:/values-en-rCA/values-en-rCA.xml",
             "map": [
                 {
                     "source": "/Users/sam/.gradle/caches/transforms-3/ee062c66b10e1f548c33320d27fa826c/transformed/appcompat-1.4.2/res/values-en-rCA/values-en-rCA.xml",

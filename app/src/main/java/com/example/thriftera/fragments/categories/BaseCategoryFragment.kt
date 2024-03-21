@@ -1,5 +1,6 @@
 package com.example.thriftera.fragments.categories
 
+import android.graphics.Rect
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,16 +11,18 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView.ItemDecoration
 import com.example.thriftera.R
 import com.example.thriftera.adapters.BestProductsAdapter
 import com.example.thriftera.databinding.FragmentBaseCategoryBinding
 import com.example.thriftera.util.showBottomNavigationView
 
-open class BaseCategoryFragment: Fragment(R.layout.fragment_base_category) {
+
+open class BaseCategoryFragment : Fragment(R.layout.fragment_base_category) {
     //Fragment used to list all the products in tab-component named "All"
     private lateinit var binding: FragmentBaseCategoryBinding
     protected val offerAdapter: BestProductsAdapter by lazy { BestProductsAdapter() }
-    protected val  bestProductsAdapter: BestProductsAdapter by lazy { BestProductsAdapter() }
+    protected val bestProductsAdapter: BestProductsAdapter by lazy { BestProductsAdapter() }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -37,53 +40,53 @@ open class BaseCategoryFragment: Fragment(R.layout.fragment_base_category) {
         setupBestProductsRv()
 
         bestProductsAdapter.onClick = {
-            val b = Bundle().apply { putParcelable("product",it) }
-            findNavController().navigate(R.id.action_homeFragment_to_productDetailsFragment,b)
+            val b = Bundle().apply { putParcelable("product", it) }
+            findNavController().navigate(R.id.action_homeFragment_to_productDetailsFragment, b)
         }
 
         offerAdapter.onClick = {
-            val b = Bundle().apply { putParcelable("product",it) }
-            findNavController().navigate(R.id.action_homeFragment_to_productDetailsFragment,b)
+            val b = Bundle().apply { putParcelable("product", it) }
+            findNavController().navigate(R.id.action_homeFragment_to_productDetailsFragment, b)
         }
 
-        binding.rvOfferProducts.addOnScrollListener(object : RecyclerView.OnScrollListener(){
+        binding.rvOfferProducts.addOnScrollListener(object : RecyclerView.OnScrollListener() {
             override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                 super.onScrolled(recyclerView, dx, dy)
 
-                if (!recyclerView.canScrollVertically(1) && dx != 0){
+                if (!recyclerView.canScrollVertically(1) && dx != 0) {
                     onOfferPagingRequest()
                 }
             }
         })
 
-        binding.nestedScrollBaseCategory.setOnScrollChangeListener(NestedScrollView.OnScrollChangeListener{ v, _, scrollY, _, _ ->
-            if (v.getChildAt(0).bottom <= v.height + scrollY){
-               onBestProductsPagingRequest()
+        binding.nestedScrollBaseCategory.setOnScrollChangeListener(NestedScrollView.OnScrollChangeListener { v, _, scrollY, _, _ ->
+            if (v.getChildAt(0).bottom <= v.height + scrollY) {
+                onBestProductsPagingRequest()
             }
         })
     }
 
-    fun showOfferLoading(){
+    fun showOfferLoading() {
         binding.offerProductsProgressBar.visibility = View.VISIBLE
     }
 
-    fun hideOfferLoading(){
+    fun hideOfferLoading() {
         binding.offerProductsProgressBar.visibility = View.GONE
     }
 
-    fun showBestProductsLoading(){
+    fun showBestProductsLoading() {
         binding.bestProductsProgressBar.visibility = View.VISIBLE
     }
 
-    fun hideBestProductsLoading(){
+    fun hideBestProductsLoading() {
         binding.bestProductsProgressBar.visibility = View.GONE
     }
 
-    open fun onOfferPagingRequest(){
+    open fun onOfferPagingRequest() {
 
     }
 
-    open fun onBestProductsPagingRequest(){
+    open fun onBestProductsPagingRequest() {
 
     }
 
@@ -98,7 +101,7 @@ open class BaseCategoryFragment: Fragment(R.layout.fragment_base_category) {
     private fun setupOfferRv() {
         binding.rvOfferProducts.apply {
             layoutManager =
-                LinearLayoutManager(requireContext(),LinearLayoutManager.HORIZONTAL,false)
+                LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
             adapter = offerAdapter
         }
     }

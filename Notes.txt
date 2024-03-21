@@ -1,5 +1,3 @@
-
-
 NOTES:
 DRY - Don't Repeat Yourself, Follow this one
 WET - Write Everything Twice

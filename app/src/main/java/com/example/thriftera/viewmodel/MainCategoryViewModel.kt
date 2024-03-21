@@ -29,6 +29,10 @@ class MainCategoryViewModel @Inject constructor(
     private val pagingInfo = PagingInfo()
 
     init {
+       loadData()
+    }
+
+    fun loadData(){
         fetchSpecialProducts()
         fetchBestDeals()
         fetchBestProducts()

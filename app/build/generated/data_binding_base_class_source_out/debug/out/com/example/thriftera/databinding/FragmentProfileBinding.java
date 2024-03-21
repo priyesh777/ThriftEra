@@ -10,6 +10,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.Guideline;
 import androidx.core.widget.NestedScrollView;
@@ -65,6 +66,9 @@ public final class FragmentProfileBinding implements ViewBinding {
   public final ProgressBar progressbarSettings;
 
   @NonNull
+  public final Toolbar toolbarSettings;
+
+  @NonNull
   public final TextView tvAddProduct;
 
   @NonNull
@@ -78,9 +82,6 @@ public final class FragmentProfileBinding implements ViewBinding {
 
   @NonNull
   public final TextView tvRegional;
-
-  @NonNull
-  public final TextView tvSettings;
 
   @NonNull
   public final TextView tvUserName;
@@ -98,10 +99,11 @@ public final class FragmentProfileBinding implements ViewBinding {
       @NonNull LinearLayout linearAddProduct, @NonNull LinearLayout linearBookedItem,
       @NonNull LinearLayout linearLogOut, @NonNull LinearLayout linearRegional,
       @NonNull TextView logout, @NonNull ProgressBar progressbarSettings,
-      @NonNull TextView tvAddProduct, @NonNull TextView tvAdminAddProduct,
-      @NonNull TextView tvBookedItems, @NonNull TextView tvEditPersonalDetails,
-      @NonNull TextView tvRegional, @NonNull TextView tvSettings, @NonNull TextView tvUserName,
-      @NonNull TextView tvVersion, @NonNull LinearLayout userBookedItems) {
+      @NonNull Toolbar toolbarSettings, @NonNull TextView tvAddProduct,
+      @NonNull TextView tvAdminAddProduct, @NonNull TextView tvBookedItems,
+      @NonNull TextView tvEditPersonalDetails, @NonNull TextView tvRegional,
+      @NonNull TextView tvUserName, @NonNull TextView tvVersion,
+      @NonNull LinearLayout userBookedItems) {
     this.rootView = rootView;
     this.arrow = arrow;
     this.checkBookedItems = checkBookedItems;
@@ -116,12 +118,12 @@ public final class FragmentProfileBinding implements ViewBinding {
     this.linearRegional = linearRegional;
     this.logout = logout;
     this.progressbarSettings = progressbarSettings;
+    this.toolbarSettings = toolbarSettings;
     this.tvAddProduct = tvAddProduct;
     this.tvAdminAddProduct = tvAdminAddProduct;
     this.tvBookedItems = tvBookedItems;
     this.tvEditPersonalDetails = tvEditPersonalDetails;
     this.tvRegional = tvRegional;
-    this.tvSettings = tvSettings;
     this.tvUserName = tvUserName;
     this.tvVersion = tvVersion;
     this.userBookedItems = userBookedItems;
@@ -232,6 +234,12 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.toolbarSettings;
+      Toolbar toolbarSettings = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarSettings == null) {
+        break missingId;
+      }
+
       id = R.id.tvAddProduct;
       TextView tvAddProduct = ViewBindings.findChildViewById(rootView, id);
       if (tvAddProduct == null) {
@@ -262,12 +270,6 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvSettings;
-      TextView tvSettings = ViewBindings.findChildViewById(rootView, id);
-      if (tvSettings == null) {
-        break missingId;
-      }
-
       id = R.id.tvUserName;
       TextView tvUserName = ViewBindings.findChildViewById(rootView, id);
       if (tvUserName == null) {
@@ -288,9 +290,9 @@ public final class FragmentProfileBinding implements ViewBinding {
 
       return new FragmentProfileBinding((NestedScrollView) rootView, arrow, checkBookedItems,
           constraintParent, constraintProfile, guideline1, guideline2, imageUser, linearAddProduct,
-          linearBookedItem, linearLogOut, linearRegional, logout, progressbarSettings, tvAddProduct,
-          tvAdminAddProduct, tvBookedItems, tvEditPersonalDetails, tvRegional, tvSettings,
-          tvUserName, tvVersion, userBookedItems);
+          linearBookedItem, linearLogOut, linearRegional, logout, progressbarSettings,
+          toolbarSettings, tvAddProduct, tvAdminAddProduct, tvBookedItems, tvEditPersonalDetails,
+          tvRegional, tvUserName, tvVersion, userBookedItems);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

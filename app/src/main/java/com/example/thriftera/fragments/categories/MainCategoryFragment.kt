@@ -1,6 +1,8 @@
 package com.example.thriftera.fragments.categories
 
+import android.graphics.Rect
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -13,6 +15,8 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout.OnRefreshListener
 import com.example.thriftera.R
 import com.example.thriftera.adapters.BestDealsAdapter
 import com.example.thriftera.adapters.BestProductsAdapter
@@ -23,6 +27,7 @@ import com.example.thriftera.util.showBottomNavigationView
 import com.example.thriftera.viewmodel.MainCategoryViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
+
 
 private val TAG = "MainCategoryFragment"
 
@@ -50,20 +55,21 @@ class MainCategoryFragment : Fragment(R.layout.fragment_main_category) {
         setupSpecialProductsRv()
         setupBestDealsRv()
         setupBestProducts()
+        setupSwipeRefresh()
 
         specialProductsAdapter.onClick = {
-            val b = Bundle().apply { putParcelable("product",it) }
-          findNavController().navigate(R.id.action_homeFragment_to_productDetailsFragment,b)
+            val b = Bundle().apply { putParcelable("product", it) }
+            findNavController().navigate(R.id.action_homeFragment_to_productDetailsFragment, b)
         }
 
         bestDealsAdapter.onClick = {
-            val b = Bundle().apply { putParcelable("product",it) }
-            findNavController().navigate(R.id.action_homeFragment_to_productDetailsFragment,b)
+            val b = Bundle().apply { putParcelable("product", it) }
+            findNavController().navigate(R.id.action_homeFragment_to_productDetailsFragment, b)
         }
 
         bestProductsAdapter.onClick = {
-            val b = Bundle().apply { putParcelable("product",it) }
-            findNavController().navigate(R.id.action_homeFragment_to_productDetailsFragment,b)
+            val b = Bundle().apply { putParcelable("product", it) }
+            findNavController().navigate(R.id.action_homeFragment_to_productDetailsFragment, b)
         }
 
 
@@ -73,15 +79,18 @@ class MainCategoryFragment : Fragment(R.layout.fragment_main_category) {
                     is Resource.Loading -> {
                         showLoading()
                     }
+
                     is Resource.Success -> {
                         specialProductsAdapter.differ.submitList(it.data)
                         hideLoading()
                     }
+
                     is Resource.Error -> {
                         hideLoading()
                         Log.e(TAG, it.message.toString())
                         Toast.makeText(requireContext(), it.message, Toast.LENGTH_SHORT).show()
                     }
+
                     else -> Unit
                 }
             }
@@ -93,15 +102,18 @@ class MainCategoryFragment : Fragment(R.layout.fragment_main_category) {
                     is Resource.Loading -> {
                         showLoading()
                     }
+
                     is Resource.Success -> {
                         bestDealsAdapter.differ.submitList(it.data)
                         hideLoading()
                     }
+
                     is Resource.Error -> {
                         hideLoading()
                         Log.e(TAG, it.message.toString())
                         Toast.makeText(requireContext(), it.message, Toast.LENGTH_SHORT).show()
                     }
+
                     else -> Unit
                 }
             }
@@ -113,18 +125,21 @@ class MainCategoryFragment : Fragment(R.layout.fragment_main_category) {
                     is Resource.Loading -> {
                         binding.bestProductsProgressbar.visibility = View.VISIBLE
                     }
+
                     is Resource.Success -> {
                         bestProductsAdapter.differ.submitList(it.data)
                         binding.bestProductsProgressbar.visibility = View.GONE
 
 
                     }
+
                     is Resource.Error -> {
                         Log.e(TAG, it.message.toString())
                         Toast.makeText(requireContext(), it.message, Toast.LENGTH_SHORT).show()
                         binding.bestProductsProgressbar.visibility = View.GONE
 
                     }
+
                     else -> Unit
                 }
             }
@@ -137,12 +152,47 @@ class MainCategoryFragment : Fragment(R.layout.fragment_main_category) {
         })
     }
 
+    private fun setupSwipeRefresh() {
+        binding.swipeRefreshLayout.setOnRefreshListener(OnRefreshListener {
+            viewModel.loadData()
+            binding.swipeRefreshLayout.isRefreshing = false
+        })
+    }
+
     private fun setupBestProducts() {
         bestProductsAdapter = BestProductsAdapter()
         binding.rvBestProducts.apply {
             layoutManager =
                 GridLayoutManager(requireContext(), 2, GridLayoutManager.VERTICAL, false)
             adapter = bestProductsAdapter
+            addItemDecoration(object : RecyclerView.ItemDecoration() {
+                override fun getItemOffsets(
+                    outRect: Rect,
+                    view: View,
+                    parent: RecyclerView,
+                    state: RecyclerView.State
+                ) {
+                    val position = parent.getChildAdapterPosition(view)
+                    val spanCount = 2
+                    val spacing = 10
+                    if (position >= 0) {
+                        val column = position % spanCount
+                        outRect.left =
+                            spacing - column * spacing / spanCount
+                        outRect.right =
+                            (column + 1) * spacing / spanCount
+                        if (position < spanCount) {
+                            outRect.top = spacing
+                        }
+                        outRect.bottom = spacing
+                    } else {
+                        outRect.left = 0
+                        outRect.right = 0
+                        outRect.top = 0
+                        outRect.bottom = 0
+                    }
+                }
+            })
         }
     }
 

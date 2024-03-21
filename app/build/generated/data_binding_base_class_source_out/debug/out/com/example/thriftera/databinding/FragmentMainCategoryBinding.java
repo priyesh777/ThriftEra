@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.widget.NestedScrollView;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.thriftera.R;
@@ -44,6 +45,9 @@ public final class FragmentMainCategoryBinding implements ViewBinding {
   public final RecyclerView rvSpecialProducts;
 
   @NonNull
+  public final SwipeRefreshLayout swipeRefreshLayout;
+
+  @NonNull
   public final TextView tvBestDeals;
 
   @NonNull
@@ -54,7 +58,8 @@ public final class FragmentMainCategoryBinding implements ViewBinding {
       @NonNull ProgressBar mainCategoryProgressbar,
       @NonNull NestedScrollView nestedScrollMainCategory, @NonNull RecyclerView rvBestDealsProducts,
       @NonNull RecyclerView rvBestProducts, @NonNull RecyclerView rvSpecialProducts,
-      @NonNull TextView tvBestDeals, @NonNull TextView tvBestProducts) {
+      @NonNull SwipeRefreshLayout swipeRefreshLayout, @NonNull TextView tvBestDeals,
+      @NonNull TextView tvBestProducts) {
     this.rootView = rootView;
     this.bestProductsProgressbar = bestProductsProgressbar;
     this.latestProducts = latestProducts;
@@ -63,6 +68,7 @@ public final class FragmentMainCategoryBinding implements ViewBinding {
     this.rvBestDealsProducts = rvBestDealsProducts;
     this.rvBestProducts = rvBestProducts;
     this.rvSpecialProducts = rvSpecialProducts;
+    this.swipeRefreshLayout = swipeRefreshLayout;
     this.tvBestDeals = tvBestDeals;
     this.tvBestProducts = tvBestProducts;
   }
@@ -136,6 +142,12 @@ public final class FragmentMainCategoryBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.swipeRefreshLayout;
+      SwipeRefreshLayout swipeRefreshLayout = ViewBindings.findChildViewById(rootView, id);
+      if (swipeRefreshLayout == null) {
+        break missingId;
+      }
+
       id = R.id.tvBestDeals;
       TextView tvBestDeals = ViewBindings.findChildViewById(rootView, id);
       if (tvBestDeals == null) {
@@ -150,7 +162,7 @@ public final class FragmentMainCategoryBinding implements ViewBinding {
 
       return new FragmentMainCategoryBinding((ConstraintLayout) rootView, bestProductsProgressbar,
           latestProducts, mainCategoryProgressbar, nestedScrollMainCategory, rvBestDealsProducts,
-          rvBestProducts, rvSpecialProducts, tvBestDeals, tvBestProducts);
+          rvBestProducts, rvSpecialProducts, swipeRefreshLayout, tvBestDeals, tvBestProducts);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

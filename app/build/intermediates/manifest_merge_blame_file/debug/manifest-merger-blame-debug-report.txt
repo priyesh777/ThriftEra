@@ -16,55 +16,55 @@
 12-->[com.google.firebase:firebase-auth:21.0.6] /Users/sam/.gradle/caches/transforms-3/84acf632a4d71d756b1e79e555148359/transformed/firebase-auth-21.0.6/AndroidManifest.xml:24:22-76
 13
 14    <application
-14-->/Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:4:5-28:19
+14-->/Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:4:5-28:19
 15        android:name="com.example.thriftera.ThriftApplication"
-15-->/Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:5:9-42
+15-->/Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:5:9-42
 16        android:allowBackup="true"
-16-->/Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:6:9-35
+16-->/Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:6:9-35
 17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 17-->[androidx.core:core:1.8.0] /Users/sam/.gradle/caches/transforms-3/4577755ecd11c9ddf0821e848ddf32e3/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
 18        android:debuggable="true"
 19        android:extractNativeLibs="true"
 20        android:icon="@mipmap/ic_launcher"
-20-->/Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:7:9-43
+20-->/Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:7:9-43
 21        android:label="@string/app_name"
-21-->/Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:8:9-41
+21-->/Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:8:9-41
 22        android:roundIcon="@mipmap/ic_launcher_round"
-22-->/Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:9:9-54
+22-->/Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:9:9-54
 23        android:supportsRtl="false"
-23-->/Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:10:9-36
+23-->/Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:10:9-36
 24        android:testOnly="true"
 25        android:theme="@style/Theme.KelineYt" >
-25-->/Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:11:9-46
+25-->/Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:11:9-46
 26        <activity
-26-->/Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:12:9-15:40
+26-->/Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:12:9-15:40
 27            android:name="com.example.thriftera.activities.AddProductActivity"
-27-->/Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:13:13-58
+27-->/Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:13:13-58
 28            android:exported="false"
-28-->/Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:15:13-37
+28-->/Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:15:13-37
 29            android:theme="@style/Theme.KelineYt.ActionBar" />
-29-->/Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:14:13-60
+29-->/Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:14:13-60
 30        <activity
-30-->/Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:16:9-18:39
+30-->/Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:16:9-18:39
 31            android:name="com.example.thriftera.activities.ShoppingActivity"
-31-->/Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:17:13-56
+31-->/Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:17:13-56
 32            android:exported="true" />
-32-->/Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:18:13-36
+32-->/Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:18:13-36
 33        <activity
-33-->/Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:19:9-27:20
+33-->/Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:19:9-27:20
 34            android:name="com.example.thriftera.activities.LoginRegisterActivity"
-34-->/Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:20:13-61
+34-->/Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:20:13-61
 35            android:exported="true" >
-35-->/Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:21:13-36
+35-->/Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:21:13-36
 36            <intent-filter>
-36-->/Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:22:13-26:29
+36-->/Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:22:13-26:29
 37                <action android:name="android.intent.action.MAIN" />
-37-->/Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:23:17-69
-37-->/Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:23:25-66
+37-->/Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:23:17-69
+37-->/Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:23:25-66
 38
 39                <category android:name="android.intent.category.LAUNCHER" />
-39-->/Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:25:17-77
-39-->/Users/sam/Desktop/dev/android/ThriftEra-Android/app/src/main/AndroidManifest.xml:25:27-74
+39-->/Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:25:17-77
+39-->/Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:25:27-74
 40            </intent-filter>
 41        </activity>
 42

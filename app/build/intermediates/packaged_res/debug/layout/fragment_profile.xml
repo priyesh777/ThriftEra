@@ -29,15 +29,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/tvSettings"
-                style="@style/BigTextViewThin"
-                android:layout_width="wrap_content"
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarSettings"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Settings"
-                app:layout_constraintStart_toStartOf="@id/guideline1"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:background="@color/base_green"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:title="Settings"
+                app:titleTextColor="@color/white" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintProfile"
@@ -46,7 +47,7 @@
                 android:layout_marginTop="8dp"
                 app:layout_constraintEnd_toEndOf="@id/guideline2"
                 app:layout_constraintStart_toStartOf="@id/guideline1"
-                app:layout_constraintTop_toBottomOf="@+id/tvSettings">
+                app:layout_constraintTop_toBottomOf="@+id/toolbarSettings">
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/imageUser"
@@ -223,9 +224,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="Add Product"
-                android:visibility="gone"
                 android:textColor="@color/g_gray700"
                 android:textStyle="normal"
+                android:visibility="gone"
                 app:layout_constraintStart_toStartOf="@id/guideline1"
                 app:layout_constraintTop_toBottomOf="@id/linear_regional" />
 
@@ -234,9 +235,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:visibility="gone"
                 android:background="@drawable/search_box_background"
                 android:orientation="vertical"
+                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="@id/guideline2"
                 app:layout_constraintStart_toStartOf="@id/guideline1"
                 app:layout_constraintTop_toBottomOf="@id/tvAdminAddProduct">

@@ -10,49 +10,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbarCart"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="wrap_content"
+            android:background="@color/base_green"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-
-                <ImageView
-                    android:id="@+id/imageCloseCart"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:scaleType="centerInside"
-                    android:src="@drawable/ic_close"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:tint="@color/black" />
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="25dp"
-                    android:paddingLeft="20dp"
-                    android:fontFamily="@font/poppins_light"
-                    android:text="My Cart"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.appcompat.widget.Toolbar>
-
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="My Cart"
+            app:titleTextColor="@color/white" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/rightGuideLine"
@@ -171,9 +138,9 @@
                 android:layout_height="250dp"
                 android:src="@drawable/ic_empty_box_texture"
                 app:layout_constraintBottom_toBottomOf="@id/imageEmptyBox"
-                app:layout_constraintTop_toTopOf="@id/imageEmptyBox"
+                app:layout_constraintEnd_toEndOf="@id/imageEmptyBox"
                 app:layout_constraintStart_toStartOf="@id/imageEmptyBox"
-                app:layout_constraintEnd_toEndOf="@id/imageEmptyBox"/>
+                app:layout_constraintTop_toTopOf="@id/imageEmptyBox" />
 
             <ImageView
                 android:id="@+id/imageEmptyBox"
@@ -195,10 +162,9 @@
                 android:text="Your shopping cart is empty"
                 android:textColor="@color/black"
                 android:textSize="15sp"
-                app:layout_constraintTop_toBottomOf="@id/imageEmptyBoxTexture"
+                app:layout_constraintEnd_toEndOf="@id/imageEmptyBoxTexture"
                 app:layout_constraintStart_toStartOf="@id/imageEmptyBoxTexture"
-                app:layout_constraintEnd_toEndOf="@id/imageEmptyBoxTexture"/>
-
+                app:layout_constraintTop_toBottomOf="@id/imageEmptyBoxTexture" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
