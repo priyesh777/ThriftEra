@@ -23,9 +23,6 @@ public final class FragmentRegisterBinding implements ViewBinding {
   private final FrameLayout rootView;
 
   @NonNull
-  public final TextView alternateSignIn;
-
-  @NonNull
   public final CircularProgressButton buttonRegisterRegister;
 
   @NonNull
@@ -44,9 +41,6 @@ public final class FragmentRegisterBinding implements ViewBinding {
   public final EditText edPasswordRegister;
 
   @NonNull
-  public final CircularProgressButton googleRegister;
-
-  @NonNull
   public final Guideline guidelineRegisterLeft;
 
   @NonNull
@@ -58,22 +52,19 @@ public final class FragmentRegisterBinding implements ViewBinding {
   @NonNull
   public final TextView tvLetsRegister;
 
-  private FragmentRegisterBinding(@NonNull FrameLayout rootView, @NonNull TextView alternateSignIn,
+  private FragmentRegisterBinding(@NonNull FrameLayout rootView,
       @NonNull CircularProgressButton buttonRegisterRegister, @NonNull TextView createAccount,
       @NonNull EditText edEmailRegister, @NonNull EditText edFirstNameRegister,
       @NonNull EditText edLastNameRegister, @NonNull EditText edPasswordRegister,
-      @NonNull CircularProgressButton googleRegister, @NonNull Guideline guidelineRegisterLeft,
-      @NonNull Guideline guidelineRegisterRight, @NonNull TextView haveAccountAlready,
-      @NonNull TextView tvLetsRegister) {
+      @NonNull Guideline guidelineRegisterLeft, @NonNull Guideline guidelineRegisterRight,
+      @NonNull TextView haveAccountAlready, @NonNull TextView tvLetsRegister) {
     this.rootView = rootView;
-    this.alternateSignIn = alternateSignIn;
     this.buttonRegisterRegister = buttonRegisterRegister;
     this.createAccount = createAccount;
     this.edEmailRegister = edEmailRegister;
     this.edFirstNameRegister = edFirstNameRegister;
     this.edLastNameRegister = edLastNameRegister;
     this.edPasswordRegister = edPasswordRegister;
-    this.googleRegister = googleRegister;
     this.guidelineRegisterLeft = guidelineRegisterLeft;
     this.guidelineRegisterRight = guidelineRegisterRight;
     this.haveAccountAlready = haveAccountAlready;
@@ -107,12 +98,6 @@ public final class FragmentRegisterBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.alternateSignIn;
-      TextView alternateSignIn = ViewBindings.findChildViewById(rootView, id);
-      if (alternateSignIn == null) {
-        break missingId;
-      }
-
       id = R.id.buttonRegisterRegister;
       CircularProgressButton buttonRegisterRegister = ViewBindings.findChildViewById(rootView, id);
       if (buttonRegisterRegister == null) {
@@ -149,12 +134,6 @@ public final class FragmentRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.googleRegister;
-      CircularProgressButton googleRegister = ViewBindings.findChildViewById(rootView, id);
-      if (googleRegister == null) {
-        break missingId;
-      }
-
       id = R.id.guidelineRegisterLeft;
       Guideline guidelineRegisterLeft = ViewBindings.findChildViewById(rootView, id);
       if (guidelineRegisterLeft == null) {
@@ -179,10 +158,10 @@ public final class FragmentRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentRegisterBinding((FrameLayout) rootView, alternateSignIn,
-          buttonRegisterRegister, createAccount, edEmailRegister, edFirstNameRegister,
-          edLastNameRegister, edPasswordRegister, googleRegister, guidelineRegisterLeft,
-          guidelineRegisterRight, haveAccountAlready, tvLetsRegister);
+      return new FragmentRegisterBinding((FrameLayout) rootView, buttonRegisterRegister,
+          createAccount, edEmailRegister, edFirstNameRegister, edLastNameRegister,
+          edPasswordRegister, guidelineRegisterLeft, guidelineRegisterRight, haveAccountAlready,
+          tvLetsRegister);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -2873,7 +2873,6 @@ id all
 id allStates
 id alphaSlideBar
 id alphaSlideBarFrame
-id alternateSignIn
 id always
 id androidx_window_activity_scope
 id animateToEnd
@@ -3073,8 +3072,6 @@ id ghost_view
 id ghost_view_holder
 id glide_custom_view_target_tag
 id gone
-id googleLoginButton
-id googleRegister
 id graph
 id graph_wrap
 id group_divider

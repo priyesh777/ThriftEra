@@ -1,6 +1,7 @@
 package com.example.thriftera.adapters
 
 import android.graphics.Paint
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -22,12 +23,12 @@ class BestProductsAdapter : RecyclerView.Adapter<BestProductsAdapter.BestProduct
                 val priceAfterOffer = product.offerPercentage.getProductPrice(product.price)
                 tvNewPrice.text = "$ ${String.format("%.2f", priceAfterOffer)}"
                 tvPrice.paintFlags = tvPrice.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
-                if (product.offerPercentage == null)
-                    tvNewPrice.visibility = View.INVISIBLE
-
-                Glide.with(itemView).load(product.images[0]).into(imgProduct)
+                Glide.with(imgProduct).load(product.images[0]).into(imgProduct)
                 tvPrice.text = "$ ${product.price}"
                 tvName.text = product.name
+                if (product.offerPercentage == null) {
+                    tvNewPrice.visibility = View.INVISIBLE
+                }
             }
 
         }

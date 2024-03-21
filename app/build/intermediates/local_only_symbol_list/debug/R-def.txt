@@ -116,7 +116,6 @@ id action_profileFragment_to_userAccountFragment
 id action_registerFragment_to_loginFragment
 id action_searchFragment_to_productDetailsFragment
 id addressFragment
-id alternateSignIn
 id arrow
 id bestProductsProgressBar
 id bestProductsProgressbar
@@ -171,8 +170,6 @@ id emptySearchTexture
 id forgotPasswordLogin
 id fragmentContainerView
 id fragmentUserBookedItems
-id googleLoginButton
-id googleRegister
 id guideline1
 id guideline2
 id guidelineEllipseBottom

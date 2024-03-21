@@ -5,18 +5,15 @@ magic string - ""
 
 TO IMPLEMENT
 
-1. Pull to refresh
-2. Drop-down for the category
-3. Save message when the product is added and close the activity
+1. Pull to refresh -  Done
+2. Drop-down for the category ?
+3. Save message when the product is added and clear the field
 4. Change UI a bit
 5. Consistent
 
 
 TODO
-1. Add toast after product added successfully, clear fields
-2. change how data is saved in firebase
-3. Search Functionality
-4. After registration success, redirect to login page
-5. Send Notification functionality after the booking is done. [See]
-6. Code Review - Check if possible
-7.
+change how data is saved in firebase - In progress
+Search Functionality - To be done
+After registration success, redirect to login page -> Easy
+Send Notification functionality after the booking is done. ?

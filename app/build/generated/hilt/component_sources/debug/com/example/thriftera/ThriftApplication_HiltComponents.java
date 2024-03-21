@@ -9,9 +9,9 @@ import com.example.thriftera.fragments.categories.CupboardFragment_GeneratedInje
 import com.example.thriftera.fragments.categories.FurnitureFragment_GeneratedInjector;
 import com.example.thriftera.fragments.categories.MainCategoryFragment_GeneratedInjector;
 import com.example.thriftera.fragments.categories.TableFragment_GeneratedInjector;
-import com.example.thriftera.fragments.lognRegister.IntroductionFragment_GeneratedInjector;
-import com.example.thriftera.fragments.lognRegister.LoginFragment_GeneratedInjector;
-import com.example.thriftera.fragments.lognRegister.RegisterFragment_GeneratedInjector;
+import com.example.thriftera.fragments.loginRegister.IntroductionFragment_GeneratedInjector;
+import com.example.thriftera.fragments.loginRegister.LoginFragment_GeneratedInjector;
+import com.example.thriftera.fragments.loginRegister.RegisterFragment_GeneratedInjector;
 import com.example.thriftera.fragments.settings.AllOrdersFragment_GeneratedInjector;
 import com.example.thriftera.fragments.settings.UserAccountFragment_GeneratedInjector;
 import com.example.thriftera.fragments.shopping.AddressFragment_GeneratedInjector;

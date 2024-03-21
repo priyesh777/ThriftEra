@@ -1,6 +1,7 @@
 package com.example.thriftera.fragments.categories
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
@@ -15,7 +16,7 @@ import kotlinx.coroutines.flow.collectLatest
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class AccessoryFragment: BaseCategoryFragment() {
+class AccessoryFragment : BaseCategoryFragment() {
     @Inject
     lateinit var firestore: FirebaseFirestore
 
@@ -32,15 +33,19 @@ class AccessoryFragment: BaseCategoryFragment() {
                     is Resource.Loading -> {
                         showOfferLoading()
                     }
+
                     is Resource.Success -> {
+                        Log.d("Offer Accessory", it.data.toString())
                         offerAdapter.differ.submitList(it.data)
                         hideOfferLoading()
                     }
+
                     is Resource.Error -> {
                         Snackbar.make(requireView(), it.message.toString(), Snackbar.LENGTH_LONG)
                             .show()
                         hideOfferLoading()
                     }
+
                     else -> Unit
                 }
             }
@@ -52,15 +57,18 @@ class AccessoryFragment: BaseCategoryFragment() {
                     is Resource.Loading -> {
                         showBestProductsLoading()
                     }
+
                     is Resource.Success -> {
                         bestProductsAdapter.differ.submitList(it.data)
                         hideBestProductsLoading()
                     }
+
                     is Resource.Error -> {
                         Snackbar.make(requireView(), it.message.toString(), Snackbar.LENGTH_LONG)
                             .show()
                         hideBestProductsLoading()
                     }
+
                     else -> Unit
                 }
             }

@@ -26,9 +26,6 @@ public final class FragmentLoginBinding implements ViewBinding {
   public final TextView LetsLogin;
 
   @NonNull
-  public final TextView alternateSignIn;
-
-  @NonNull
   public final CircularProgressButton buttonLoginLogin;
 
   @NonNull
@@ -36,9 +33,6 @@ public final class FragmentLoginBinding implements ViewBinding {
 
   @NonNull
   public final TextView forgotPasswordLogin;
-
-  @NonNull
-  public final CircularProgressButton googleLoginButton;
 
   @NonNull
   public final Guideline guidelineLoginLeft;
@@ -56,18 +50,15 @@ public final class FragmentLoginBinding implements ViewBinding {
   public final TextView signInInformation;
 
   private FragmentLoginBinding(@NonNull FrameLayout rootView, @NonNull TextView LetsLogin,
-      @NonNull TextView alternateSignIn, @NonNull CircularProgressButton buttonLoginLogin,
-      @NonNull EditText emailLogin, @NonNull TextView forgotPasswordLogin,
-      @NonNull CircularProgressButton googleLoginButton, @NonNull Guideline guidelineLoginLeft,
+      @NonNull CircularProgressButton buttonLoginLogin, @NonNull EditText emailLogin,
+      @NonNull TextView forgotPasswordLogin, @NonNull Guideline guidelineLoginLeft,
       @NonNull Guideline guidelineLoginRight, @NonNull TextView haveNoAccount,
       @NonNull EditText passwordLogin, @NonNull TextView signInInformation) {
     this.rootView = rootView;
     this.LetsLogin = LetsLogin;
-    this.alternateSignIn = alternateSignIn;
     this.buttonLoginLogin = buttonLoginLogin;
     this.emailLogin = emailLogin;
     this.forgotPasswordLogin = forgotPasswordLogin;
-    this.googleLoginButton = googleLoginButton;
     this.guidelineLoginLeft = guidelineLoginLeft;
     this.guidelineLoginRight = guidelineLoginRight;
     this.haveNoAccount = haveNoAccount;
@@ -108,12 +99,6 @@ public final class FragmentLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.alternateSignIn;
-      TextView alternateSignIn = ViewBindings.findChildViewById(rootView, id);
-      if (alternateSignIn == null) {
-        break missingId;
-      }
-
       id = R.id.buttonLoginLogin;
       CircularProgressButton buttonLoginLogin = ViewBindings.findChildViewById(rootView, id);
       if (buttonLoginLogin == null) {
@@ -129,12 +114,6 @@ public final class FragmentLoginBinding implements ViewBinding {
       id = R.id.forgotPasswordLogin;
       TextView forgotPasswordLogin = ViewBindings.findChildViewById(rootView, id);
       if (forgotPasswordLogin == null) {
-        break missingId;
-      }
-
-      id = R.id.googleLoginButton;
-      CircularProgressButton googleLoginButton = ViewBindings.findChildViewById(rootView, id);
-      if (googleLoginButton == null) {
         break missingId;
       }
 
@@ -168,9 +147,9 @@ public final class FragmentLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentLoginBinding((FrameLayout) rootView, LetsLogin, alternateSignIn,
-          buttonLoginLogin, emailLogin, forgotPasswordLogin, googleLoginButton, guidelineLoginLeft,
-          guidelineLoginRight, haveNoAccount, passwordLogin, signInInformation);
+      return new FragmentLoginBinding((FrameLayout) rootView, LetsLogin, buttonLoginLogin,
+          emailLogin, forgotPasswordLogin, guidelineLoginLeft, guidelineLoginRight, haveNoAccount,
+          passwordLogin, signInInformation);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

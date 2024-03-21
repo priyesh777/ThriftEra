@@ -28,9 +28,9 @@ import com.example.thriftera.fragments.categories.FurnitureFragment_MembersInjec
 import com.example.thriftera.fragments.categories.MainCategoryFragment;
 import com.example.thriftera.fragments.categories.TableFragment;
 import com.example.thriftera.fragments.categories.TableFragment_MembersInjector;
-import com.example.thriftera.fragments.lognRegister.IntroductionFragment;
-import com.example.thriftera.fragments.lognRegister.LoginFragment;
-import com.example.thriftera.fragments.lognRegister.RegisterFragment;
+import com.example.thriftera.fragments.loginRegister.IntroductionFragment;
+import com.example.thriftera.fragments.loginRegister.LoginFragment;
+import com.example.thriftera.fragments.loginRegister.RegisterFragment;
 import com.example.thriftera.fragments.settings.AllOrdersFragment;
 import com.example.thriftera.fragments.settings.UserAccountFragment;
 import com.example.thriftera.fragments.shopping.AddressFragment;
