@@ -3139,6 +3139,7 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
+id ivProduct
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -3288,6 +3289,7 @@ id progressbar
 id progressbarAccount
 id progressbarAddress
 id progressbarCart
+id progressbarSearch
 id progressbarSettings
 id progressbar_all_orders
 id radio
@@ -3312,6 +3314,7 @@ id rvColors
 id rvFrame
 id rvOfferProducts
 id rvProducts
+id rvSearch
 id rvSpecialProducts
 id rv_all_orders
 id rv_sizes
@@ -3326,7 +3329,6 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
-id searchBar
 id searchFragment
 id search_badge
 id search_bar
@@ -3386,6 +3388,7 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
+id sv_product
 id swipeRefreshLayout
 id tabLayout
 id tabMode
@@ -3664,6 +3667,7 @@ layout fragment_register
 layout fragment_search
 layout fragment_user_account
 layout fragment_user_booked_items
+layout item_search
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

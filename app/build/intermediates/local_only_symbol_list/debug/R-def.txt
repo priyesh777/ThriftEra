@@ -211,6 +211,7 @@ id img_best_deal
 id img_favorite
 id img_product
 id introductionFragment
+id ivProduct
 id latestProducts
 id layout_cart_empty
 id layout_search_empty
@@ -247,6 +248,7 @@ id progressbar
 id progressbarAccount
 id progressbarAddress
 id progressbarCart
+id progressbarSearch
 id progressbarSettings
 id progressbar_all_orders
 id registerFragment
@@ -260,16 +262,17 @@ id rvColors
 id rvFrame
 id rvOfferProducts
 id rvProducts
+id rvSearch
 id rvSpecialProducts
 id rv_all_orders
 id rv_sizes
 id saveProduct
-id searchBar
 id searchFragment
 id shoppingHostFragment
 id shopping_graph
 id signInInformation
 id stepView
+id sv_product
 id swipeRefreshLayout
 id tabLayout
 id themeImage
@@ -360,6 +363,7 @@ layout fragment_register
 layout fragment_search
 layout fragment_user_account
 layout fragment_user_booked_items
+layout item_search
 layout order_item
 layout product_rv_item
 layout reset_passowrd_dialog

@@ -12,6 +12,7 @@ import com.bumptech.glide.Glide
 import com.example.thriftera.data.Product
 import com.example.thriftera.databinding.ProductRvItemBinding
 import com.example.thriftera.helper.getProductPrice
+import com.example.thriftera.helper.getProductPriceAfterDiscount
 
 class BestProductsAdapter : RecyclerView.Adapter<BestProductsAdapter.BestProductsViewHolder>() {
 // Adapter to list the best-products scroll element using the recycler view
@@ -20,14 +21,20 @@ class BestProductsAdapter : RecyclerView.Adapter<BestProductsAdapter.BestProduct
         RecyclerView.ViewHolder(binding.root) {
         fun bind(product: Product) {
             binding.apply {
-                val priceAfterOffer = product.offerPercentage.getProductPrice(product.price)
-                tvNewPrice.text = "$ ${String.format("%.2f", priceAfterOffer)}"
-                tvPrice.paintFlags = tvPrice.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
+                //if there is an offer
                 Glide.with(imgProduct).load(product.images[0]).into(imgProduct)
-                tvPrice.text = "$ ${product.price}"
                 tvName.text = product.name
-                if (product.offerPercentage == null) {
-                    tvNewPrice.visibility = View.INVISIBLE
+                if (product.offerPercentage != null){
+                    val priceAfterOffer = getProductPriceAfterDiscount(
+                        product.price,
+                        product.offerPercentage)
+                    tvPrice.text = "$${product.price}"
+                    tvPrice.paintFlags = tvPrice.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
+
+                    tvNewPrice.text = "$${String.format("%.2f", priceAfterOffer)}"
+                    tvNewPrice.visibility = View.VISIBLE
+                }else {
+                    tvPrice.text = "$${product.price}"
                 }
             }
 
@@ -58,7 +65,6 @@ class BestProductsAdapter : RecyclerView.Adapter<BestProductsAdapter.BestProduct
     override fun onBindViewHolder(holder: BestProductsViewHolder, position: Int) {
         val product = differ.currentList[position]
         holder.bind(product)
-
         holder.itemView.setOnClickListener {
             onClick?.invoke(product)
         }

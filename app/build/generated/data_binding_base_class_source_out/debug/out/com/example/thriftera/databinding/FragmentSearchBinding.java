@@ -4,59 +4,54 @@ package com.example.thriftera.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.SearchView;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.core.widget.NestedScrollView;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.thriftera.R;
-import com.google.android.material.progressindicator.LinearProgressIndicator;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class FragmentSearchBinding implements ViewBinding {
   @NonNull
-  private final NestedScrollView rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageView emptySearchTexture;
-
-  @NonNull
-  public final LinearLayout homeHeader;
+  public final AppCompatImageView emptySearchTexture;
 
   @NonNull
   public final ConstraintLayout layoutSearchEmpty;
 
   @NonNull
-  public final LinearProgressIndicator progressbarCart;
+  public final ProgressBar progressbarSearch;
 
   @NonNull
-  public final RecyclerView rvBestProducts;
+  public final RecyclerView rvSearch;
 
   @NonNull
-  public final ConstraintLayout searchBar;
+  public final SearchView svProduct;
 
-  private FragmentSearchBinding(@NonNull NestedScrollView rootView,
-      @NonNull ImageView emptySearchTexture, @NonNull LinearLayout homeHeader,
-      @NonNull ConstraintLayout layoutSearchEmpty, @NonNull LinearProgressIndicator progressbarCart,
-      @NonNull RecyclerView rvBestProducts, @NonNull ConstraintLayout searchBar) {
+  private FragmentSearchBinding(@NonNull ConstraintLayout rootView,
+      @NonNull AppCompatImageView emptySearchTexture, @NonNull ConstraintLayout layoutSearchEmpty,
+      @NonNull ProgressBar progressbarSearch, @NonNull RecyclerView rvSearch,
+      @NonNull SearchView svProduct) {
     this.rootView = rootView;
     this.emptySearchTexture = emptySearchTexture;
-    this.homeHeader = homeHeader;
     this.layoutSearchEmpty = layoutSearchEmpty;
-    this.progressbarCart = progressbarCart;
-    this.rvBestProducts = rvBestProducts;
-    this.searchBar = searchBar;
+    this.progressbarSearch = progressbarSearch;
+    this.rvSearch = rvSearch;
+    this.svProduct = svProduct;
   }
 
   @Override
   @NonNull
-  public NestedScrollView getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -82,14 +77,8 @@ public final class FragmentSearchBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.emptySearchTexture;
-      ImageView emptySearchTexture = ViewBindings.findChildViewById(rootView, id);
+      AppCompatImageView emptySearchTexture = ViewBindings.findChildViewById(rootView, id);
       if (emptySearchTexture == null) {
-        break missingId;
-      }
-
-      id = R.id.homeHeader;
-      LinearLayout homeHeader = ViewBindings.findChildViewById(rootView, id);
-      if (homeHeader == null) {
         break missingId;
       }
 
@@ -99,26 +88,26 @@ public final class FragmentSearchBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.progressbarCart;
-      LinearProgressIndicator progressbarCart = ViewBindings.findChildViewById(rootView, id);
-      if (progressbarCart == null) {
+      id = R.id.progressbarSearch;
+      ProgressBar progressbarSearch = ViewBindings.findChildViewById(rootView, id);
+      if (progressbarSearch == null) {
         break missingId;
       }
 
-      id = R.id.rvBestProducts;
-      RecyclerView rvBestProducts = ViewBindings.findChildViewById(rootView, id);
-      if (rvBestProducts == null) {
+      id = R.id.rvSearch;
+      RecyclerView rvSearch = ViewBindings.findChildViewById(rootView, id);
+      if (rvSearch == null) {
         break missingId;
       }
 
-      id = R.id.searchBar;
-      ConstraintLayout searchBar = ViewBindings.findChildViewById(rootView, id);
-      if (searchBar == null) {
+      id = R.id.sv_product;
+      SearchView svProduct = ViewBindings.findChildViewById(rootView, id);
+      if (svProduct == null) {
         break missingId;
       }
 
-      return new FragmentSearchBinding((NestedScrollView) rootView, emptySearchTexture, homeHeader,
-          layoutSearchEmpty, progressbarCart, rvBestProducts, searchBar);
+      return new FragmentSearchBinding((ConstraintLayout) rootView, emptySearchTexture,
+          layoutSearchEmpty, progressbarSearch, rvSearch, svProduct);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

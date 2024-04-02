@@ -16,4 +16,11 @@ TODO
 change how data is saved in firebase - In progress
 Search Functionality - To be done
 After registration success, redirect to login page -> Easy
-Send Notification functionality after the booking is done. ?
+Send Notification functionality after the booking is done. ?1
+
+
+React Native:
+
+/user/login -> POST -> accessToken
+React Native -> accessToken -> local storage -> RN recommendation storage
+axios -> Authorization Header -> Bearer accessToken (Local Storage)

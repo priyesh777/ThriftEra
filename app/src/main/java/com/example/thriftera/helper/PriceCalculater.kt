@@ -9,3 +9,9 @@ fun Float?.getProductPrice(price: Float): Float{
 
     return priceAfterOffer
 }
+
+
+//a function that discounts the percentage from price
+fun getProductPriceAfterDiscount(originalPrice: Float, percent: Float): Float {
+    return originalPrice - (originalPrice * percent/100)
+}

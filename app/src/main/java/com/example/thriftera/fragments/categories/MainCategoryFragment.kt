@@ -2,7 +2,6 @@ package com.example.thriftera.fragments.categories
 
 import android.graphics.Rect
 import android.os.Bundle
-import android.os.Handler
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -130,7 +129,6 @@ class MainCategoryFragment : Fragment(R.layout.fragment_main_category) {
                         bestProductsAdapter.differ.submitList(it.data)
                         binding.bestProductsProgressbar.visibility = View.GONE
 
-
                     }
 
                     is Resource.Error -> {
@@ -211,7 +209,6 @@ class MainCategoryFragment : Fragment(R.layout.fragment_main_category) {
 
     private fun showLoading() {
         binding.mainCategoryProgressbar.visibility = View.VISIBLE
-
     }
 
     private fun setupSpecialProductsRv() {
