@@ -2,23 +2,18 @@ package com.example.thriftera.adapters;
 
 import java.lang.System;
 
-@kotlin.Metadata(mv = {1, 6, 0}, k = 1, d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0006\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u00002\f\u0012\b\u0012\u00060\u0002R\u00020\u00000\u0001:\u0001)B\u0005\u00a2\u0006\u0002\u0010\u0003J\u0010\u0010\u0019\u001a\u00020\u00142\b\u0010\u001a\u001a\u0004\u0018\u00010\u001bJ\b\u0010\u001c\u001a\u00020\u001dH\u0016J\u0010\u0010\u001e\u001a\u00020\u001f2\u0006\u0010 \u001a\u00020\u001dH\u0016J\u001c\u0010!\u001a\u00020\u00142\n\u0010\"\u001a\u00060\u0002R\u00020\u00002\u0006\u0010 \u001a\u00020\u001dH\u0016J\u001c\u0010#\u001a\u00060\u0002R\u00020\u00002\u0006\u0010$\u001a\u00020%2\u0006\u0010&\u001a\u00020\u001dH\u0016J\u0014\u0010\'\u001a\u00020\u00142\f\u0010(\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005R\u0014\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00060\bX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u0010\t\u001a\u0010\u0012\f\u0012\n \u000b*\u0004\u0018\u00010\u00060\u00060\n\u00a2\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR*\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00060\u00052\f\u0010\u000e\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005@BX\u0082\u000e\u00a2\u0006\b\n\u0000\"\u0004\b\u0010\u0010\u0011R(\u0010\u0012\u001a\u0010\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u0014\u0018\u00010\u0013X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0015\u0010\u0016\"\u0004\b\u0017\u0010\u0018\u00a8\u0006*"}, d2 = {"Lcom/example/thriftera/adapters/SearchAdapter;", "Landroidx/recyclerview/widget/RecyclerView$Adapter;", "Lcom/example/thriftera/adapters/SearchAdapter$SearchProductsViewHolder;", "()V", "allProducts", "", "Lcom/example/thriftera/data/Product;", "diffCallback", "Landroidx/recyclerview/widget/DiffUtil$ItemCallback;", "differ", "Landroidx/recyclerview/widget/AsyncListDiffer;", "kotlin.jvm.PlatformType", "getDiffer", "()Landroidx/recyclerview/widget/AsyncListDiffer;", "value", "filteredProducts", "setFilteredProducts", "(Ljava/util/List;)V", "onProductClick", "Lkotlin/Function1;", "", "getOnProductClick", "()Lkotlin/jvm/functions/Function1;", "setOnProductClick", "(Lkotlin/jvm/functions/Function1;)V", "filter", "query", "", "getItemCount", "", "getItemId", "", "position", "onBindViewHolder", "holder", "onCreateViewHolder", "parent", "Landroid/view/ViewGroup;", "viewType", "submitList", "products", "SearchProductsViewHolder", "app_debug"})
+@kotlin.Metadata(mv = {1, 6, 0}, k = 1, d1 = {"\u0000@\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\b\u0003\u0018\u0000 \u001d2\f\u0012\b\u0012\u00060\u0002R\u00020\u00000\u0001:\u0002\u001d\u001eB\u0005\u00a2\u0006\u0002\u0010\u0003J\b\u0010\u0011\u001a\u00020\u0012H\u0016J\u001c\u0010\u0013\u001a\u00020\f2\n\u0010\u0014\u001a\u00060\u0002R\u00020\u00002\u0006\u0010\u0015\u001a\u00020\u0012H\u0016J\u001c\u0010\u0016\u001a\u00060\u0002R\u00020\u00002\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u0012H\u0016J\u0014\u0010\u001a\u001a\u00020\f2\f\u0010\u001b\u001a\b\u0012\u0004\u0012\u00020\u00060\u001cR\u001f\u0010\u0004\u001a\u0010\u0012\f\u0012\n \u0007*\u0004\u0018\u00010\u00060\u00060\u0005\u00a2\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR(\u0010\n\u001a\u0010\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\f\u0018\u00010\u000bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\r\u0010\u000e\"\u0004\b\u000f\u0010\u0010\u00a8\u0006\u001f"}, d2 = {"Lcom/example/thriftera/adapters/SearchAdapter;", "Landroidx/recyclerview/widget/RecyclerView$Adapter;", "Lcom/example/thriftera/adapters/SearchAdapter$SearchProductsViewHolder;", "()V", "differ", "Landroidx/recyclerview/widget/AsyncListDiffer;", "Lcom/example/thriftera/data/Product;", "kotlin.jvm.PlatformType", "getDiffer", "()Landroidx/recyclerview/widget/AsyncListDiffer;", "onProductClick", "Lkotlin/Function1;", "", "getOnProductClick", "()Lkotlin/jvm/functions/Function1;", "setOnProductClick", "(Lkotlin/jvm/functions/Function1;)V", "getItemCount", "", "onBindViewHolder", "holder", "position", "onCreateViewHolder", "parent", "Landroid/view/ViewGroup;", "viewType", "submitList", "list", "", "Companion", "SearchProductsViewHolder", "app_debug"})
 public final class SearchAdapter extends androidx.recyclerview.widget.RecyclerView.Adapter<com.example.thriftera.adapters.SearchAdapter.SearchProductsViewHolder> {
-    private java.util.List<com.example.thriftera.data.Product> allProducts;
-    private final androidx.recyclerview.widget.DiffUtil.ItemCallback<com.example.thriftera.data.Product> diffCallback = null;
+    @org.jetbrains.annotations.NotNull
+    public static final com.example.thriftera.adapters.SearchAdapter.Companion Companion = null;
+    private static final androidx.recyclerview.widget.DiffUtil.ItemCallback<com.example.thriftera.data.Product> DIFF_CALLBACK = null;
     @org.jetbrains.annotations.NotNull
     private final androidx.recyclerview.widget.AsyncListDiffer<com.example.thriftera.data.Product> differ = null;
-    private java.util.List<com.example.thriftera.data.Product> filteredProducts;
     @org.jetbrains.annotations.Nullable
     private kotlin.jvm.functions.Function1<? super com.example.thriftera.data.Product, kotlin.Unit> onProductClick;
     
     public SearchAdapter() {
         super();
-    }
-    
-    @java.lang.Override
-    public long getItemId(int position) {
-        return 0L;
     }
     
     @org.jetbrains.annotations.NotNull
@@ -33,25 +28,18 @@ public final class SearchAdapter extends androidx.recyclerview.widget.RecyclerVi
         return null;
     }
     
+    @java.lang.Override
+    public int getItemCount() {
+        return 0;
+    }
+    
     public final void submitList(@org.jetbrains.annotations.NotNull
-    java.util.List<com.example.thriftera.data.Product> products) {
-    }
-    
-    private final void setFilteredProducts(java.util.List<com.example.thriftera.data.Product> value) {
-    }
-    
-    public final void filter(@org.jetbrains.annotations.Nullable
-    java.lang.String query) {
+    java.util.List<com.example.thriftera.data.Product> list) {
     }
     
     @java.lang.Override
     public void onBindViewHolder(@org.jetbrains.annotations.NotNull
     com.example.thriftera.adapters.SearchAdapter.SearchProductsViewHolder holder, int position) {
-    }
-    
-    @java.lang.Override
-    public int getItemCount() {
-        return 0;
     }
     
     @org.jetbrains.annotations.Nullable
@@ -80,6 +68,14 @@ public final class SearchAdapter extends androidx.recyclerview.widget.RecyclerVi
         
         public final void bind(@org.jetbrains.annotations.NotNull
         com.example.thriftera.data.Product product) {
+        }
+    }
+    
+    @kotlin.Metadata(mv = {1, 6, 0}, k = 1, d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002R\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0006"}, d2 = {"Lcom/example/thriftera/adapters/SearchAdapter$Companion;", "", "()V", "DIFF_CALLBACK", "Landroidx/recyclerview/widget/DiffUtil$ItemCallback;", "Lcom/example/thriftera/data/Product;", "app_debug"})
+    public static final class Companion {
+        
+        private Companion() {
+            super();
         }
     }
 }

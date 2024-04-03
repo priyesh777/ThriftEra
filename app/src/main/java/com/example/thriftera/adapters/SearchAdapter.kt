@@ -8,38 +8,36 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.thriftera.data.Product
 import com.example.thriftera.databinding.ItemSearchBinding
-import com.example.thriftera.helper.getProductPrice
+import com.example.thriftera.helper.getProductPriceAfterDiscount
 
 class SearchAdapter : RecyclerView.Adapter<SearchAdapter.SearchProductsViewHolder>() {
+    companion object {
+        private val DIFF_CALLBACK = object : DiffUtil.ItemCallback<Product>() {
+            override fun areItemsTheSame(oldItem: Product, newItem: Product): Boolean = oldItem.id == newItem.id
 
-    private var allProducts: List<Product> = listOf()
+            override fun areContentsTheSame(oldItem: Product, newItem: Product): Boolean = oldItem == newItem
+        }
+    }
+
+    val differ = AsyncListDiffer(this, DIFF_CALLBACK)
 
     inner class SearchProductsViewHolder(val binding: ItemSearchBinding) :
         RecyclerView.ViewHolder(binding.root) {
-
         fun bind(product: Product) {
             binding.apply {
                 Glide.with(itemView).load(product.images[0]).into(ivProduct)
                 tvProductCartName.text = product.name
-                val priceAfterPercentage = product.offerPercentage.getProductPrice(product.price)
-                tvProductCartPrice.text = "$${String.format("%.2f", priceAfterPercentage)}"
+                if (product.offerPercentage != null) {
+                    val priceAfterOffer = getProductPriceAfterDiscount(
+                        product.price,
+                        product.offerPercentage)
+                    tvProductCartPrice.text = "$${String.format("%.2f", priceAfterOffer)}"
+                }else {
+                    tvProductCartPrice.text = "$${String.format("%.2f", product.price)}"
+                }
             }
         }
     }
-
-    override fun getItemId(position: Int): Long {
-        return filteredProducts[position].id.hashCode().toLong()
-    }
-
-    private val diffCallback = object : DiffUtil.ItemCallback<Product>() {
-        override fun areItemsTheSame(oldItem: Product, newItem: Product): Boolean =
-            oldItem.id == newItem.id
-
-        override fun areContentsTheSame(oldItem: Product, newItem: Product): Boolean =
-            oldItem == newItem
-    }
-
-    val differ = AsyncListDiffer(this, diffCallback)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SearchProductsViewHolder {
         return SearchProductsViewHolder(
@@ -49,37 +47,21 @@ class SearchAdapter : RecyclerView.Adapter<SearchAdapter.SearchProductsViewHolde
         )
     }
 
-    fun submitList(products: List<Product>) {
-        allProducts = products
-        filteredProducts = allProducts
+    override fun getItemCount() = differ.currentList.size
+
+    fun submitList(list: List<Product>) {
+        differ.submitList(list)
     }
 
-
-    private var filteredProducts: List<Product> = listOf()
-        set(value) {
-            field = value
-            differ.submitList(value)
-        }
-
-    fun filter(query: String?) {
-        val filteredList = if (query.isNullOrEmpty()) allProducts else allProducts.filter {
-            it.name.lowercase().contains(
-                query,
-                ignoreCase = true
-            )
-        }
-        differ.submitList(filteredList.toList())
-    }
 
     override fun onBindViewHolder(holder: SearchProductsViewHolder, position: Int) {
-        val product = filteredProducts[position]
+        val product = differ.currentList[position]
         holder.bind(product)
         holder.itemView.setOnClickListener {
             onProductClick?.invoke(product)
         }
     }
 
-    override fun getItemCount() = filteredProducts.size
 
     var onProductClick: ((Product) -> Unit)? = null
 }
