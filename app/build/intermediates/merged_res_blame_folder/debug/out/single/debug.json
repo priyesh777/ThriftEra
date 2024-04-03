@@ -1,438 +1,434 @@
 [
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable-v24_blury_background.jpg.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable-v24/blury_background.jpg"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable-v24_ic_add.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable-v24/ic_add.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable-v24_ic_language.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable-v24/ic_language.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_ic_home.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/ic_home.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_fragment_introdcution.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/fragment_introdcution.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_empty_box_background.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/empty_box_background.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_fragment_base_category.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/fragment_base_category.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_ic_search.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/ic_search.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_fragment_register.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/fragment_register.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/font_poppins.ttf.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/font/poppins.ttf"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable-v24_ic_logout.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable-v24/ic_logout.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_ic_texture_left.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/ic_texture_left.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_fragment_profile.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/fragment_profile.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_bottom_navigation_background.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/bottom_navigation_background.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_base_green_background.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/base_green_background.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_reset_passowrd_dialog.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/reset_passowrd_dialog.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_icon_background.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/icon_background.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_product_card_border.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/product_card_border.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_thrift_logo.png.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/thrift_logo.png"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_book_item_dialog.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/book_item_dialog.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_baseline_search_24.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/baseline_search_24.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/font_poppins_thin.ttf.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/font/poppins_thin.ttf"
+        "merged": "com.example.thriftera.app-merged_res-56:/font_poppins.ttf.flat",
+        "source": "com.example.thriftera.app-main-58:/font/poppins.ttf"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable-v24_facebook_login.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable-v24/facebook_login.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_order_item.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/order_item.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_order_item.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/order_item.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_ic_edit.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/ic_edit.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_bottom_nav_item_background.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/bottom_nav_item_background.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_fragment_billing.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/fragment_billing.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_ic_home.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/ic_home.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.thriftera.app-pngs-52:/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/ic_launcher_background.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/menu_toolbar_menu.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/menu/toolbar_menu.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable-v24_ic_logout.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable-v24/ic_logout.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_fragment_account_options.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/fragment_account_options.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_fragment_account_options.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/fragment_account_options.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_ic_close.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/ic_close.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_ic_picked.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/ic_picked.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/anim_to_right.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/anim/to_right.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_ic_search.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/ic_search.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable-v24_ellips.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable-v24/ellips.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable-v24_ic_notification.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable-v24/ic_notification.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable-v24_ic_arrow.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable-v24/ic_arrow.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/anim_from_left.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/anim/from_left.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable-v24_ic_all_orders.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable-v24/ic_all_orders.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_fragment_product_details.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/fragment_product_details.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.thriftera.app-main-58:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_base_green_background.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/base_green_background.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_white_background.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/white_background.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_fragment_base_category.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/fragment_base_category.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_actitivty_login_register.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/actitivty_login_register.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_activity_shopping.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/activity_shopping.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_color_rv_item.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/color_rv_item.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_product_rv_item.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/product_rv_item.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable-v24_facebook_login.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable-v24/facebook_login.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/navigation_login_register_graph.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/navigation/login_register_graph.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/menu_bottom_navigation_menu.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/menu/bottom_navigation_menu.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable-v24_unselected_button_background.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable-v24/unselected_button_background.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_activity_shopping.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/activity_shopping.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_booked_product_item.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/booked_product_item.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_total_box_background.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/total_box_background.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_theme_image.png.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/theme_image.png"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_activity_add_product.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/activity_add_product.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_size_rv_item.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/size_rv_item.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/anim_from_bottom.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/anim/from_bottom.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable-v24_ellips.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable-v24/ellips.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_search_box_background.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/search_box_background.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable-v24_ic_billing.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable-v24/ic_billing.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_bottom_nav_item_background.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/bottom_nav_item_background.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/anim_from_right.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/anim/from_right.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_size_rv_item.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/size_rv_item.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/navigation_shopping_graph.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/navigation/shopping_graph.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.thriftera.app-main-58:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_ic_empty_box.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/ic_empty_box.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_fragment_home.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/fragment_home.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable-v24_ic_kleine_shape.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable-v24/ic_kleine_shape.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/anim_to_right.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/anim/to_right.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_ic_microphone.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/ic_microphone.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_viewpager_image_item.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/viewpager_image_item.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable-v24_blury_background.jpg.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable-v24/blury_background.jpg"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_ic_microphone.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/ic_microphone.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.thriftera.app-main-58:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/font_poppins_light.ttf.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/font/poppins_light.ttf"
+        "merged": "com.example.thriftera.app-merged_res-56:/font_sf_pro_display.OTF.flat",
+        "source": "com.example.thriftera.app-main-58:/font/sf_pro_display.OTF"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/font_sf_pro_display.OTF.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/font/sf_pro_display.OTF"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_fragment_main_category.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/fragment_main_category.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/menu_toolbar_menu.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/menu/toolbar_menu.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_book_item_dialog.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/book_item_dialog.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_fragment_order_detail.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/fragment_order_detail.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_empty_box_background.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/empty_box_background.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "com.example.thriftera.app-merged_res-56:/anim_from_right.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/anim/from_right.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_ic_scan.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/ic_scan.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.thriftera.app-main-58:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_ic_texture_right.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/ic_texture_right.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.thriftera.app-main-58:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_fragment_user_booked_items.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/fragment_user_booked_items.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_actitivty_login_register.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/actitivty_login_register.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_best_deals_rv_item.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/best_deals_rv_item.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_ic_cart.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/ic_cart.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_reset_passowrd_dialog.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/reset_passowrd_dialog.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_address_rv_item.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/address_rv_item.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_ic_save.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/ic_save.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-pngs-52:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_theme_image.png.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/theme_image.png"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_fragment_billing.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/fragment_billing.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_fragment_product_details.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/fragment_product_details.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_color_rv_item.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/color_rv_item.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/anim_from_left.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/anim/from_left.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_ic_texture_right.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/ic_texture_right.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_best_deals_rv_item.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/best_deals_rv_item.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/navigation_login_register_graph.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/navigation/login_register_graph.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_fragment_cart.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/fragment_cart.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_blue_background.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/blue_background.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/menu_bottom_navigation_menu.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/menu/bottom_navigation_menu.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.thriftera.app-main-58:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/anim_to_left.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/anim/to_left.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_ic_favorite.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/ic_favorite.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_green_border.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/green_border.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_fragment_introdcution.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/fragment_introdcution.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable-v24_ic_language.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable-v24/ic_language.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_ic_empty_box_texture.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/ic_empty_box_texture.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_base_white_background.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/base_white_background.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_fragment_order_detail.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/fragment_order_detail.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_activity_add_product.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/activity_add_product.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_item_search.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/item_search.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_product_card_border.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/product_card_border.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_ic_favorite.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/ic_favorite.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_ic_cart.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/ic_cart.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable-v24_ic_location.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable-v24/ic_location.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_special_rv_item.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/special_rv_item.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable-v24_ic_kleine_shape.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable-v24/ic_kleine_shape.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable-v24_ic_billing.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable-v24/ic_billing.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_viewpager_image_item.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/viewpager_image_item.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_ic_plus.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/ic_plus.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_ic_profile.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/ic_profile.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable-v24_ic_add.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable-v24/ic_add.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.thriftera.app-main-58:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_fragment_login.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/fragment_login.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.thriftera.app-main-58:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_fragment_register.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/fragment_register.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_billing_products_rv_item.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/billing_products_rv_item.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_fragment_main_category.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/fragment_main_category.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_ic_picked.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/ic_picked.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_thrift_logo.png.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/thrift_logo.png"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_ic_plus.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/ic_plus.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_item_search.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/item_search.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_fragment_cart.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/fragment_cart.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_fragment_user_account.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/fragment_user_account.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable-v24_ic_location.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable-v24/ic_location.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_billing_products_rv_item.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/billing_products_rv_item.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_product_rv_item.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/product_rv_item.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_cart_product_item.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/cart_product_item.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_bottom_navigation_background.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/bottom_navigation_background.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_fragment_profile.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/fragment_profile.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/navigation_shopping_graph.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/navigation/shopping_graph.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_settings_items_background.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/settings_items_background.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_address_rv_item.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/address_rv_item.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_base_white_background.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/base_white_background.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable-v24_google_login.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable-v24/google_login.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_white_background.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/white_background.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_ic_empty_box.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/ic_empty_box.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_baseline_search_24.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/baseline_search_24.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable-v24_ic_all_orders.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable-v24/ic_all_orders.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_booked_product_item.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/booked_product_item.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_fragment_address.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/fragment_address.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_settings_items_background.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/settings_items_background.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_fragment_orders.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/fragment_orders.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_ic_minus.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/ic_minus.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_search_box_background.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/search_box_background.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/font_poppins_thin.ttf.flat",
+        "source": "com.example.thriftera.app-main-58:/font/poppins_thin.ttf"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable-v24_ic_arrow.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable-v24/ic_arrow.xml"
-    },
-    {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_fragment_search.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/fragment_search.xml"
-    },
-    {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_special_rv_item.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/special_rv_item.xml"
-    },
-    {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_ic_minus.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/ic_minus.xml"
-    },
-    {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_ic_profile.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/ic_profile.xml"
-    },
-    {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable-v24_google_login.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable-v24/google_login.xml"
-    },
-    {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_fragment_user_booked_items.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/fragment_user_booked_items.xml"
-    },
-    {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_ic_save.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/ic_save.xml"
-    },
-    {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_ic_close.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/ic_close.xml"
-    },
-    {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_ic_edit.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/ic_edit.xml"
-    },
-    {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_green_border.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/green_border.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable-v24_unselected_button_background.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable-v24/unselected_button_background.xml"
     },
     {
         "merged": "com.example.thriftera.app-merged_res-56:/layout_fragment_search.xml.flat",
         "source": "com.example.thriftera.app-main-58:/layout/fragment_search.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_total_box_background.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/total_box_background.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_ic_empty_box_texture.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/ic_empty_box_texture.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/layout_fragment_home.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/layout/fragment_home.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_cart_product_item.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/cart_product_item.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_icon_background.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/icon_background.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_fragment_login.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/fragment_login.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/drawable_blue_background.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/drawable/blue_background.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable-v24_ic_notification.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable-v24/ic_notification.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/anim_from_bottom.xml.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/anim/from_bottom.xml"
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_fragment_address.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/fragment_address.xml"
     },
     {
-        "merged": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-merged_res-56:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/Users/sam/.gradle/daemon/8.0/com.example.thriftera.app-main-58:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "com.example.thriftera.app-merged_res-56:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.thriftera.app-main-58:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_ic_texture_left.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/ic_texture_left.xml"
+    },
+    {
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_fragment_orders.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/fragment_orders.xml"
+    },
+    {
+        "merged": "com.example.thriftera.app-merged_res-56:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.thriftera.app-main-58:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.thriftera.app-merged_res-56:/drawable_ic_scan.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/drawable/ic_scan.xml"
+    },
+    {
+        "merged": "com.example.thriftera.app-merged_res-56:/font_poppins_light.ttf.flat",
+        "source": "com.example.thriftera.app-main-58:/font/poppins_light.ttf"
+    },
+    {
+        "merged": "com.example.thriftera.app-merged_res-56:/anim_to_left.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/anim/to_left.xml"
+    },
+    {
+        "merged": "com.example.thriftera.app-merged_res-56:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.thriftera.app-merged_res-56:/layout_fragment_user_account.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/layout/fragment_user_account.xml"
+    },
+    {
+        "merged": "com.example.thriftera.app-merged_res-56:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.thriftera.app-main-58:/mipmap-anydpi-v26/ic_launcher_round.xml"
     }
 ]
