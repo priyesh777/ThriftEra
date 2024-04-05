@@ -48,12 +48,10 @@ class CartFragment : Fragment(R.layout.fragment_cart) {
                 .show()
         }
 
-        var totalPrice = 0f
         lifecycleScope.launchWhenStarted {
             viewModel.productsPrice.collectLatest { price ->
                 price?.let {
-                    totalPrice = it
-                    binding.tvTotalPrice.text = "$ $price"
+                    binding.tvTotalPrice.text = "$$price"
                 }
             }
         }

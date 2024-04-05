@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.thriftera.data.CartProduct
 import com.example.thriftera.databinding.CartProductItemBinding
-import com.example.thriftera.helper.getProductPrice
+import com.example.thriftera.helper.getProductPriceAfterDiscount
 
 class CartProductAdapter: RecyclerView.Adapter<CartProductAdapter.CartProductsViewHolder>() {
 //Adapter to showcase the products of cart component using the recycler view
@@ -19,15 +19,20 @@ class CartProductAdapter: RecyclerView.Adapter<CartProductAdapter.CartProductsVi
 
         fun bind(cartProduct: CartProduct) {
             binding.apply {
-                Glide.with(itemView).load(cartProduct.product.images[0]).into(imageCartProduct)
-                tvProductCartName.text = cartProduct.product.name
-                tvCartProductQuantity.text = cartProduct.quantity.toString()
-
-                val priceAfterPercentage = cartProduct.product.offerPercentage.getProductPrice(cartProduct.product.price)
-                tvProductCartPrice.text = "$ ${String.format("%.2f", priceAfterPercentage)}"
-
+                val product = cartProduct.product
+                Glide.with(itemView).load(product.images[0]).into(imageCartProduct)
+                tvProductCartName.text = product.name
                 imageCartProductColor.setImageDrawable(ColorDrawable(cartProduct.selectedColor?: Color.TRANSPARENT))
                 tvCartProductSize.text = cartProduct.selectedSize?:"".also { imageCartProductSize.setImageDrawable(ColorDrawable(Color.TRANSPARENT)) }
+                tvCartProductQuantity.text = cartProduct.quantity.toString()
+                if (product.offerPercentage != null){
+                    val priceAfterOffer = getProductPriceAfterDiscount(
+                        product.price,
+                        product.offerPercentage)
+                    tvProductCartPrice.text = "$${String.format("%.2f", priceAfterOffer)}"
+                }else {
+                    tvProductCartPrice.text = "$${String.format("%.2f", product.price)}"
+                }
             }
         }
     }
@@ -76,7 +81,4 @@ class CartProductAdapter: RecyclerView.Adapter<CartProductAdapter.CartProductsVi
     var onProductClick: ((CartProduct) -> Unit)? = null
     var onPlusClick: ((CartProduct) -> Unit)? = null
     var onMinusClick: ((CartProduct) -> Unit)? = null
-
-
-
 }

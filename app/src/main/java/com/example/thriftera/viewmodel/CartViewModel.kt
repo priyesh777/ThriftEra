@@ -1,5 +1,6 @@
 package com.example.thriftera.viewmodel
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.thriftera.constants.BOOKED_ITEMS_COLLECTION
@@ -10,19 +11,23 @@ import com.example.thriftera.data.CartProduct
 import com.example.thriftera.data.CartProductNew
 import com.example.thriftera.data.Product
 import com.example.thriftera.firebase.FirebaseCommon
-import com.example.thriftera.helper.getProductPrice
+import com.example.thriftera.helper.getProductPriceAfterDiscount
 import com.example.thriftera.util.Resource
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.DocumentSnapshot
+import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
-import kotlinx.coroutines.flow.*
+import kotlinx.coroutines.flow.MutableSharedFlow
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.asSharedFlow
+import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
-import java.lang.Exception
 import javax.inject.Inject
 
 
@@ -71,11 +76,13 @@ class CartViewModel @Inject constructor(
 
     private fun calculatePrice(data: List<CartProduct>): Float {
         return data.sumOf { cartProduct ->
-            (cartProduct.product.offerPercentage.getProductPrice(cartProduct.product.price) *
-                    cartProduct.quantity).toDouble()
+            val unitPrice = cartProduct.product.offerPercentage?.let { offerPercentage ->
+                getProductPriceAfterDiscount(cartProduct.product.price, offerPercentage)
+            } ?: cartProduct.product.price
+
+            (unitPrice * cartProduct.quantity).toDouble()
         }.toFloat()
     }
-
 
     init {
         getCartProducts()
@@ -85,33 +92,48 @@ class CartViewModel @Inject constructor(
     private fun getCartProducts() {
         viewModelScope.launch {
             _cartProducts.emit(Resource.Loading())
-
-            try {
-                val userCartRef = firestore.collection(USER_COLLECTION).document(auth.uid!!)
-                    .collection(CART_COLLECTION)
-                val cartSnapshot = userCartRef.get().await()
-                val cartProductsNew = cartSnapshot.toObjects(CartProductNew::class.java)
-                val cartProductsDeferred = cartProductsNew.map { cartProductNew ->
-                    async {
-                        val productSnapshot = firestore.collection(PRODUCTS_COLLECTION)
-                            .document(cartProductNew.productId).get().await()
-                        val product = productSnapshot.toObject(Product::class.java)
-                        CartProduct(
-                            product = product!!,
-                            quantity = cartProductNew.quantity,
-                            selectedColor = cartProductNew.selectedColor,
-                            selectedSize = cartProductNew.selectedSize
+            val userCartRef = firestore.collection(USER_COLLECTION).document(auth.uid!!)
+                .collection(CART_COLLECTION)
+            userCartRef.addSnapshotListener { snapshot, e ->
+                if (e != null) {
+                    viewModelScope.launch {
+                        _cartProducts.emit(
+                            Resource.Error(
+                                e.message ?: "An error occurred fetching cart products"
+                            )
                         )
                     }
+                    return@addSnapshotListener
                 }
-                val cartProducts = cartProductsDeferred.awaitAll()
-                _cartProducts.emit(Resource.Success(cartProducts))
-            } catch (e: Exception) {
-                _cartProducts.emit(
-                    Resource.Error(
-                        e.message ?: "An error occurred fetching cart products"
-                    )
-                )
+
+                cartProductDocuments = snapshot?.documents ?: emptyList()
+
+                viewModelScope.launch {
+                    val cartProductsDeferred = snapshot?.documents?.mapNotNull { documentSnapshot ->
+                        val cartProductNew = documentSnapshot.toObject(CartProductNew::class.java)
+                        cartProductNew?.productId?.takeIf { it.isNotBlank() }?.let { productId ->
+                            async {
+                                try {
+                                    val productSnapshot = firestore.collection(PRODUCTS_COLLECTION)
+                                        .document(productId).get().await()
+                                    val product = productSnapshot.toObject(Product::class.java)
+                                    product?.let {
+                                        CartProduct(
+                                            product = it,
+                                            quantity = cartProductNew.quantity,
+                                            selectedColor = cartProductNew.selectedColor,
+                                            selectedSize = cartProductNew.selectedSize
+                                        )
+                                    }
+                                } catch (e: Exception) {
+                                    null // Handle or log the error as appropriate
+                                }
+                            }
+                        }
+                    }?.awaitAll()?.filterNotNull() ?: emptyList()
+
+                    _cartProducts.emit(Resource.Success(cartProductsDeferred))
+                }
             }
         }
     }
@@ -126,7 +148,6 @@ class CartViewModel @Inject constructor(
                 bookedCollection.add(it)
             }
             _successDialog.value = true
-            //delete documents in cart
             deleteAllProductsInCart()
         } catch (e: Exception) {
             e.printStackTrace()
@@ -158,6 +179,7 @@ class CartViewModel @Inject constructor(
         quantityChanging: FirebaseCommon.QuantityChanging
     ) {
 
+
         val index = cartProducts.value.data?.indexOf(cartProduct)
 
         /**
@@ -184,17 +206,44 @@ class CartViewModel @Inject constructor(
         }
     }
 
+
     private fun decreaseQuantity(documentId: String) {
-        firebaseCommon.decreaseQuantity(documentId) { result, exception ->
-            if (exception != null)
-                viewModelScope.launch { _cartProducts.emit(Resource.Error(exception.message.toString())) }
+        val cartItemRef = firestore.collection(USER_COLLECTION).document(auth.uid!!)
+            .collection(CART_COLLECTION).document(documentId)
+
+        firestore.runTransaction { transaction ->
+            val snapshot = transaction.get(cartItemRef)
+            val currentQuantity = snapshot.getLong("quantity") ?: 0L
+
+            if (currentQuantity > 1) {
+                transaction.update(cartItemRef, "quantity", FieldValue.increment(-1))
+            } else if (currentQuantity == 1L) {
+                transaction.delete(cartItemRef)
+            } else {
+            }
+        }.addOnSuccessListener {
+            Log.d(
+                "decreaseQuantity",
+                "Transaction successfully completed for document: $documentId"
+            )
+        }.addOnFailureListener { e ->
+            Log.w("decreaseQuantity", "Transaction failed for document: $documentId", e)
+            viewModelScope.launch { _cartProducts.emit(Resource.Error(e.message.toString())) }
         }
     }
 
+
     private fun increaseQuantity(documentId: String) {
-        firebaseCommon.increaseQuantity(documentId) { result, exception ->
-            if (exception != null)
-                viewModelScope.launch { _cartProducts.emit(Resource.Error(exception.message.toString())) }
-        }
+        val cartItemRef = firestore.collection(USER_COLLECTION).document(auth.uid!!)
+            .collection(CART_COLLECTION).document(documentId)
+
+        cartItemRef.update("quantity", FieldValue.increment(1))
+            .addOnSuccessListener {
+                Log.d("increaseQuantity", "Quantity successfully increased.")
+            }
+            .addOnFailureListener { e ->
+                Log.w("increaseQuantity", "Error increasing quantity.", e)
+                viewModelScope.launch { _cartProducts.emit(Resource.Error(e.message.toString())) }
+            }
     }
 }

@@ -1,138 +1,142 @@
 [
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_billing.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/fragment_billing.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/activity_shopping.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/activity_shopping.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/actitivty_login_register.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/actitivty_login_register.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/book_item_dialog.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/book_item_dialog.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/special_rv_item.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/special_rv_item.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_register.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/fragment_register.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/product_rv_item.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/product_rv_item.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_user_account.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/fragment_user_account.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/cart_product_item.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/cart_product_item.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/billing_products_rv_item.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/billing_products_rv_item.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_cart.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/fragment_cart.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_order_detail.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/fragment_order_detail.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_search.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/fragment_search.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/item_search.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/item_search.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/item_search.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/item_search.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_home.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/fragment_home.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/reset_passowrd_dialog.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/reset_passowrd_dialog.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_search.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/fragment_search.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_base_category.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/fragment_base_category.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_user_booked_items.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/fragment_user_booked_items.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_main_category.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/fragment_main_category.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/best_deals_rv_item.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/best_deals_rv_item.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_product_details.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/fragment_product_details.xml"
-    },
-    {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/viewpager_image_item.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/viewpager_image_item.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/cart_product_item.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/cart_product_item.xml"
     },
     {
         "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_user_booked_items.xml",
         "source": "com.example.thriftera.app-main-58:/layout/fragment_user_booked_items.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_register.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/fragment_register.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/size_rv_item.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/size_rv_item.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_account_options.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/fragment_account_options.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/color_rv_item.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/color_rv_item.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_address.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/fragment_address.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/actitivty_login_register.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/actitivty_login_register.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_login.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/fragment_login.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_cart.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/fragment_cart.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_orders.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/fragment_orders.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_login.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/fragment_login.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_user_account.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/fragment_user_account.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_profile.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/fragment_profile.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/book_item_dialog.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/book_item_dialog.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/viewpager_image_item.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/viewpager_image_item.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/activity_add_product.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/activity_add_product.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/activity_add_product.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/activity_add_product.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/size_rv_item.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/size_rv_item.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_introdcution.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/fragment_introdcution.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/activity_shopping.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/activity_shopping.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/order_item.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/order_item.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/order_item.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/order_item.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/address_rv_item.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/address_rv_item.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_order_detail.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/fragment_order_detail.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/booked_product_item.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/booked_product_item.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/best_deals_rv_item.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/best_deals_rv_item.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/product_rv_item.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/product_rv_item.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_introdcution.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/fragment_introdcution.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/special_rv_item.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/special_rv_item.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/billing_products_rv_item.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/billing_products_rv_item.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_base_category.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/fragment_base_category.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/address_rv_item.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/address_rv_item.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_billing.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/fragment_billing.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/color_rv_item.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/color_rv_item.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_account_options.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/fragment_account_options.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_profile.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/fragment_profile.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_main_category.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/fragment_main_category.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_home.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/fragment_home.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/reset_passowrd_dialog.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/reset_passowrd_dialog.xml"
     },
     {
-        "merged": "com.example.thriftera.app-mergeDebugResources-55:/layout/booked_product_item.xml",
-        "source": "com.example.thriftera.app-main-58:/layout/booked_product_item.xml"
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_product_details.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/fragment_product_details.xml"
+    },
+    {
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_address.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/fragment_address.xml"
+    },
+    {
+        "merged": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-mergeDebugResources-55:/layout/fragment_orders.xml",
+        "source": "/Users/sam/.gradle/daemon/8.4/com.example.thriftera.app-main-58:/layout/fragment_orders.xml"
     }
 ]

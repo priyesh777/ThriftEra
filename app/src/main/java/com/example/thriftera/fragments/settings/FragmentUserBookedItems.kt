@@ -42,12 +42,10 @@ class FragmentUserBookedItems : Fragment(R.layout.fragment_user_booked_items) {
 
         setupCartRv()
 
-        var totalPrice = 0f
         lifecycleScope.launchWhenStarted {
             viewModel.productsPrice.collectLatest { price ->
                 price?.let {
-                    totalPrice = it
-                    binding.tvTotalPrice.text = "$ $price"
+                    binding.tvTotalPrice.text = "$$price"
                 }
             }
         }

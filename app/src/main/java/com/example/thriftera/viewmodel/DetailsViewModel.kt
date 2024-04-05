@@ -4,7 +4,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.thriftera.constants.CART_COLLECTION
 import com.example.thriftera.constants.USER_COLLECTION
-import com.example.thriftera.data.CartProduct
 import com.example.thriftera.data.CartProductNew
 import com.example.thriftera.firebase.FirebaseCommon
 import com.example.thriftera.util.Resource
@@ -40,6 +39,7 @@ class DetailsViewModel @Inject constructor(
                 if (documents.isEmpty()) {
                     addNewProduct(cartProduct)
                 } else {
+                        //updateProductQuantity()
 //                    val existingProduct = documents.first().toObject(CartProduct::class.java)
 //                    if (existingProduct?.product == cartProduct.product &&
 //                        existingProduct.selectedColor == cartProduct.selectedColor &&

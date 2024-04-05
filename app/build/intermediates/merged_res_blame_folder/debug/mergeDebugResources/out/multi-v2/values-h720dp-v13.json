@@ -4,7 +4,7 @@
             "outputFile": "com.example.thriftera.app-mergeDebugResources-54:/values-h720dp-v13/values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "/home/priiyesh/.gradle/caches/transforms-3/1d0b5cb07567784a294cb65d26f06b25/transformed/appcompat-1.4.2/res/values-h720dp-v13/values-h720dp-v13.xml",
+                    "source": "/Users/sam/.gradle/caches/transforms-3/1d0b5cb07567784a294cb65d26f06b25/transformed/appcompat-1.4.2/res/values-h720dp-v13/values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

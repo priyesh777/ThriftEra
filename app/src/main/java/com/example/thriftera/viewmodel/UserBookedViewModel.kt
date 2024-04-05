@@ -6,13 +6,17 @@ import com.example.thriftera.constants.BOOKED_ITEMS_COLLECTION
 import com.example.thriftera.constants.USER_COLLECTION
 import com.example.thriftera.data.CartProduct
 import com.example.thriftera.firebase.FirebaseCommon
-import com.example.thriftera.helper.getProductPrice
+import com.example.thriftera.helper.getProductPriceAfterDiscount
 import com.example.thriftera.util.Resource
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.DocumentSnapshot
 import com.google.firebase.firestore.FirebaseFirestore
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.flow.*
+import kotlinx.coroutines.flow.MutableSharedFlow
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.asSharedFlow
+import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -53,8 +57,12 @@ class UserBookedViewModel @Inject constructor(
 
 
     private fun calculatePrice(data: List<CartProduct>): Float {
-        return data.sumByDouble { cartProduct ->
-            (cartProduct.product.offerPercentage.getProductPrice(cartProduct.product.price) * cartProduct.quantity).toDouble()
+        return data.sumOf { cartProduct ->
+            val unitPrice = cartProduct.product.offerPercentage?.let { offerPercentage ->
+                getProductPriceAfterDiscount(cartProduct.product.price, offerPercentage)
+            } ?: cartProduct.product.price
+
+            (unitPrice * cartProduct.quantity).toDouble()
         }.toFloat()
     }
 

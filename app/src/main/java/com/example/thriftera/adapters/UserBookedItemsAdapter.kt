@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.thriftera.data.CartProduct
 import com.example.thriftera.databinding.BookedProductItemBinding
-import com.example.thriftera.helper.getProductPrice
+import com.example.thriftera.helper.getProductPriceAfterDiscount
 
 class UserBookedItemsAdapter: RecyclerView.Adapter<UserBookedItemsAdapter.CartProductsViewHolder>() {
     //Adapter to list the booked items in the profile section
@@ -20,15 +20,22 @@ class UserBookedItemsAdapter: RecyclerView.Adapter<UserBookedItemsAdapter.CartPr
 
         fun bind(cartProduct: CartProduct) {
             binding.apply {
-                Glide.with(itemView).load(cartProduct.product.images[0]).into(imageCartProduct)
-                tvProductCartName.text = cartProduct.product.name
-//                tvCartProductQuantity.text = cartProduct.quantity.toString()
-
-                val priceAfterPercentage = cartProduct.product.offerPercentage.getProductPrice(cartProduct.product.price)
-                tvProductCartPrice.text = "$ ${String.format("%.2f", priceAfterPercentage)}"
+                val product = cartProduct.product
+                Glide.with(itemView).load(product.images[0]).into(imageCartProduct)
+                tvProductCartName.text = product.name
 
                 imageCartProductColor.setImageDrawable(ColorDrawable(cartProduct.selectedColor?: Color.TRANSPARENT))
-                tvCartProductSize.text = cartProduct.selectedSize?:"".also { imageCartProductSize.setImageDrawable(ColorDrawable(Color.TRANSPARENT)) }
+                tvCartProductSize.text = cartProduct.selectedSize?:"".also { imageCartProductSize.setImageDrawable(
+                    ColorDrawable(Color.TRANSPARENT)
+                ) }
+                if (product.offerPercentage != null){
+                    val priceAfterOffer = getProductPriceAfterDiscount(
+                        product.price,
+                        product.offerPercentage)
+                    tvProductCartPrice.text = "$${String.format("%.2f", priceAfterOffer)}"
+                }else {
+                    tvProductCartPrice.text = "$${String.format("%.2f", product.price)}"
+                }
             }
         }
     }

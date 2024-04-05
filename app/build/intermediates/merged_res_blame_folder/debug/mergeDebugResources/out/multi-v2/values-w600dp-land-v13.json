@@ -4,7 +4,7 @@
             "outputFile": "com.example.thriftera.app-mergeDebugResources-54:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
             "map": [
                 {
-                    "source": "/home/priiyesh/.gradle/caches/transforms-3/9d9e4957c54050312900a23e6eb147fc/transformed/material-1.6.1/res/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+                    "source": "/Users/sam/.gradle/caches/transforms-3/9d9e4957c54050312900a23e6eb147fc/transformed/material-1.6.1/res/values-w600dp-land-v13/values-w600dp-land-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
