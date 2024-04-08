@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:2:1-30:12
+ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:2:1-33:12
 MERGED from [com.github.skydoves:colorpickerview:2.2.4] /Users/sam/.gradle/caches/transforms-3/fa3fc4bcbc6d453aa8f6fe47dd9084ca/transformed/colorpickerview-2.2.4/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.databinding:viewbinding:8.3.1] /Users/sam/.gradle/caches/transforms-3/84854a4fadf9a41da4bbad3bf1ea3eed/transformed/viewbinding-8.3.1/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.5.2] /Users/sam/.gradle/caches/transforms-3/fbcb9ed0a5c28c0c02360a1bb357cd2d/transformed/navigation-fragment-ktx-2.5.2/AndroidManifest.xml:17:1-24:12
@@ -98,9 +98,23 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/sam/.
 		INJECTED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:4:5-76
+	android:name
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:4:22-74
+uses-permission#android.permission.INTERNET
+ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:5:5-67
+MERGED from [com.google.firebase:firebase-auth:21.0.6] /Users/sam/.gradle/caches/transforms-3/3e217fc4ce65c8a416e49c2511783067/transformed/firebase-auth-21.0.6/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-auth:21.0.6] /Users/sam/.gradle/caches/transforms-3/3e217fc4ce65c8a416e49c2511783067/transformed/firebase-auth-21.0.6/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/sam/.gradle/caches/transforms-3/510a25bda134c3da00b208d9a8fb20e7/transformed/firebase-storage-20.1.0/AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/sam/.gradle/caches/transforms-3/510a25bda134c3da00b208d9a8fb20e7/transformed/firebase-storage-20.1.0/AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.2.1] /Users/sam/.gradle/caches/transforms-3/b7f933965928452abaa186011914d9d3/transformed/firebase-firestore-24.2.1/AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.2.1] /Users/sam/.gradle/caches/transforms-3/b7f933965928452abaa186011914d9d3/transformed/firebase-firestore-24.2.1/AndroidManifest.xml:14:5-67
+	android:name
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:4:5-28:19
-INJECTED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:4:5-28:19
+ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:7:5-31:19
+INJECTED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:7:5-31:19
 MERGED from [androidx.window:window:1.0.0] /Users/sam/.gradle/caches/transforms-3/2a57cc31a0ac33b03c5219363a48b2eb/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0] /Users/sam/.gradle/caches/transforms-3/2a57cc31a0ac33b03c5219363a48b2eb/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
 MERGED from [com.google.android.material:material:1.6.1] /Users/sam/.gradle/caches/transforms-3/9d9e4957c54050312900a23e6eb147fc/transformed/material-1.6.1/AndroidManifest.xml:24:5-20
@@ -152,49 +166,49 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/sam/
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.8.0] /Users/sam/.gradle/caches/transforms-3/5b914cabee23c380435099c3f00ceeac/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:10:9-36
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:13:9-36
 	android:label
-		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:8:9-41
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:11:9-41
 	android:roundIcon
-		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:9:9-54
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:12:9-54
 	android:icon
-		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:7:9-43
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:10:9-43
 	android:allowBackup
-		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:6:9-35
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:11:9-46
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:14:9-46
 	android:name
-		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:5:9-42
-activity#com.example.thriftera.activities.AddProductActivity
-ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:12:9-15:40
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:8:9-42
+activity#com.groupproject.thriftera.activities.AddProductActivity
+ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:15:9-18:40
 	android:exported
-		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:15:13-37
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:18:13-37
 	android:theme
-		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:14:13-60
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:17:13-60
 	android:name
-		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:13:13-58
-activity#com.example.thriftera.activities.ShoppingActivity
-ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:16:9-18:39
-	android:exported
-		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:18:13-36
-	android:name
-		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:17:13-56
-activity#com.example.thriftera.activities.LoginRegisterActivity
-ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:19:9-27:20
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:16:13-58
+activity#com.groupproject.thriftera.activities.ShoppingActivity
+ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:19:9-21:39
 	android:exported
 		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:21:13-36
 	android:name
-		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:20:13-61
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:20:13-56
+activity#com.groupproject.thriftera.activities.LoginRegisterActivity
+ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:22:9-30:20
+	android:exported
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:24:13-36
+	android:name
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:23:13-61
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:22:13-26:29
+ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:25:13-29:29
 action#android.intent.action.MAIN
-ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:23:17-69
+ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:26:17-69
 	android:name
-		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:23:25-66
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:26:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:25:17-77
+ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:28:17-77
 	android:name
-		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:25:27-74
+		ADDED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml:28:27-74
 uses-sdk
 INJECTED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/sam/Desktop/priyesh/ThriftEra-Android/app/src/main/AndroidManifest.xml
@@ -387,14 +401,6 @@ ADDED from [androidx.window:window:1.0.0] /Users/sam/.gradle/caches/transforms-3
 		ADDED from [androidx.window:window:1.0.0] /Users/sam/.gradle/caches/transforms-3/2a57cc31a0ac33b03c5219363a48b2eb/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
 	android:name
 		ADDED from [androidx.window:window:1.0.0] /Users/sam/.gradle/caches/transforms-3/2a57cc31a0ac33b03c5219363a48b2eb/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
-uses-permission#android.permission.INTERNET
-ADDED from [com.google.firebase:firebase-auth:21.0.6] /Users/sam/.gradle/caches/transforms-3/3e217fc4ce65c8a416e49c2511783067/transformed/firebase-auth-21.0.6/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/sam/.gradle/caches/transforms-3/510a25bda134c3da00b208d9a8fb20e7/transformed/firebase-storage-20.1.0/AndroidManifest.xml:26:5-67
-MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/sam/.gradle/caches/transforms-3/510a25bda134c3da00b208d9a8fb20e7/transformed/firebase-storage-20.1.0/AndroidManifest.xml:26:5-67
-MERGED from [com.google.firebase:firebase-firestore:24.2.1] /Users/sam/.gradle/caches/transforms-3/b7f933965928452abaa186011914d9d3/transformed/firebase-firestore-24.2.1/AndroidManifest.xml:14:5-67
-MERGED from [com.google.firebase:firebase-firestore:24.2.1] /Users/sam/.gradle/caches/transforms-3/b7f933965928452abaa186011914d9d3/transformed/firebase-firestore-24.2.1/AndroidManifest.xml:14:5-67
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:21.0.6] /Users/sam/.gradle/caches/transforms-3/3e217fc4ce65c8a416e49c2511783067/transformed/firebase-auth-21.0.6/AndroidManifest.xml:23:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:21.0.6] /Users/sam/.gradle/caches/transforms-3/3e217fc4ce65c8a416e49c2511783067/transformed/firebase-auth-21.0.6/AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/sam/.gradle/caches/transforms-3/510a25bda134c3da00b208d9a8fb20e7/transformed/firebase-storage-20.1.0/AndroidManifest.xml:25:5-79

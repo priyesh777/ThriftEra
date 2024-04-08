@@ -1,4 +1,4 @@
-package com.example.thriftera
+package com.groupproject.thriftera
 
 import org.junit.Test
 

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.thriftera.app-mergeDebugResources-54:/values-or/values-or.xml",
+            "outputFile": "com.groupproject.thriftera.app-mergeDebugResources-54:/values-or/values-or.xml",
             "map": [
                 {
                     "source": "/Users/sam/.gradle/caches/transforms-3/5e0e3d823302019211b69acfc1e58cbd/transformed/play-services-base-18.0.1/res/values-or/values.xml",

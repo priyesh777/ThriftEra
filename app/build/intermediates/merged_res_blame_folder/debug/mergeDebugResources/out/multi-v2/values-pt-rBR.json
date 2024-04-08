@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.thriftera.app-mergeDebugResources-54:/values-pt-rBR/values-pt-rBR.xml",
+            "outputFile": "com.groupproject.thriftera.app-mergeDebugResources-54:/values-pt-rBR/values-pt-rBR.xml",
             "map": [
                 {
                     "source": "/Users/sam/.gradle/caches/transforms-3/5b914cabee23c380435099c3f00ceeac/transformed/core-1.8.0/res/values-pt-rBR/values-pt-rBR.xml",

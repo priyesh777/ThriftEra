@@ -8,14 +8,14 @@ plugins {
 }
 
 android {
-    compileSdk 31
-    namespace 'com.example.thriftera'
+    compileSdk 33
+    namespace 'com.groupproject.thriftera'
     defaultConfig {
-        applicationId "com.example.thriftera"
+        applicationId "com.groupproject.thriftera"
         minSdk 21
-        targetSdk 31
-        versionCode 1
-        versionName "1.0"
+        targetSdk 33
+        versionCode 4
+        versionName "1.4"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.thriftera.app-mergeDebugResources-54:/values-ms/values-ms.xml",
+            "outputFile": "com.groupproject.thriftera.app-mergeDebugResources-54:/values-ms/values-ms.xml",
             "map": [
                 {
                     "source": "/Users/sam/.gradle/caches/transforms-3/1d0b5cb07567784a294cb65d26f06b25/transformed/appcompat-1.4.2/res/values-ms/values-ms.xml",

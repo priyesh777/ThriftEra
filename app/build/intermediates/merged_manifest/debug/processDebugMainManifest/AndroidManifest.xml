@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.thriftera"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    package="com.groupproject.thriftera"
+    android:versionCode="4"
+    android:versionName="1.4" >
 
     <uses-sdk
         android:minSdkVersion="21"
-        android:targetSdkVersion="31" />
+        android:targetSdkVersion="33" />
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name="com.example.thriftera.ThriftApplication"
+        android:name="com.groupproject.thriftera.ThriftApplication"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
@@ -24,14 +25,14 @@
         android:testOnly="true"
         android:theme="@style/Theme.KelineYt" >
         <activity
-            android:name="com.example.thriftera.activities.AddProductActivity"
+            android:name="com.groupproject.thriftera.activities.AddProductActivity"
             android:exported="false"
             android:theme="@style/Theme.KelineYt.ActionBar" />
         <activity
-            android:name="com.example.thriftera.activities.ShoppingActivity"
+            android:name="com.groupproject.thriftera.activities.ShoppingActivity"
             android:exported="true" />
         <activity
-            android:name="com.example.thriftera.activities.LoginRegisterActivity"
+            android:name="com.groupproject.thriftera.activities.LoginRegisterActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -112,7 +113,7 @@
 
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="com.example.thriftera.firebaseinitprovider"
+            android:authorities="com.groupproject.thriftera.firebaseinitprovider"
             android:directBootAware="true"
             android:exported="false"
             android:initOrder="100" />
@@ -123,7 +124,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.example.thriftera.androidx-startup"
+            android:authorities="com.groupproject.thriftera.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"
