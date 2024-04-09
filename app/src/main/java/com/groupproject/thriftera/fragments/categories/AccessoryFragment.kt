@@ -27,29 +27,29 @@ class AccessoryFragment : BaseCategoryFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        lifecycleScope.launchWhenStarted {
-            viewModel.offerProducts.collectLatest {
-                when (it) {
-                    is Resource.Loading -> {
-                        showOfferLoading()
-                    }
-
-                    is Resource.Success -> {
-                        Log.d("Offer Accessory", it.data.toString())
-                        offerAdapter.differ.submitList(it.data)
-                        hideOfferLoading()
-                    }
-
-                    is Resource.Error -> {
-                        Snackbar.make(requireView(), it.message.toString(), Snackbar.LENGTH_LONG)
-                            .show()
-                        hideOfferLoading()
-                    }
-
-                    else -> Unit
-                }
-            }
-        }
+//        lifecycleScope.launchWhenStarted {
+//            viewModel.offerProducts.collectLatest {
+//                when (it) {
+//                    is Resource.Loading -> {
+//                        showOfferLoading()
+//                    }
+//
+//                    is Resource.Success -> {
+//                        Log.d("Offer Accessory", it.data.toString())
+//                        offerAdapter.differ.submitList(it.data)
+//                        hideOfferLoading()
+//                    }
+//
+//                    is Resource.Error -> {
+//                        Snackbar.make(requireView(), it.message.toString(), Snackbar.LENGTH_LONG)
+//                            .show()
+//                        hideOfferLoading()
+//                    }
+//
+//                    else -> Unit
+//                }
+//            }
+//        }
 
         lifecycleScope.launchWhenStarted {
             viewModel.bestProducts.collectLatest {

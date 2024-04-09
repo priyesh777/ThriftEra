@@ -44,7 +44,7 @@
     <string name="app_name">Thrift Era</string>
     <string name="gcm_defaultSenderId" translatable="false">259709069762</string>
     <string name="google_api_key" translatable="false">AIzaSyDs0SIxe7DE3t9LLYntqKFkQjdB_eOPpMk</string>
-    <string name="google_app_id" translatable="false">1:259709069762:android:c6b24f45b458d764c08e5b</string>
+    <string name="google_app_id" translatable="false">1:259709069762:android:2762984fe1f7a922c08e5b</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDs0SIxe7DE3t9LLYntqKFkQjdB_eOPpMk</string>
     <string name="google_storage_bucket" translatable="false">thrifterav1.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>

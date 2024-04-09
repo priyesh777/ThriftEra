@@ -29,10 +29,9 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         val categoriesFragments = arrayListOf(
             MainCategoryFragment(),
-            CupboardFragment(),
+            FurnitureFragment(),
             TableFragment(),
             AccessoryFragment(),
-//            FurnitureFragment()
         )
 
         binding.viewpagerHome.isUserInputEnabled = false
@@ -47,8 +46,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                 1 -> tab.text = "Furniture"
                 2 -> tab.text = "Tables"
                 3 -> tab.text = "Accessories"
-//                2 -> tab.text = "Furniture"
-//                3 -> tab.text = "Cupboards"
             }
         }.attach()
     }
